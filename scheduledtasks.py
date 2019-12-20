@@ -10,7 +10,7 @@ TASK_STATE = {0: 'Unknown',
 
 
 
-def readFoldersOfTasks():
+def read_folders_of_tasks():
     # je maakt een schedule reader aan en daar verbind je mee
     scheduler = win32com.client.Dispatch('Schedule.Service')
     scheduler.Connect()
@@ -21,9 +21,13 @@ def readFoldersOfTasks():
         folder = folders.pop(0)
         folders += list(folder.GetFolders(0))
         for task in folder.GetTasks(0):
-            print('Path       : %s' % task.Path)
-            print('State      : %s' % TASK_STATE[task.State])
-            print('Last Run   : %s\n' % task.LastRunTime)
+            print('Name task    : %s' % task.name)
+            print('Path         : %s' % task.Path)
+            print('State        : %s' % TASK_STATE[task.State])
+            #print('Time created : %s' % task.created)
+            print('Last Run     : %s\n' % task.LastRunTime)
+
+            # naam van de task ophalen en de naam van de auteur + datum gecreerd
 
 if __name__ == '__main__':
-    readFoldersOfTasks()
+    read_folders_of_tasks()
