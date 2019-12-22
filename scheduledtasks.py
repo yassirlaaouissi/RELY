@@ -6,28 +6,59 @@ TASK_STATE = {0: 'Unknown',
               3: 'Completed',
               4: 'Running'}
 
-#yeet
-
 
 
 def read_folders_of_tasks():
+    AllTaskDetails = []
+
     # je maakt een schedule reader aan en daar verbind je mee
     scheduler = win32com.client.Dispatch('Schedule.Service')
     scheduler.Connect()
 
-    # Leest de folders uit waarin de scheduled tasks staan en geeft bepaalde info weer zoals hieronder te zien is
+    # begint in root folder
     folders = [scheduler.GetFolder('\\')]
     while folders:
+        #loopt door alle folders + subfolders heen popt steeds een en scant voor scheduled tasks
         folder = folders.pop(0)
         folders += list(folder.GetFolders(0))
         for task in folder.GetTasks(0):
-            print('Name task    : %s' % task.name)
-            print('Path         : %s' % task.Path)
-            print('State        : %s' % TASK_STATE[task.State])
-            #print('Time created : %s' % task.created)
-            print('Last Run     : %s\n' % task.LastRunTime)
+            #store alle printables in een variabele en voeg deze toe aan een list
+            TaskName = task.name
+            TaskPath = task.Path
+            TaskState = TASK_STATE[task.State]
+            TaskLastRunned = task.LastRunTime
+            TaskDetails = [TaskName, TaskPath, TaskState, TaskLastRunned]
 
-            # naam van de task ophalen en de naam van de auteur + datum gecreerd
+            #voeg de list van alle printables toe aan een array zodat je deze kan returnen
+            AllTaskDetails.append(TaskDetails)
+
+            # per scheduled task in de folder print je de volgende info
+            #print('Name task                  : %s' % TaskName)
+            #print('Path (rootfolder)          : %s' % TaskPath)
+            #print('State                      : %s' % TaskState)
+            #print('Last Run (system date)     : %s\n' % TaskLastRunned)
+
+    return AllTaskDetails
+
+def filter_tasks(AllTaskDetails):
+    WantToFilter = input("Do you want to filter the scheduled tasks? (Y or N): ")
+    if(WantToFilter == "Y"):
+        print("selected yes")
+    elif(WantToFilter == "N"):
+        print("selected no")
+    else:
+        print("You did not select Y or N, please restart the tool and try again")
+
+    NameToFilterOn = ""
+    PathToFilterOn = ""
+    StateToFilterOn = ""
+
+    for task in AllTaskDetails:
+        Name = task[0]
+        Path = task[1]
+        State = task[2]
+        LastRunned = task[3]
+
 
 if __name__ == '__main__':
-    read_folders_of_tasks()
+    filter_tasks(read_folders_of_tasks())
