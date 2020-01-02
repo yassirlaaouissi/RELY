@@ -1,49 +1,105 @@
 #Functionaliteit van Romy.
-import codecs
-import os
-import subprocess
+import psutil
+from datetime import datetime
+import pandas as pd
 
-def main():
-    all_proc_info = get_proc_info('NAME="explorer.exe"')
 
-    test.log("All names and values of first process found:");
-    first_process = all_proc_info[0];
-    for n, v in first_process.iteritems():
-        test.log("  " + n + ": " + v);
+def get_size(bytes):
+    """
+    Returns size of bytes in a nice format
+    """
+    for unit in ['', 'K', 'M', 'G', 'T', 'P']:
+        if bytes < 1024:
+            return f"{bytes:.2f}{unit}B"
+        bytes /= 1024
 
-    test.log("")
 
-    test.log("Accessing a single value:")
-    test.log("  CommandLine: " + first_process["CommandLine"])
+# the list the contain all process dictionaries
+processes = []
+for process in psutil.process_iter():
+    # get all process info in one shot
+    with process.oneshot():
+        # get the process id
+        pid = process.pid
+        # get the name of the file executed
+        name = process.name()
+        # get the time the process was spawned
+        create_time = datetime.fromtimestamp(process.create_time())
+        try:
+            # get the number of CPU cores that can execute this process
+            cores = len(process.cpu_affinity())
+        except psutil.AccessDenied:
+            cores = 0
+        # get the CPU usage percentage
+        cpu_usage = process.cpu_percent()
+        # get the status of the process (running, idle, etc.)
+        status = process.status()
+        try:
+            # get the process priority (a lower value means a more prioritized process)
+            nice = int(process.nice())
+        except psutil.AccessDenied:
+            nice = 0
+        try:
+            # get the memory usage in bytes
+            memory_usage = process.memory_full_info().uss
+        except psutil.AccessDenied:
+            memory_usage = 0
+        # total process read and written bytes
+        io_counters = process.io_counters()
+        read_bytes = io_counters.read_bytes
+        write_bytes = io_counters.write_bytes
+        # get the number of total threads spawned by this process
+        n_threads = process.num_threads()
+        # get the username of user spawned the process
+        try:
+            username = process.username()
+        except psutil.AccessDenied:
+            username = "N/A"
 
-def get_proc_info(search_expression=None):
-    if search_expression is None:
-        search_expression = ""
-    else:
-        search_expression = " WHERE " + search_expression
+    processes.append({
+        'pid': pid, 'name': name, 'create_time': create_time,
+        'cores': cores, 'cpu_usage': cpu_usage, 'status': status, 'nice': nice,
+        'memory_usage': memory_usage, 'read_bytes': read_bytes, 'write_bytes': write_bytes,
+        'n_threads': n_threads, 'username': username,
+    })
 
-    # Execute with wmic and capture output:
-    s = 'pushd "' + os.getcwd() + '" && wmic PROCESS ' + search_expression + ' GET * /format:csv <nul'
-    d = subprocess.Popen(s, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT).communicate()[0];
+# convert to pandas dataframe
+df = pd.DataFrame(processes)
+# set the process id as index of a process
+df.set_index('pid', inplace=True)
+if __name__ == "__main__":
+    import argparse
 
-    # Strip first empty line produced by wmic:
-    d = d[3:]
+    parser = argparse.ArgumentParser(description="Process Viewer & Monitor")
+    parser.add_argument("-c", "--columns", help="""Columns to show,
+                                                available are name,create_time,cores,cpu_usage,status,nice,memory_usage,read_bytes,write_bytes,n_threads,username.
+                                                Default is name,cpu_usage,memory_usage,read_bytes,write_bytes,status,create_time,nice,n_threads,cores.""",
+                        default="name,cpu_usage,memory_usage,read_bytes,write_bytes,status,create_time,nice,n_threads,cores")
+    parser.add_argument("-s", "--sort-by", dest="sort_by", help="Column to sort by, default is memory_usage .",
+                        default="memory_usage")
+    parser.add_argument("--descending", action="store_true", help="Whether to sort in descending order.")
+    parser.add_argument("-n", help="Number of processes to show, will show all if 0 is specified, default is 25 .",
+                        default=25)
 
-    # Write to file (to later read via testData API):
-    fn = "temp.csv"
-    f = codecs.open(fn, "w", "utf8")
-    f.write(d)
-    f.close()
+    # parse arguments
+    args = parser.parse_args()
+    columns = args.columns
+    sort_by = args.sort_by
+    descending = args.descending
+    n = int(args.n)
 
-    # Read via testData API:
-    dataset = testData.dataset(fn)
-    all_proc_info = []
-    for row in dataset:
-        proc_info = {}
-        field_names = testData.fieldNames(row)
-        for n in field_names:
-            v = testData.field(row, n)
-            proc_info[n] = v
-        all_proc_info.append(proc_info)
-    os.remove(fn)
-    return all_proc_info
+    # sort rows by the column passed as argument
+    df.sort_values(sort_by, inplace=True, ascending=not descending)
+    # pretty printing bytes
+    df['memory_usage'] = df['memory_usage'].apply(get_size)
+    df['write_bytes'] = df['write_bytes'].apply(get_size)
+    df['read_bytes'] = df['read_bytes'].apply(get_size)
+    # convert to proper date format
+    df['create_time'] = df['create_time'].apply(datetime.strftime, args=("%Y-%m-%d %H:%M:%S",))
+    # reorder and define used columns
+    df = df[columns.split(",")]
+    # print
+    if n == 0:
+        print(df.to_string())
+    elif n > 0:
+        print(df.head(n).to_string())
