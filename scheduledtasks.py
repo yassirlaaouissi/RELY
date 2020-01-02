@@ -39,113 +39,87 @@ def read_folders_of_tasks():
 
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!FILTERING!!!!!!!!!!!!!!!!!!!!!!!
 def filter_tasks(AllTaskDetails):
-    #hier maak je een list aan waaraan de tasks worden toegevoegd die gefilterd zijn
-    FilteredAllTaskDetails = []
+    UnfilteredList = AllTaskDetails
+    FilteredList = []
 
-    #Wil je uberhaupt wel filteren
     WantToFilter = input("Do you want to filter the scheduled tasks? (Y or N): ")
-    if(WantToFilter == "Y"):
-        print("selected yes \n")
 
-        #-------------------------------------!HIER BEGINT NAAM FILTERING!----------------------------------------------
-        NameToFilterOn = input("If you want to filter on task names give the name and press enter, else leave blank and press enter: ")
+    if(WantToFilter == "N"):
 
-        #Als de ingevoerde naam overeenkomt met naam uit AllTaskDetail dan hele task toevoegen aan FilteredAllTaskDetails
-        AddedNameToFilteredList = False
-        if(NameToFilterOn != ""):
-            for task in AllTaskDetails:
-                if(NameToFilterOn == task[0]):
-                    FilteredAllTaskDetails.append(task)
-                    AddedNameToFilteredList = True
-            if (AddedNameToFilteredList == False):
-                print("The name you entered was not found in the scheduled tasks, please restart the program and try again or proceed to the next step")
+        return UnfilteredList
+    elif(WantToFilter == "Y"):
+        #Give values to filter on
+        filterOnName = input("If you want to filter on name of task please give the name, else leave blank and press enter: ")
+        filterOnState = input("If you want to filter on state of task please give the state, else leave blank and press enter: ")
+        filterOnPath = input("If you want to filter on path of task please give the path, else leave blank and press enter: ")
 
-
-        #field is blank
-        elif(NameToFilterOn == ""):
-            print("You have left the field above blank, will proceed to next step\n")
-
-        # -------------------------------------!HIER BEGINT STATE FILTERING!----------------------------------------------
-        StateToFilterOn = input("If you want to filter on task states give the state and press enter, else leave blank and press enter: ")
-
-        # Als de ingevoerde state overeenkomt met state uit AllTaskDetail dan hele task toevoegen aan FilteredAllTaskDetails
-        AddedStateToFilteredList = False
-        if (StateToFilterOn != ""):
-            for task in AllTaskDetails:
-                if task in FilteredAllTaskDetails:
-                    continue
-                elif(StateToFilterOn == task[2]):
-                    FilteredAllTaskDetails.append(task)
-                    AddedStateToFilteredList = True
-            if (AddedStateToFilteredList == False):
-                print("The state you entered was not found in the scheduled tasks, please restart the program and try again or proceed to the next step")
-
-
-        # field is blank
-        elif (StateToFilterOn == ""):
-            print("You have left the field above blank, will proceed to next step\n")
-
-        # -------------------------------------!HIER BEGINT PATH FILTERING!----------------------------------------------
-        PathToFilterOn = input("If you want to filter on task path give the path and press enter, else leave blank and press enter: ")
-
-        # Als de ingevoerde path overeenkomt met path uit AllTaskDetail dan hele task toevoegen aan FilteredAllTaskDetails
-        AddedPathToFilteredList = False
-        if(PathToFilterOn != ""):
-            for task in AllTaskDetails:
-                if task in FilteredAllTaskDetails:
-                    continue
-                elif (PathToFilterOn == task[2]):
-                    FilteredAllTaskDetails.append(task)
-                    AddedPathToFilteredList = True
-            if(AddedPathToFilteredList == False):
-                print("The path you entered was not found in the scheduled tasks, please restart the program and try again or proceed to the next step")
-
-
-        # field is blank
-        elif(PathToFilterOn == ""):
-            print("You have left the field above blank, will proceed to next step\n")
-
-
-
-
-
-
-
-        if(AddedNameToFilteredList & AddedPathToFilteredList & AddedStateToFilteredList == False):
-            print("-----------------------------------------------------------------------")
-            print("No filtering was applied, will now proceed to saving unfiltered scheduled tasks")
-            print("-----------------------------------------------------------------------\n")
-            return AllTaskDetails
+        #The actual filtering
+        if(filterOnName + filterOnState + filterOnPath == "" ):
+            #print(UnfilteredList)
+            return UnfilteredList
         else:
-            print("-----------------------------------------------------------------------")
-            print("Filtering was applied, will now proceed to saving unfiltered scheduled tasks")
-            print("-----------------------------------------------------------------------\n")
-            return FilteredAllTaskDetails
+            if(filterOnName != ""):
+                for task in UnfilteredList:
+                    if task in FilteredList:
+                        continue
+                    elif(task[0] == filterOnName):
+                        FilteredList.append(task)
+                if(FilteredList == []):
+                    print("Name not found in list of scheduled tasks \n")
+            #for task in FilteredList:
+            #    print(task)
 
-    #Als je niet wilt filteren op de scheduled tasks
-    elif(WantToFilter == "N"):
-        print("-----------------------------------------------------------------------")
-        print("selected no, will now proceed to saving unfiltered scheduled tasks")
-        print("-----------------------------------------------------------------------\n")
-        return AllTaskDetails
+            if (filterOnState != ""):
+                for task in UnfilteredList:
+                    if task in FilteredList:
+                        continue
+                    elif (task[2] == filterOnState):
+                        FilteredList.append(task)
+                if (FilteredList == []):
+                    print("State not found in list of scheduled tasks \n")
+            #for task in FilteredList:
+            #    print(task)
 
+            if (filterOnPath != ""):
+                for task in UnfilteredList:
+                    if task in FilteredList:
+                        continue
+                    elif (task[1] == filterOnPath):
+                        FilteredList.append(task)
+                if (FilteredList == []):
+                    print("Path not found in list of scheduled tasks \n")
+            #for task in FilteredList:
+            #    print(task)
+
+
+
+            #return the filtered list after done with filtering
+            return FilteredList
     else:
-        print("You did not select Y or N, please restart the tool and try again")
+        print("The input you gave did not correspond Y or N, please restart the program and try again.")
 
 
 
 
 def save_list_to_file(ListToSave):
-    with open('ScheduledTasks.txt', 'w') as f:
+    filename = 'ScheduledTasks.txt'
+    with open(filename, 'w') as f:
         f.write("   Name of the task   ||      Path    ||        Status     ||      Last time runned    \n")
+        WantToPrintList = input("Do you want to print the results of the scheduled task scan? (Y or N): ")
         for task in ListToSave:
             tempTask = str(task)
             tempTask2 = tempTask.replace("[","")
             tempTask3 = tempTask2.replace("]", "")
             tempTask4 = tempTask3.replace(",", " || ")
-            print(tempTask4)
+            if(WantToPrintList == "Y"):
+                print("   Name of the task   ||      Path    ||        Status     ||      Last time runned   ")
+                print(tempTask4)
             f.write("%s\n" % tempTask4)
+
+        if(WantToPrintList == "N"):
+            print("File with results will be saved in the same folder as scheduledtasks.py. Name of the file is " + filename)
 
 
 if __name__ == '__main__':
     save_list_to_file(filter_tasks(read_folders_of_tasks()))
+    #filter_tasks(read_folders_of_tasks())
