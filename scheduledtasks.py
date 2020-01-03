@@ -44,10 +44,10 @@ def filter_tasks(AllTaskDetails):
 
     WantToFilter = input("Do you want to filter the scheduled tasks? (Y or N): ")
 
-    if(WantToFilter == "N" or "n"):
+    if(WantToFilter == "N"):
 
         return UnfilteredList
-    elif(WantToFilter == "Y" or "y"):
+    elif(WantToFilter == "Y"):
         #Give values to filter on
         filterOnName = input("If you want to filter on name of task please give the name, else leave blank and press enter: ")
         filterOnState = input("If you want to filter on state of task please give the state, else leave blank and press enter: ")
@@ -111,12 +111,12 @@ def save_list_to_file(ListToSave):
             tempTask2 = tempTask.replace("[","")
             tempTask3 = tempTask2.replace("]", "")
             tempTask4 = tempTask3.replace(",", " || ")
-            if(WantToPrintList == "Y" or "y"):
+            if(WantToPrintList == "Y"):
                 print("   Name of the task   ||      Path    ||        Status     ||      Last time runned   ")
                 print(tempTask4)
             f.write("%s\n" % tempTask4)
 
-        if(WantToPrintList == "N" or "n"):
+        if(WantToPrintList == "N"):
             print("File with results will be saved in the same folder as scheduledtasks.py. Name of the file is " + filename)
 
 
