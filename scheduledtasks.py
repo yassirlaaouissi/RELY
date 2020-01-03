@@ -118,6 +118,8 @@ def save_list_to_file(ListToSave):
 
         if(WantToPrintList == "N"):
             print("File with results will be saved in the same folder as scheduledtasks.py. Name of the file is " + filename)
+        else:
+            print("File with results will be saved in the same folder as scheduledtasks.py. Name of the file is " + filename)
 
 
 if __name__ == '__main__':

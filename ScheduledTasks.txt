@@ -1,7 +1,7 @@
    Name of the task   ||      Path    ||        Status     ||      Last time runned    
 'CCleanerSkipUAC' ||  '\\CCleanerSkipUAC' ||  'Completed' ||  '2019-06-30 20:06:34 (Central EU Time)'
 'Driver Easy Scheduled Scan' ||  '\\Driver Easy Scheduled Scan' ||  'Disabled' ||  '2019-03-08 17:23:48 (Central EU Time)'
-'ExplorerSync' ||  '\\ExplorerSync' ||  'Running' ||  '2020-01-03 13:41:00 (Central EU Time)'
+'ExplorerSync' ||  '\\ExplorerSync' ||  'Running' ||  '2020-01-03 13:45:00 (Central EU Time)'
 'HPAudioSwitch' ||  '\\HPAudioSwitch' ||  'Running' ||  '2020-01-03 11:17:38 (Central EU Time)'
 'HPCeeScheduleForyassi' ||  '\\HPCeeScheduleForyassi' ||  'Completed' ||  '2020-01-02 22:33:00 (Central EU Time)'
 'HPJumpStartLaunch' ||  '\\HPJumpStartLaunch' ||  'Running' ||  '2020-01-03 11:16:37 (Central EU Time)'
@@ -15,7 +15,7 @@
 'RtHDVBg_HP_VOICEMODE_FOR_SKYPE' ||  '\\RtHDVBg_HP_VOICEMODE_FOR_SKYPE' ||  'Running' ||  '2020-01-03 11:17:08 (Central EU Time)'
 'RtHDVBg_Session' ||  '\\RtHDVBg_Session' ||  'Running' ||  '2020-01-03 11:17:08 (Central EU Time)'
 'RTKCPL' ||  '\\RTKCPL' ||  'Running' ||  '2020-01-03 11:18:38 (Central EU Time)'
-'yassi923kw' ||  '\\yassi923kw' ||  'Running' ||  '2020-01-03 13:41:00 (Central EU Time)'
+'yassi923kw' ||  '\\yassi923kw' ||  'Running' ||  '2020-01-03 13:45:00 (Central EU Time)'
 'HP Support Solutions Framework Updater - Resources' ||  '\\Hewlett-Packard\\HP Support Assistant\\HP Support Solutions Framework Updater - Resources' ||  'Completed' ||  '2019-05-30 20:15:39 (Central EU Time)'
 'Product Configurator' ||  '\\Hewlett-Packard\\HP Support Assistant\\Product Configurator' ||  'Completed' ||  '2019-12-29 22:32:24 (Central EU Time)'
 'HP CoolSense Start at Logon' ||  '\\HP\\HP CoolSense\\HP CoolSense Start at Logon' ||  'Running' ||  '2020-01-03 11:17:08 (Central EU Time)'
