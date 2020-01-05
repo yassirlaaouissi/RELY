@@ -173,11 +173,11 @@ print ("==============================================================")
 print ("Most recently used")
 print ("==============================================================")
 
-key = r'HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU'
+key = r'HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run'
 
 for sub_key in get_sub_keys(key):
     path = join(key, sub_key)
-    value = get_values(path, ['Path'])
+    value = get_values(path, ['OneDrive'])
 
     if value:
         print(sub_key,value)
