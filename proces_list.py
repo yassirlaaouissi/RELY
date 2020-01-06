@@ -50,9 +50,10 @@ for process in psutil.process_iter():
 # Hiermee wordt de lijst netjes weergegeven in de console.
 header = processes[0].keys()
 rows = [x.values() for x in processes]
-print(tabulate.tabulate(rows, header, tablefmt='rst'))
+tableproceslist = tabulate.tabulate(rows, header, tablefmt='rst')
+print(tableproceslist)
 
 # Hiermee wordt de lijst met uitkomsten opgeslagen in een .txt bestand.
-with open('Processlist_results.txt', 'w') as f:
-    for item in processes:
-        f.write("%s\n" % item)
+f = open('Proces_list.txt', 'w')
+f.write(tableproceslist)
+f.close()
