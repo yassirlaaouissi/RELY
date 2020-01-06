@@ -1,55 +1,55 @@
 import os
 from datetime import datetime
+import tabulate
 
-#tijdelijke bestandslocatie
-f = open('C:\\Users\lucil\OneDrive\Documenten\school\Filesystem.txt', 'w')
-f.write('               File name                 File size              Last Access              Last modified              Creation time       \n')
+allfilesystem_list = []
 
-#om de list naar het bestand toe te schrijven
+#om de list naar het bestand toe te schrijven en naar scherm te printen
 def savelist(listname):
-    for fileinfo in listname:
-        filefile = str(fileinfo)
 
-        f = open('C:\\Users\lucil\OneDrive\Documenten\school\Filesystem.txt', "a")
-        f.write('%s\t\t' % filefile)
-        f.close()
-    f = open('C:\\Users\lucil\OneDrive\Documenten\school\Filesystem.txt', "a")
-    f.write('\n')
+    #print tabel naar scherm
+    header = allfilesystem_list[0].keys()
+    rows = [x.values() for x in allfilesystem_list]
+    tablefilesystem = tabulate.tabulate(rows, header, tablefmt='rst')
+    print(tablefilesystem)
+
+    #schrijf tabel weg naar bestand
+    f = open('C:\\Users\lucil\OneDrive\Documenten\school\Filesystem.txt', 'w')
+    f.write(tablefilesystem)
     f.close()
 
-#C:\\ met dubbele \
-pathname = input('Type in the path you want to analyze: ')
+    #locatie moet nog worden bepaald
+    print('\nThe analysis is saved into a file called Filesystem.txt on the location ...')
 
 #om filesystem langs te lopen
-for (dirpath, dirnames, filenames) in os.walk(pathname):
-    for f in filenames:
+def analysefilesystem():
 
-        file_stats = os.stat(dirpath)
-        lastaccess = file_stats.st_atime
-        lastmodified = file_stats.st_mtime
-        creationtime = file_stats.st_ctime
+    # C:\\ met dubbele \
+    pathname = input('Type in the path you want to analyze: ')
 
-        #om de datetime te veranderen naar een string
-        last_access = datetime.fromtimestamp(lastaccess)
-        last_access = last_access.strftime('%d/%m/%Y %H:%M:%S')
-        last_modified = datetime.fromtimestamp(lastmodified)
-        last_modified = last_modified.strftime('%d/%m/%Y %H:%M:%S')
-        creation_time = datetime.fromtimestamp(creationtime)
-        creation_time = creation_time.strftime('%d/%m/%Y %H:%M:%S')
+    for (dirpath, dirnames, filenames) in os.walk(pathname):
+        for f in filenames:
 
-        #resultaten voor op het scherm zelf
-        print('\nFile name :', os.path.join(dirpath, f))
-        print('File size:', file_stats.st_size, 'bytes')
-        print('Time of last access:', datetime.fromtimestamp(lastaccess))
-        print('Time of last modification:', datetime.fromtimestamp(lastmodified))
-        print('Creation time:', datetime.fromtimestamp(creationtime))
+            path = os.path.join(dirpath, f)
+            file_stats = os.stat(path)
+            lastaccess = file_stats.st_atime
+            lastmodified = file_stats.st_mtime
+            creationtime = file_stats.st_ctime
 
-        filesystem_list = [os.path.join(dirpath, f), file_stats.st_size, last_access, last_modified, creation_time]
-        savelist(filesystem_list)
+            #om de datetime te veranderen naar een string
+            last_access = datetime.fromtimestamp(lastaccess)
+            last_access = last_access.strftime('%d/%m/%Y %H:%M:%S')
+            last_modified = datetime.fromtimestamp(lastmodified)
+            last_modified = last_modified.strftime('%d/%m/%Y %H:%M:%S')
+            creation_time = datetime.fromtimestamp(creationtime)
+            creation_time = creation_time.strftime('%d/%m/%Y %H:%M:%S')
+            file_size = file_stats.st_size
 
-#locatie nog te bepalen
-print('\nThe analysis is saved into a file called Filesystem.txt on the location ...')
+            allfilesystem_list.append({'File path': path, 'File name': f, 'File size (bytes)': file_size, 'last access': last_access, 'Last modified': last_modified, 'Creation time': creation_time})
 
 
+if __name__ == '__main__':
 
+    analysefilesystem()
+    savelist(allfilesystem_list)
 
