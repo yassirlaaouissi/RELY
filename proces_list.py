@@ -2,7 +2,6 @@
 import psutil
 from datetime import datetime
 import tabulate
-import json
 
 # Lijst die alle proces dictionaries bevat.
 processes = []
