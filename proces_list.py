@@ -54,6 +54,7 @@ tableproceslist = tabulate.tabulate(rows, header, tablefmt='rst')
 print(tableproceslist)
 
 # Hiermee wordt de lijst met uitkomsten opgeslagen in een .txt bestand.
-f = open('Proces_list.txt', 'w')
+f = open('C://Users/romyw/Documents/ipfit5/Proces_list.txt', 'w') #extern opslaan
+#f = open('Proces_list.txt', 'w') #intern opslaan
 f.write(tableproceslist)
 f.close()
