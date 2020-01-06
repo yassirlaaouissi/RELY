@@ -2,6 +2,7 @@
 import psutil
 from datetime import datetime
 import tabulate
+import json
 
 # Lijst die alle proces dictionaries bevat.
 processes = []
@@ -50,3 +51,8 @@ for process in psutil.process_iter():
 header = processes[0].keys()
 rows = [x.values() for x in processes]
 print(tabulate.tabulate(rows, header, tablefmt='rst'))
+
+with open('Processlist_results.txt', 'w') as f:
+    for item in processes:
+        f.write("%s\n" % item)
+

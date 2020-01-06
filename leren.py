@@ -58,4 +58,31 @@ def process_list():
 #if __name__ == '__main__':
  #   process_list()
 
+def save_list_to_file(list_to_save):
+    filename = 'Proces_list.txt'
+    with open(filename, 'w') as f:
+        f.write(
+            "   Process ID      ||      Name     ||        Create time      ||      Cores     ||      CPU usage    ||     Status     ||      Memory usage      ||      Read bytes     ||      Write bytes     ||      n treads    ||   Username  \n")
+        want_to_print_list = input("Do you want to print the results of the proces list scan? (Y or N): ")
+        for task in list_to_save:
+            tempTask = str(task)
+            tempTask2 = tempTask.replace("[", "")
+            tempTask3 = tempTask2.replace("]", "")
+            tempTask4 = tempTask3.replace(",", "  ")
+            if (want_to_print_list == "Y"):
+                print(
+                    "   Process ID   ||      Name     ||        Create time      ||      Cores     ||      CPU usage    ||     Status     ||      Memory usage      ||      Read bytes     ||      Write bytes     ||      n treads    ||   Username  ")
+                print(tempTask4)
+            f.write("%s\n" % tempTask4)
+
+        if (want_to_print_list == "N"):
+            print(
+                "File with results will be saved in the same folder as scheduledtasks.py. Name of the file is " + filename)
+        else:
+            print(
+                "File with results will be saved in the same folder as scheduledtasks.py. Name of the file is " + filename)
+
+
+save_list_to_file(processes)
+
 
