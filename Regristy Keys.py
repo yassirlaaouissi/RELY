@@ -2,6 +2,59 @@
 
 from winreg import *
 import os
+import winreg
+
+
+explorer = winreg.OpenKey(
+    winreg.HKEY_LOCAL_MACHINE,
+    r"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Git_is1"
+)
+
+key = r"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Git_is1"
+
+print (key)
+
+
+TYPE_STATE = {  0: 'REG_NONE',
+                1: 'REG_SZ',
+                2: 'REG_EXPAND_SZ',
+                3: 'REG_BINARY',
+                4: 'REG_DWORD ',
+                5: 'REG_DWORD_BIG_ENDIAN',
+                6: 'REG_LINK',
+                7: 'REG_MULTI_SZ',
+                8: 'REG_RESOURCE_LIST',
+                9: 'REG_FULL_RESOURCE_DESCRIPTOR',
+                10: 'REG_RESOURCE_REQUIREMENTS_LIST',
+                11: 'REG_QWORD '}
+
+
+# list values owned by this registry key
+try:
+    i = 0
+    while 1:
+        name, data, type = winreg.EnumValue(explorer, i)
+        print("Name: " + str(name) + " || " + " Type: " + TYPE_STATE.get(type) + " || " + " Data: " + str(data))
+        i += 1
+
+except WindowsError:
+    print ("NIET GEVONDEN")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Definieer het beginpunt van de registry
 # voor hier zijn de HKEY_CLASSES_ROOT (gaat over de hele computer installatie)
