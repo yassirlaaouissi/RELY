@@ -14,19 +14,19 @@ key = r"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Git_is1"
 
 print (key)
 
+TYPE_STATE = {0: 'REG_NONE',
+              1: 'REG_SZ',
+              2: 'REG_EXPAND_SZ',
+              3: 'REG_BINARY',
+              4: 'REG_DWORD ',
+              5: 'REG_DWORD_BIG_ENDIAN',
+              6: 'REG_LINK',
+              7: 'REG_MULTI_SZ',
+              8: 'REG_RESOURCE_LIST',
+              9: 'REG_FULL_RESOURCE_DESCRIPTOR',
+              10: 'REG_RESOURCE_REQUIREMENTS_LIST',
+              11: 'REG_QWORD '}
 
-TYPE_STATE = {  0: 'REG_NONE',
-                1: 'REG_SZ',
-                2: 'REG_EXPAND_SZ',
-                3: 'REG_BINARY',
-                4: 'REG_DWORD ',
-                5: 'REG_DWORD_BIG_ENDIAN',
-                6: 'REG_LINK',
-                7: 'REG_MULTI_SZ',
-                8: 'REG_RESOURCE_LIST',
-                9: 'REG_FULL_RESOURCE_DESCRIPTOR',
-                10: 'REG_RESOURCE_REQUIREMENTS_LIST',
-                11: 'REG_QWORD '}
 
 
 # list values owned by this registry key
@@ -226,11 +226,14 @@ print ("==============================================================")
 print ("Most recently used")
 print ("==============================================================")
 
-key = r'HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run'
+key = r'HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\R'
 
-for sub_key in get_sub_keys(key):
-    path = join(key, sub_key)
-    value = get_values(path, ['OneDrive'])
+try:
+    for sub_key in get_sub_keys(key):
+        path = join(key, sub_key)
+        value = get_values(path, ['OneDrive'])
 
-    if value:
-        print(sub_key,value)
+        if value:
+            print(sub_key,value)
+except WindowsError:
+    print("yeet")
