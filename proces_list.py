@@ -12,14 +12,14 @@ for process in psutil.process_iter():
         pid = process.pid
         # Naam verkrijgen van het uitgevoerde bestand.
         name = process.name()
-        # Tijd verkrijgen van wanneer het proces is gecreeerd.
+        # Tijd verkrijgen van wanneer het proces gecreeerd is.
         create_time = datetime.fromtimestamp(process.create_time())
         try:
             # Verkrijg het aantal CPU-cores dat dit proces kan uitvoeren.
             cores = len(process.cpu_affinity())
         except psutil.AccessDenied:
             cores = 0
-        # Verkrijg het CPU-gebruikpercentage
+        # Verkrijg het CPU-gebruikerspercentage
         cpu_usage = process.cpu_percent()
         # Verkrijg de status van het proces.
         status = process.status()
@@ -56,4 +56,3 @@ print(tabulate.tabulate(rows, header, tablefmt='rst'))
 with open('Processlist_results.txt', 'w') as f:
     for item in processes:
         f.write("%s\n" % item)
-
