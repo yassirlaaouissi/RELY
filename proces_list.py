@@ -47,10 +47,12 @@ for process in psutil.process_iter():
         'n_threads': n_threads, 'username': username,
     })
 
+# Hiermee wordt de lijst netjes weergegeven in de console.
 header = processes[0].keys()
 rows = [x.values() for x in processes]
 print(tabulate.tabulate(rows, header, tablefmt='rst'))
 
+# Hiermee wordt de lijst met uitkomsten opgeslagen in een .txt bestand.
 with open('Processlist_results.txt', 'w') as f:
     for item in processes:
         f.write("%s\n" % item)
