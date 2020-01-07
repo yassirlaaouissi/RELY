@@ -1,5 +1,6 @@
 from operator import contains
 
+import tabulate
 import win32com.client
 # hierin defineer je een key value dictionary waarmee je de staat van een scheduled task kan meegeven
 TASK_STATE = {0: 'Unknown',
@@ -99,29 +100,32 @@ def filter_tasks(AllTaskDetails):
         print("The input you gave did not correspond Y or N, please restart the program and try again.")
 
 
+def show_results(list):
+    headers = ["Name", "Path", "State", "Last time runned"]
+    for key in list:
+        row = list
+    #rows = [x.values() for x in list]
+    tablelist = tabulate.tabulate(row, headers, tablefmt='rst')
+    filename = 'ScheduledTasks.txt'
 
+    WantToPrintList = input("Do you want to print the results of the scheduled task scan? (Y or N): ")
+    if(WantToPrintList == "Y"):
+        print(tablelist)
+        return tablelist
+    elif(WantToPrintList == "N"):
+        print("File with results will be saved in the same folder as scheduledtasks.py. Name of the file is " + filename)
+        return tablelist
+    else:
+        print("File with results will be saved in the same folder as scheduledtasks.py. Name of the file is " + filename)
+        return tablelist
 
 def save_list_to_file(ListToSave):
     filename = 'ScheduledTasks.txt'
     with open(filename, 'w') as f:
-        f.write("   Name of the task   ||      Path    ||        Status     ||      Last time runned    \n")
-        WantToPrintList = input("Do you want to print the results of the scheduled task scan? (Y or N): ")
-        for task in ListToSave:
-            tempTask = str(task)
-            tempTask2 = tempTask.replace("[","")
-            tempTask3 = tempTask2.replace("]", "")
-            tempTask4 = tempTask3.replace(",", " || ")
-            if(WantToPrintList == "Y"):
-                print("   Name of the task   ||      Path    ||        Status     ||      Last time runned   ")
-                print(tempTask4)
-            f.write("%s\n" % tempTask4)
+        f.write(ListToSave)
 
-        if(WantToPrintList == "N"):
-            print("File with results will be saved in the same folder as scheduledtasks.py. Name of the file is " + filename)
-        else:
-            print("File with results will be saved in the same folder as scheduledtasks.py. Name of the file is " + filename)
+
 
 
 if __name__ == '__main__':
-    save_list_to_file(filter_tasks(read_folders_of_tasks()))
-    #filter_tasks(read_folders_of_tasks())
+    save_list_to_file(show_results(filter_tasks(read_folders_of_tasks())))
