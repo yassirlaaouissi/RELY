@@ -1,6 +1,11 @@
+# Importeer de juiste bibliotheken om de registry te kunnen lezen
 import winreg
+import tabulate
+import os.path as osp
+
 
 def choice_menu():
+
     geefHKEY = input("Please give an HKEY (e.g. HKEY_LOCAL_MACHINE): ")
     geefPad = input("Please give the path you want to be scanned: ")
 
@@ -46,7 +51,7 @@ def choice_menu():
     return explorer
 
 def reg_reader(exp):
-    list_of_regkeys = []
+    regristry = []
     TYPE_STATE = {0: 'REG_NONE',
                   1: 'REG_SZ',
                   2: 'REG_EXPAND_SZ',
@@ -66,28 +71,39 @@ def reg_reader(exp):
         i = 0
         while 1:
             name, data, type = winreg.EnumValue(exp, i)
-            OneKey = [name, type, data]
-            list_of_regkeys.append(OneKey)
             print("Name: " + str(name) + " || " + " Type: " + TYPE_STATE.get(type) + " || " + " Data: " + str(data))
             i += 1
+
+            #
+            name = str(name)
+            type = str(TYPE_STATE.get(type))
+            data = str(data)
+
+            regristry.append({
+                'Name': name, 'Type': type, 'Data': data,
+            })
 
     except WindowsError:
         print
 
+    return regristry
 
-    return list_of_regkeys
 
-def save_keys(list):
-    list2 = str(list)
-    filename = 'RegistryKeys.txt'
-    with open(filename, 'w') as f:
-        for key in list2:
-            tempKey2 = key.replace("[", "")
-            tempKey3 = tempKey2.replace("]", "")
-            tempKey4 = tempKey3.replace(",", " || ")
-            f.write(tempKey4)
-            #f.close()
+def save_keys(regristry):
 
+    header = regristry[0].keys()
+    rows = [x.values() for x in regristry]
+    tableproceslist = tabulate.tabulate(rows, header, tablefmt='rst')
+    print(tableproceslist)
+
+    # Hiermee wordt de lijst met uitkomsten opgeslagen in een .txt bestand.
+    if osp.isfile("RegistryKeys.txt"):
+        f = open('RegistryKeys.txt', 'w')
+    else:
+        f = open('RegistryKeys.txt', 'x')
+
+    f.write(tableproceslist)
+    f.close()
 
 
 
@@ -97,19 +113,3 @@ def save_keys(list):
 
 if __name__ == '__main__':
     save_keys(reg_reader(choice_menu()))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
