@@ -66,8 +66,11 @@ def filterfiles(listname):
         sizestr = str(sizelist2)
         sizestr2 = sizestr.replace('[', '')
         sizestr3 = sizestr2.replace(']', '')
-        sizelistdict = literal_eval(sizestr3)
-        filteredlist.append(sizelistdict)
+        if sizestr3 == '':
+            print('No results found')
+        else:
+            sizelistdict = literal_eval(sizestr3)
+            filteredlist.append(sizelistdict)
     else:
         print('ok')
 
@@ -76,12 +79,17 @@ def filterfiles(listname):
     if name1 == 'Y':
         name2 = input('Type the name of the file you want to filter on: ')
         namelist = filter(lambda x: x['File name'] == name2, listname)
+        print(namelist)
         namelist2 = list(namelist)
+        print(namelist2)
         namestr = str(namelist2)
         namestr2 = namestr.replace('[', '')
         namestr3 = namestr2.replace(']', '')
-        namelistdict = literal_eval(namestr3)
-        filteredlist.append(namelistdict)
+        if namestr3 == '':
+            print('No results found')
+        else:
+            namelistdict = literal_eval(namestr3)
+            filteredlist.append(namelistdict)
     else:
         print('ok')
 
