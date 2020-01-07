@@ -17,7 +17,7 @@ def show_list(listname):
 def save_list(listname):
     save = input('Do you want to save te results to a file? (Y/N)?: ')
     if save == 'Y':
-        f = open('C:\\Users\lucil\OneDrive\Documenten\school\Filesystem.txt', 'w')
+        f = open('C:\\Users\lucil\PycharmProjects\RELY\Filesystem.txt', 'w')
         f.write(listname)
         f.close()
 
@@ -100,9 +100,10 @@ if __name__ == '__main__':
 
     resultlist = analysefilesystem()
     tablelist = show_list(resultlist)
+
     filtervraag = input('Do you want to filter the results? (Y/N)?: ')
     if filtervraag == 'Y':
         filteredlist = filterfiles(allfilesystem_list)
         tablelist = show_list(filteredlist)
-    save_list(tablelist)
 
+    save_list(tablelist)
