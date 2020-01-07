@@ -3,7 +3,6 @@ import psutil
 from datetime import datetime
 import tabulate
 
-# proberen uitput te pushen.
 
 def proces_list():
     # Lijst die alle proces dictionaries bevat.
