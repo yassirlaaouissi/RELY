@@ -22,7 +22,7 @@ def save_list(listname):
         f.close()
 
         # locatie moet nog worden bepaald
-        print('\nThe results are saved into a file called Filesystem.txt on the location ...')
+        print('\nThe results are saved into a file called Filesystem.txt on the location C:\\Users\lucil\PycharmProjects\RELY\Filesystem.txt')
     else:
         print('The results are not saved.')
 
@@ -63,14 +63,15 @@ def filterfiles(listname):
         size2 = int(size2)
         sizelist = filter(lambda x: x['File size (bytes)'] == size2, listname)
         sizelist2 = list(sizelist)
-        sizestr = str(sizelist2)
-        sizestr2 = sizestr.replace('[', '')
-        sizestr3 = sizestr2.replace(']', '')
-        if sizestr3 == '':
-            print('No results found')
-        else:
-            sizelistdict = literal_eval(sizestr3)
-            filteredlist.append(sizelistdict)
+        for item in sizelist2:
+            sizestr = str(item)
+            sizestr2 = sizestr.replace('[', '')
+            sizestr3 = sizestr2.replace(']', '')
+            if sizestr3 == '':
+                print('No results found')
+            else:
+                sizelistdict = literal_eval(sizestr3)
+                filteredlist.append(sizelistdict)
     else:
         print('ok')
 
@@ -79,17 +80,16 @@ def filterfiles(listname):
     if name1 == 'Y':
         name2 = input('Type the name of the file you want to filter on: ')
         namelist = filter(lambda x: x['File name'] == name2, listname)
-        print(namelist)
         namelist2 = list(namelist)
-        print(namelist2)
-        namestr = str(namelist2)
-        namestr2 = namestr.replace('[', '')
-        namestr3 = namestr2.replace(']', '')
-        if namestr3 == '':
-            print('No results found')
-        else:
-            namelistdict = literal_eval(namestr3)
-            filteredlist.append(namelistdict)
+        for item in namelist2:
+            namestr = str(item)
+            namestr2 = namestr.replace('[', '')
+            namestr3 = namestr2.replace(']', '')
+            if namestr3 == '':
+                print('No results found')
+            else:
+                namelistdict = literal_eval(namestr3)
+                filteredlist.append(namelistdict)
     else:
         print('ok')
 
