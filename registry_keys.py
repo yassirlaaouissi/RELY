@@ -5,7 +5,7 @@ import os.path as osp
 
 
 def choice_menu():
-
+    # input vragen aan de gebruiker.
     geefHKEY = input("Please give an HKEY (e.g. HKEY_LOCAL_MACHINE): ")
     geefPad = input("Please give the path you want to be scanned: ")
 
@@ -14,6 +14,7 @@ def choice_menu():
     elif (geefHKEY == ""):
         print("Please enter a valid choice. Try again by restarting the program")
 
+    #Leest de gegeven HKEY-input van de gebruiker uit.
     HKEYFound = False
     if (geefHKEY == "HKEY_CLASSES_ROOT"):
         explorer = winreg.OpenKey(
@@ -52,6 +53,8 @@ def choice_menu():
 
 def reg_reader(exp):
     regristry = []
+
+    #Geeft bij 'Type' de bijbehoorende state naam aan.
     TYPE_STATE = {0: 'REG_NONE',
                   1: 'REG_SZ',
                   2: 'REG_EXPAND_SZ',
@@ -66,15 +69,15 @@ def reg_reader(exp):
                   11: 'REG_QWORD '}
 
 
-    # list values owned by this registry key
+    # Waardes in de lijst van de registry keys
     try:
         i = 0
         while 1:
             name, data, type = winreg.EnumValue(exp, i)
-            print("Name: " + str(name) + " || " + " Type: " + TYPE_STATE.get(type) + " || " + " Data: " + str(data))
+            #print("Name: " + str(name) + " || " + " Type: " + TYPE_STATE.get(type) + " || " + " Data: " + str(data))
             i += 1
 
-            #
+            #Tabelontwerp creeëren
             name = str(name)
             type = str(TYPE_STATE.get(type))
             data = str(data)
@@ -90,13 +93,13 @@ def reg_reader(exp):
 
 
 def save_keys(regristry):
-
+    #print tabel naar scherm
     header = regristry[0].keys()
     rows = [x.values() for x in regristry]
     tableproceslist = tabulate.tabulate(rows, header, tablefmt='rst')
     print(tableproceslist)
 
-    # Hiermee wordt de lijst met uitkomsten opgeslagen in een .txt bestand.
+    #schrijf de tabel met uitkomsten naar een .txt bestand.
     if osp.isfile("RegistryKeys.txt"):
         f = open('RegistryKeys.txt', 'w')
     else:
