@@ -22,8 +22,6 @@ def proces_list():
                 cores = len(process.cpu_affinity())
             except psutil.AccessDenied:
                 cores = 0
-            # Verkrijg het CPU-gebruikerspercentage
-            cpu_usage = process.cpu_percent()
             # Verkrijg de status van het proces.
             status = process.status()
             try:
@@ -45,8 +43,8 @@ def proces_list():
 
         processes.append({
             'pid': pid, 'name': name, 'create_time': create_time,
-            'cores': cores, 'cpu_usage': cpu_usage, 'status': status,
-            'memory_usage': memory_usage, 'read_bytes': read_bytes, 'write_bytes': write_bytes,
+            'cores': cores, 'status': status, 'memory_usage': memory_usage,
+            'read_bytes': read_bytes, 'write_bytes': write_bytes,
             'n_threads': n_threads, 'username': username,
         })
 
