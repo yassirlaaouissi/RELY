@@ -1,8 +1,9 @@
-#Functionaliteit van Romy.
+# Functionaliteit van Romy.
 import psutil
 from datetime import datetime
 import tabulate
 
+# proberen uitput te pushen.
 
 def proces_list():
     # Lijst die alle proces dictionaries bevat.
@@ -50,14 +51,14 @@ def proces_list():
             'n_threads': n_threads, 'username': username,
         })
 
-    #print(processes)
+    # print(processes)
 
     save_file(processes)
 
 
 def save_file(processes):
 
-    #print(processes)
+    # print(processes)
 
     # Hiermee wordt de lijst netjes weergegeven in de console.
     header = processes[0].keys()
@@ -66,8 +67,8 @@ def save_file(processes):
     print(tableproceslist)
 
     # Hiermee wordt de lijst met uitkomsten opgeslagen in een .txt bestand.
-    f = open('C://Users/romyw/Documents/ipfit5/Proces_list.txt', 'w')  #extern opslaan
-    #f = open('Proces_list.txt', 'w') #intern opslaan
+    f = open('C://Users/romyw/Documents/ipfit5/Proces_list.txt', 'w')  # extern opslaan
+    # f = open('Proces_list.txt', 'w')  # intern opslaan
     f.write(tableproceslist)
     f.close()
 

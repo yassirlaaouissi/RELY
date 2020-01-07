@@ -1,0 +1,275 @@
+=====  ==================================================================  ===================  =======  ===========  ========  ==============  ============  =============  ===========  =====================
+  pid  name                                                                create_time            cores    cpu_usage  status      memory_usage    read_bytes    write_bytes    n_threads  username
+=====  ==================================================================  ===================  =======  ===========  ========  ==============  ============  =============  ===========  =====================
+    0  System Idle Process                                                 2019-11-29 10:23:32        0            0  running                0             0              0            8  NT AUTHORITY\SYSTEM
+    4  System                                                              2019-11-29 10:23:32        0            0  running                0      39842212     5747555580          180  NT AUTHORITY\SYSTEM
+   96  svchost.exe                                                         2019-11-28 17:29:53        0            0  running                0      94980948        4155044           28  N/A
+  120  Registry                                                            2019-11-28 17:29:36        0            0  running                0       1351680      685211648            4  N/A
+  252  MsMpEng.exe                                                         2019-12-20 08:28:31        0            0  running                0    5390226333     1115749170           43  N/A
+  320  fontdrvhost.exe                                                     2019-11-28 17:29:53        0            0  running                0             0              0            5  N/A
+  444  smss.exe                                                            2019-11-28 17:29:41        0            0  running                0         13208          27100            2  N/A
+  500  WUDFHost.exe                                                        2019-11-28 17:29:53        0            0  running                0       2094436            768           14  N/A
+  620  taskhostw.exe                                                       2019-11-28 17:30:07        8            0  running                0       6957784       56316481            9  LAPTOP-O0VUI5OA\romyw
+  648  svchost.exe                                                         2019-11-28 17:29:53        0            0  running                0        614400              0           17  N/A
+  680  csrss.exe                                                           2019-11-28 17:29:51        0            0  running                0        429711              0           12  N/A
+  784  wininit.exe                                                         2019-11-28 17:29:53        0            0  running                0         15872              0            1  N/A
+  792  csrss.exe                                                           2019-11-28 17:29:53        0            0  running                0       2107698           2277           14  N/A
+  856  services.exe                                                        2019-11-28 17:29:53        0            0  running                0        495860            160            8  N/A
+  872  lsass.exe                                                           2019-11-28 17:29:53        0            0  running                0      14646642        7464358            7  N/A
+  948  svchost.exe                                                         2019-11-28 17:29:53        0            0  running                0             0              0            5  N/A
+ 1000  svchost.exe                                                         2019-11-28 17:29:53        0            0  running                0             0              0            2  N/A
+ 1012  OneDrive.exe                                                        2019-11-28 17:30:24        8            0  running                0      19004450       18009261           29  LAPTOP-O0VUI5OA\romyw
+ 1076  winlogon.exe                                                        2019-11-28 17:29:53        0            0  running                0        248640            160            7  N/A
+ 1140  fontdrvhost.exe                                                     2019-11-28 17:29:54        0            0  running                0             0              0            5  N/A
+ 1208  dwm.exe                                                             2019-11-28 17:29:54        0            0  running                0      19533362              0           13  N/A
+ 1268  chrome.exe                                                          2020-01-06 14:30:49        8            0  running                0        129340          13867           13  LAPTOP-O0VUI5OA\romyw
+ 1288  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0             0              0            7  N/A
+ 1292  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0             0              0            3  N/A
+ 1296  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0             0              0            3  N/A
+ 1388  Notion.exe                                                          2020-01-02 16:15:15        8            0  running                0        573887          88020           15  LAPTOP-O0VUI5OA\romyw
+ 1404  ctfmon.exe                                                          2019-11-28 17:30:07        8            0  running                0             0              0           11  LAPTOP-O0VUI5OA\romyw
+ 1408  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0             0              0            4  N/A
+ 1424  svchost.exe                                                         2019-11-28 17:30:09        0            0  running                0        128288         124132            7  N/A
+ 1428  NVDisplay.Container.exe                                             2019-11-28 17:29:54        0            0  running                0             0         184728            6  N/A
+ 1456  ACMON.exe                                                           2019-11-29 10:25:07        8            0  running                0        100136             84            1  LAPTOP-O0VUI5OA\romyw
+ 1528  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0             0              0            2  N/A
+ 1548  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0             0              0            3  N/A
+ 1568  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0            70       36921034           10  N/A
+ 1588  WindowsInternal.ComposableShell.Experiences.TextInput.InputApp.exe  2019-12-04 09:11:11        8            0  running                0         42931              8           10  LAPTOP-O0VUI5OA\romyw
+ 1632  ModuleCoreService.exe                                               2019-11-29 10:25:17        8            0  running                0       6771828         511666           31  LAPTOP-O0VUI5OA\romyw
+ 1664  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0        622592              0            3  N/A
+ 1736  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0     247704656      197302632            9  N/A
+ 1748  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0             0              0            9  N/A
+ 1800  GoogleCrashHandler64.exe                                            2019-12-20 08:31:44        0            0  running                0           916            560            3  N/A
+ 1880  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0             0              0            9  N/A
+ 1936  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0             0              0            3  N/A
+ 2028  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0             0              0           13  N/A
+ 2076  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0             0              0            3  N/A
+ 2084  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0       1769892       35427762            4  N/A
+ 2104  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0           714              0            5  N/A
+ 2112  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0             0              0            2  N/A
+ 2128  LockApp.exe                                                         2019-11-29 13:24:06        8            0  stopped                0         37280              8           11  LAPTOP-O0VUI5OA\romyw
+ 2208  svchost.exe                                                         2019-11-28 17:29:56        0            0  running                0        274120         448200            7  N/A
+ 2216  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0             0              0            3  N/A
+ 2268  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0     296348540        2268136            8  N/A
+ 2324  Memory Compression                                                  2019-11-28 17:29:54        0            0  running                0             0              0          138  N/A
+ 2392  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0         91224              0            3  N/A
+ 2424  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0             0              0            2  N/A
+ 2480  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0         30740          42400           16  N/A
+ 2492  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0             0              0           12  N/A
+ 2500  NVDisplay.Container.exe                                             2019-11-28 17:29:54        0            0  running                0          1321          34244           16  N/A
+ 2528  svchost.exe                                                         2019-11-29 10:25:07        0            0  running                0      14229838         745984            8  N/A
+ 2540  igfxCUIService.exe                                                  2019-11-28 17:29:54        0            0  running                0          1448            299            2  N/A
+ 2612  chrome.exe                                                          2020-01-02 16:13:13        8            0  running                0       7329260        2273147           13  LAPTOP-O0VUI5OA\romyw
+ 2628  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0             0              0            6  N/A
+ 2640  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0             0              0            3  N/A
+ 2812  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0             0              0           10  N/A
+ 2860  fsnotifier64.exe                                                    2019-12-20 10:53:03        8            0  running                0          2892       57736991            2  LAPTOP-O0VUI5OA\romyw
+ 2948  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0             0              0            9  N/A
+ 2960  jucheck.exe                                                         2019-11-29 10:29:45        8            0  running                0       3819099           7699            8  LAPTOP-O0VUI5OA\romyw
+ 3008  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0             0              0            5  N/A
+ 3036  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0             0              0            5  N/A
+ 3044  svchost.exe                                                         2019-11-28 17:29:54        0            0  running                0             0              0           10  N/A
+ 3232  RuntimeBroker.exe                                                   2019-12-06 08:18:29        8            0  running                0       2313689        1788748            2  LAPTOP-O0VUI5OA\romyw
+ 3252  svchost.exe                                                         2019-11-28 17:29:55        0            0  running                0        584318           1640           15  N/A
+ 3320  svchost.exe                                                         2019-11-28 17:29:55        0            0  running                0             0              0            5  N/A
+ 3340  AsLdrSrv.exe                                                        2019-11-28 17:29:55        0            0  running                0             0              0            3  N/A
+ 3472  svchost.exe                                                         2020-01-06 10:31:15        0            0  running                0             0              0            3  N/A
+ 3532  scheduler.exe                                                       2019-11-28 17:29:55        0            0  running                0       1166244              0            5  N/A
+ 3740  OneDrive.exe                                                        2019-11-28 17:30:26        8            0  running                0      14532723       18330546           31  LAPTOP-O0VUI5OA\romyw
+ 3752  postgres.exe                                                        2019-11-28 17:30:44        0            0  running                0         35849              0            2  N/A
+ 3824  igfxEM.exe                                                          2019-11-28 17:30:09        8            0  running                0       7593991          85859           12  LAPTOP-O0VUI5OA\romyw
+ 3852  svchost.exe                                                         2019-11-28 17:29:56        0            0  running                0             0              0            2  N/A
+ 3884  svchost.exe                                                         2019-11-28 17:29:56        0            0  running                0        146194        5865472            3  N/A
+ 3952  spoolsv.exe                                                         2019-11-28 17:29:56        0            0  running                0         48382          36540            7  N/A
+ 4044  svchost.exe                                                         2019-11-28 17:29:56        0            0  running                0           232        2384109           14  N/A
+ 4168  svchost.exe                                                         2019-11-28 17:30:07        0            0  running                0        163985        1981998            8  N/A
+ 4228  ATKOSD2.exe                                                         2019-11-28 17:30:09        8            0  running                0       1013688              0            2  LAPTOP-O0VUI5OA\romyw
+ 4232  svchost.exe                                                         2019-11-28 17:29:56        0            0  running                0     187235880        4930780           15  N/A
+ 4240  mDNSResponder.exe                                                   2019-11-28 17:29:56        0            0  running                0          3248           4480            2  N/A
+ 4248  svchost.exe                                                         2019-11-28 17:29:56        0            0  running                0     194161294      333729303            8  N/A
+ 4256  hasplms.exe                                                         2019-11-28 17:29:56        0            0  running                0       7090027         275305           12  N/A
+ 4264  svchost.exe                                                         2019-11-28 17:29:56        0            0  running                0       8644798       15483749           11  N/A
+ 4280  OxyPipeServer.exe                                                   2019-11-28 17:29:56        0            0  running                0             0              0            5  N/A
+ 4288  IntelCpHDCPSvc.exe                                                  2019-11-28 17:29:56        0            0  running                0          1166              0            3  N/A
+ 4296  svchost.exe                                                         2019-11-28 17:29:56        0            0  running                0     790923396      630598900           18  N/A
+ 4304  svchost.exe                                                         2019-11-28 17:30:07        0            0  running                0          5392              0            4  N/A
+ 4308  SASrv.exe                                                           2019-11-28 17:29:56        0            0  running                0             0              0            3  N/A
+ 4316  ibtsiva.exe                                                         2019-11-28 17:29:56        0            0  running                0             0              0            1  N/A
+ 4324  IpOverUsbSvc.exe                                                    2019-11-28 17:29:56        0            0  running                0         56082              0            5  N/A
+ 4332  ModuleCoreService.exe                                               2019-11-28 17:29:56        0            0  running                0      67399605        4996924           53  N/A
+ 4340  UIUSrv.exe                                                          2019-11-28 17:29:56        0            0  running                0             0              0            3  N/A
+ 4348  esif_uf.exe                                                         2019-11-28 17:29:56        0            0  running                0             0              0            3  N/A
+ 4364  mfevtps.exe                                                         2019-11-28 17:29:56        0            0  running                0        672624              0            3  N/A
+ 4372  EvtEng.exe                                                          2019-11-28 17:29:56        0            0  running                0        121234            364           19  N/A
+ 4380  NvTelemetryContainer.exe                                            2019-11-28 17:29:56        0            0  running                0       1073252        1109330            8  N/A
+ 4388  svchost.exe                                                         2019-11-28 17:29:56        0            0  running                0        103490              0            5  N/A
+ 4396  servicehost.exe                                                     2019-11-28 17:29:56        0            0  running                0             0            203            2  N/A
+ 4404  mfemms.exe                                                          2019-11-28 17:29:56        0            0  running                0     141392182      137590466           13  N/A
+ 4412  svchost.exe                                                         2019-11-28 17:29:56        0            0  running                0             0              0            2  N/A
+ 4420  PEFService.exe                                                      2019-11-28 17:29:56        0            0  running                0       1466263              0            4  N/A
+ 4428  RegSrvc.exe                                                         2019-11-28 17:29:56        0            0  running                0         53748              0            2  N/A
+ 4436  svchost.exe                                                         2019-11-28 17:29:56        0            0  running                0         23040              0            3  N/A
+ 4444  pg_ctl.exe                                                          2019-11-28 17:29:56        0            0  running                0           101              0            2  N/A
+ 4468  GiftBoxService.exe                                                  2019-11-28 17:29:56        0            0  running                0             0              0            3  N/A
+ 4480  svchost.exe                                                         2019-11-28 17:29:56        0            0  running                0       3012733         560480            8  N/A
+ 4504  ZeroConfigService.exe                                               2019-11-28 17:29:56        0            0  running                0        134345          32780           13  N/A
+ 4552  conhost.exe                                                         2020-01-06 14:57:55        8            0  running                0             0              0            5  LAPTOP-O0VUI5OA\romyw
+ 4580  RuntimeBroker.exe                                                   2019-11-29 10:54:19        8            0  running                0      50473437            160            2  LAPTOP-O0VUI5OA\romyw
+ 4620  NisSrv.exe                                                          2019-12-20 08:28:34        0            0  running                0             0              0            8  N/A
+ 4816  RuntimeBroker.exe                                                   2019-11-29 10:25:14        8            0  running                0        102586            360            5  LAPTOP-O0VUI5OA\romyw
+ 4888  svchost.exe                                                         2019-11-28 17:29:56        0            0  running                0       1849820        2995192            7  N/A
+ 5048  svchost.exe                                                         2019-11-28 17:29:57        0            0  running                0           116            160           17  N/A
+ 5124  svchost.exe                                                         2019-11-28 17:29:57        0            0  running                0             0              0            5  N/A
+ 5136  CodeMeter.exe                                                       2019-11-28 17:29:57        0            0  running                0           174         434180           17  N/A
+ 5152  IntelCpHeciSvc.exe                                                  2019-11-28 17:29:57        0            0  running                0          1282            124            3  N/A
+ 5268  svchost.exe                                                         2019-11-29 10:34:35        0            0  running                0           328              0            4  N/A
+ 5352  svchost.exe                                                         2019-11-28 17:29:57        0            0  running                0           664            840           13  N/A
+ 5820  postgres.exe                                                        2019-11-28 17:29:57        0            0  running                0        120453          11710            3  N/A
+ 5836  conhost.exe                                                         2019-11-28 17:29:57        0            0  running                0             0              0            4  N/A
+ 5868  postgres.exe                                                        2019-11-28 17:29:58        0            0  running                0         43799           7595            3  N/A
+ 5920  chrome.exe                                                          2019-12-20 10:24:05        8            0  running                0      15999964       45730578           14  LAPTOP-O0VUI5OA\romyw
+ 5968  GameBarFT.exe                                                       2019-12-06 08:18:29        8            0  running                0          4872            292            3  LAPTOP-O0VUI5OA\romyw
+ 5972  ShellExperienceHost.exe                                             2019-11-29 10:25:13        8            0  running                0        164513              8           14  LAPTOP-O0VUI5OA\romyw
+ 6016  mfevtps.exe                                                         2019-11-28 17:29:57        0            0  running                0     486878738            624            6  N/A
+ 6380  HControl.exe                                                        2019-11-28 17:30:07        0            0  running                0             0              0            3  N/A
+ 6384  svchost.exe                                                         2019-11-28 17:30:36        8            0  running                0      16334852         516100            4  LAPTOP-O0VUI5OA\romyw
+ 6472  hasplmv.exe                                                         2019-11-28 17:29:59        0            0  running                0        323068        7087260            3  N/A
+ 6488  unsecapp.exe                                                        2019-11-28 17:29:59        0            0  running                0             0              0            4  N/A
+ 6516  ApplicationFrameHost.exe                                            2019-11-28 17:30:12        8            0  running                0         23413              8            3  LAPTOP-O0VUI5OA\romyw
+ 6612  WmiPrvSE.exe                                                        2019-11-28 17:29:59        0            0  running                0      10955108            856            6  N/A
+ 6632  RuntimeBroker.exe                                                   2019-11-29 13:24:07        8            0  running                0        117249            160            7  LAPTOP-O0VUI5OA\romyw
+ 7120  FCDBLog.exe                                                         2019-11-28 17:30:03        0            0  running                0       5901088        6677656           27  N/A
+ 7132  msdtc.exe                                                           2019-11-29 10:26:18        0            0  running                0           116         561312           36  N/A
+ 7220  mfefire.exe                                                         2019-11-28 17:30:03        0            0  running                0        477760            742            7  N/A
+ 7352  mfefire.exe                                                         2019-11-28 17:30:04        0            0  running                0        672624              0            3  N/A
+ 7408  svchost.exe                                                         2019-12-10 11:35:13        0            0  running                0       2804282      132364323           15  N/A
+ 7424  ASUSHelloBG.exe                                                     2019-11-28 17:30:07        8            0  running                0            96              0            1  LAPTOP-O0VUI5OA\romyw
+ 7604  FortiESNAC.exe                                                      2019-11-28 17:30:04        0            0  running                0       1231264          32634           11  N/A
+ 7616  SettingSyncHost.exe                                                 2019-11-28 17:30:12        8            0  running                0     213020778       36105314           10  LAPTOP-O0VUI5OA\romyw
+ 7628  conhost.exe                                                         2019-11-29 10:25:17        8            0  running                0             0              0            2  LAPTOP-O0VUI5OA\romyw
+ 7644  FortiSSLVPNdaemon.exe                                               2019-11-28 17:30:04        0            0  running                0     236222442       31618456            5  N/A
+ 7672  FortiSettings.exe                                                   2019-11-28 17:30:04        0            0  running                0       1165842              0            3  N/A
+ 7728  dllhost.exe                                                         2019-11-28 17:30:06        0            0  running                0       2736128         966656            4  N/A
+ 7776  DMedia.exe                                                          2019-11-28 17:30:09        8            0  running                0             0              0            3  LAPTOP-O0VUI5OA\romyw
+ 7828  svchost.exe                                                         2019-11-28 17:30:04        0            0  running                0             0              0            4  N/A
+ 7908  dptf_helper.exe                                                     2019-11-28 17:30:07        8            0  running                0             0         527627            3  LAPTOP-O0VUI5OA\romyw
+ 7948  svchost.exe                                                         2019-11-28 17:30:07        8            0  running                0       5291057       31138892            7  LAPTOP-O0VUI5OA\romyw
+ 8004  sihost.exe                                                          2019-11-28 17:30:07        8            0  running                0       5763246              0           13  LAPTOP-O0VUI5OA\romyw
+ 8104  svchost.exe                                                         2019-11-28 17:30:07        8            0  running                0      21156272      131764344           18  LAPTOP-O0VUI5OA\romyw
+ 8116  chrome.exe                                                          2020-01-05 15:30:06        8            0  running                0       7654348       18980527           14  LAPTOP-O0VUI5OA\romyw
+ 8148  PresentationFontCache.exe                                           2019-11-28 17:30:07        0            0  running                0         48794              0            4  N/A
+ 8312  MicrosoftEdgeCP.exe                                                 2019-12-20 10:34:23        8            0  running                0      19117180       26022983           40  LAPTOP-O0VUI5OA\romyw
+ 8448  SystemSettings.exe                                                  2020-01-06 14:01:52        8            0  stopped                0         16245             81           24  LAPTOP-O0VUI5OA\romyw
+ 8580  MicrosoftEdge.exe                                                   2019-11-28 17:30:12        8            0  running                0      34069021       10297804           27  LAPTOP-O0VUI5OA\romyw
+ 8688  svchost.exe                                                         2019-11-28 17:30:09        8            0  running                0         83457              0            8  LAPTOP-O0VUI5OA\romyw
+ 8724  FortiTray.exe                                                       2019-11-28 17:30:08        8            0  running                0      33503931      235061686           49  LAPTOP-O0VUI5OA\romyw
+ 8756  explorer.exe                                                        2019-11-28 17:30:08        8            0  running                0    2476142393     2395961458           75  LAPTOP-O0VUI5OA\romyw
+ 8820  svchost.exe                                                         2019-11-28 17:30:08        0            0  running                0        104000         203984           10  N/A
+ 8920  Notion.exe                                                          2020-01-02 16:15:15        8            0  running                0      43820097      245817519           19  LAPTOP-O0VUI5OA\romyw
+ 9008  svchost.exe                                                         2019-11-28 17:30:08        0            0  running                0      19697664       19972096            3  N/A
+ 9036  SkypeBridge.exe                                                     2019-11-28 17:30:40        8            0  running                0        233456         144086           17  LAPTOP-O0VUI5OA\romyw
+ 9120  MicrosoftEdgeCP.exe                                                 2020-01-06 10:31:59        8            0  running                0             0              0           15  LAPTOP-O0VUI5OA\romyw
+ 9372  LMS.exe                                                             2019-11-29 10:26:17        0            0  running                0        943598         283560            4  N/A
+ 9384  Microsoft.Photos.exe                                                2019-12-20 11:03:03        8            0  stopped                0      14706917        3673059           17  LAPTOP-O0VUI5OA\romyw
+ 9420  svchost.exe                                                         2019-11-29 10:26:17        0            0  running                0     373905236     2880390310           14  N/A
+ 9452  SearchUI.exe                                                        2019-11-28 17:30:30        8            0  stopped                0      39659746       42109847           49  LAPTOP-O0VUI5OA\romyw
+ 9512  chrome.exe                                                          2020-01-05 15:22:30        8            0  running                0       4533180        1262392           14  LAPTOP-O0VUI5OA\romyw
+ 9524  BhcMgr.exe                                                          2019-11-28 17:30:30        8            0  running                0        155266              0            1  LAPTOP-O0VUI5OA\romyw
+ 9560  RuntimeBroker.exe                                                   2019-11-28 17:30:12        8            0  running                0       5791314         117319           18  LAPTOP-O0VUI5OA\romyw
+ 9584  StartMenuExperienceHost.exe                                         2019-11-28 17:30:10        8            0  running                0       5183497        1776366           13  LAPTOP-O0VUI5OA\romyw
+ 9684  SearchFilterHost.exe                                                2020-01-06 14:56:23        0            0  running                0          7414              0            4  N/A
+ 9708  Notion.exe                                                          2020-01-02 16:15:13        8            0  running                0     203775105       18574724           10  LAPTOP-O0VUI5OA\romyw
+ 9764  svchost.exe                                                         2019-11-28 17:30:11        0            0  running                0           926            988            4  N/A
+ 9788  svchost.exe                                                         2019-11-29 10:26:18        0            0  running                0       1051012           3360            8  N/A
+ 9796  CodeMeterCC.exe                                                     2019-11-28 17:30:33        8            0  running                0            39         200704            1  LAPTOP-O0VUI5OA\romyw
+ 9808  RuntimeBroker.exe                                                   2019-11-28 17:30:11        8            0  running                0        457517            160            6  LAPTOP-O0VUI5OA\romyw
+ 9940  postgres.exe                                                        2019-11-28 17:30:44        0            0  running                0         35845         226572            2  N/A
+ 9976  svchost.exe                                                         2019-12-10 10:04:42        0            0  running                0          1384              0            4  N/A
+ 9996  SecurityHealthHost.exe                                              2019-12-06 08:17:04        8            0  running                0             0              0            1  LAPTOP-O0VUI5OA\romyw
+10176  chrome.exe                                                          2020-01-06 14:01:03        8            0  running                0       2656516        4756791           15  LAPTOP-O0VUI5OA\romyw
+10372  RuntimeBroker.exe                                                   2019-12-20 11:03:04        8            0  running                0         92412             96            6  LAPTOP-O0VUI5OA\romyw
+10556  svchost.exe                                                         2019-11-29 10:25:07        0            0  running                0    1435372952      713863825           16  N/A
+10620  OUTLOOK.EXE                                                         2020-01-06 10:30:55        8            0  running                0      44120414       77095772           36  LAPTOP-O0VUI5OA\romyw
+10752  SecurityHealthSystray.exe                                           2019-11-28 17:30:24        8            0  running                0             0              0            1  LAPTOP-O0VUI5OA\romyw
+10776  browser_broker.exe                                                  2019-11-28 17:30:13        8            0  running                0        342316         338970            9  LAPTOP-O0VUI5OA\romyw
+10784  RuntimeBroker.exe                                                   2019-11-28 17:30:23        8            0  running                0         12488           7081            8  LAPTOP-O0VUI5OA\romyw
+10892  dllhost.exe                                                         2019-11-28 17:30:13        8            0  running                0      12685312        4501504            6  LAPTOP-O0VUI5OA\romyw
+11036  svchost.exe                                                         2019-12-16 08:45:46        0            0  running                0             0              0            6  N/A
+11072  svchost.exe                                                         2019-11-28 17:30:13        0            0  running                0       4677450         447601           10  N/A
+11080  SearchIndexer.exe                                                   2019-12-20 08:27:55        0            0  running                0      19299094      134227140           19  N/A
+11140  svchost.exe                                                         2019-11-29 10:41:31        0            0  running                0        737280         139264            5  N/A
+11244  postgres.exe                                                        2019-11-28 17:30:44        0            0  running                0        737774            141            2  N/A
+11392  RuntimeBroker.exe                                                   2019-11-28 17:30:13        8            0  running                0       7122296        6836273            6  LAPTOP-O0VUI5OA\romyw
+11484  SkypeApp.exe                                                        2020-01-05 15:17:50        8            0  running                0      16478304        5177016           45  LAPTOP-O0VUI5OA\romyw
+11500  chrome.exe                                                          2019-12-20 08:31:50        8            0  running                0       5996956        3392731           13  LAPTOP-O0VUI5OA\romyw
+11568  Notion.exe                                                          2020-01-02 16:15:12        8            0  running                0            76             52            6  LAPTOP-O0VUI5OA\romyw
+11616  MicrosoftEdgeCP.exe                                                 2019-11-28 17:30:14        8            0  running                0         35709              0           15  LAPTOP-O0VUI5OA\romyw
+11656  MicrosoftEdgeSH.exe                                                 2019-11-28 17:30:14        8            0  running                0             0              0            9  LAPTOP-O0VUI5OA\romyw
+11896  postgres.exe                                                        2019-11-28 17:30:44        0            0  running                0         35849              0            2  N/A
+12108  taskhostw.exe                                                       2019-12-16 08:47:30        8            0  running                0        164380         204706            6  LAPTOP-O0VUI5OA\romyw
+12184  chrome.exe                                                          2019-11-29 12:46:28        8            0  running                0        341305         279060            7  LAPTOP-O0VUI5OA\romyw
+12188  chrome.exe                                                          2020-01-02 16:07:38        8            0  running                0     140895404       73996099           16  LAPTOP-O0VUI5OA\romyw
+12204  postgres.exe                                                        2019-11-28 17:30:44        0            0  running                0         35849              0            2  N/A
+12408  SecurityHealthService.exe                                           2019-11-28 17:30:24        0            0  running                0             0           4096            7  N/A
+12568  chrome.exe                                                          2019-11-28 17:30:19        8            0  running                0    4665015828     4994743608           29  LAPTOP-O0VUI5OA\romyw
+12644  chrome.exe                                                          2019-11-28 17:30:19        8            0  running                0         39340           8436            7  LAPTOP-O0VUI5OA\romyw
+12804  svchost.exe                                                         2019-11-28 17:30:24        0            0  running                0             0              0            9  N/A
+12808  chrome.exe                                                          2019-11-28 17:30:20        8            0  running                0             0              0            2  LAPTOP-O0VUI5OA\romyw
+12904  python.exe                                                          2020-01-06 14:57:55        8            0  running                0        909005              0            4  LAPTOP-O0VUI5OA\romyw
+12988  chrome.exe                                                          2019-11-28 17:30:20        8            0  running                0    3617976546      725067074           13  LAPTOP-O0VUI5OA\romyw
+13000  chrome.exe                                                          2019-11-28 17:30:20        8            0  running                0     704205705     1346948812           14  LAPTOP-O0VUI5OA\romyw
+13120  smartscreen.exe                                                     2019-12-20 10:29:06        8            0  running                0      19487306         381332           17  LAPTOP-O0VUI5OA\romyw
+13272  conhost.exe                                                         2020-01-05 15:54:07        8            0  running                0            60              0            3  LAPTOP-O0VUI5OA\romyw
+13284  chrome.exe                                                          2020-01-03 16:04:44        8            0  running                0      14146934      100369043           14  LAPTOP-O0VUI5OA\romyw
+13308  chrome.exe                                                          2019-11-28 17:30:20        8            0  running                0      19080452       91176303           16  LAPTOP-O0VUI5OA\romyw
+13324  svchost.exe                                                         2019-11-29 10:26:17        0            0  running                0           636             24            3  N/A
+13708  dllhost.exe                                                         2019-11-29 12:44:10        8            0  running                0             0              0            2  LAPTOP-O0VUI5OA\romyw
+13816  jusched.exe                                                         2019-11-28 17:30:33        8            0  running                0       1909161           5408            6  LAPTOP-O0VUI5OA\romyw
+14204  chrome.exe                                                          2020-01-06 11:48:08        8            0  running                0       2427244        5419399           14  LAPTOP-O0VUI5OA\romyw
+14236  svchost.exe                                                         2019-11-29 10:25:08        0            0  running                0        621960        1615169            4  N/A
+14516  svchost.exe                                                         2019-11-29 12:39:04        0            0  running                0             0              0            4  N/A
+14620  CAudioFilterAgent64.exe                                             2019-11-29 10:25:12        8            0  running                0             0              0            1  LAPTOP-O0VUI5OA\romyw
+14820  igfxext.exe                                                         2019-11-29 10:25:12        8            0  running                0             0              0            2  LAPTOP-O0VUI5OA\romyw
+15028  jhi_service.exe                                                     2019-11-29 10:26:17        0            0  running                0             0              0            2  N/A
+15032  SgrmBroker.exe                                                      2019-11-29 10:26:18        0            0  running                0         79300              0            5  N/A
+15276  MicrosoftEdgeCP.exe                                                 2019-12-20 10:39:23        8            0  stopped                0         48168         341590           30  LAPTOP-O0VUI5OA\romyw
+15316  CompPkgSrv.exe                                                      2019-12-10 10:33:01        8            0  running                0          4198              0            1  LAPTOP-O0VUI5OA\romyw
+15476  GoogleCrashHandler.exe                                              2019-12-20 08:31:44        0            0  running                0          9684           4912            5  N/A
+15712  Notion.exe                                                          2020-01-02 16:15:11        8            0  running                0     161915543      381990515           29  LAPTOP-O0VUI5OA\romyw
+15868  chrome.exe                                                          2019-12-10 11:34:15        8            0  running                0        624164         592707           14  LAPTOP-O0VUI5OA\romyw
+16196  chrome.exe                                                          2019-12-20 08:31:51        8            0  running                0       8744172       20742551           15  LAPTOP-O0VUI5OA\romyw
+16240  Windows.WARP.JITService.exe                                         2020-01-06 10:31:16        0            0  running                0          4769              0            2  N/A
+17168  GameBar.exe                                                         2019-12-06 08:18:29        8            0  running                0       1854269        1889502           10  LAPTOP-O0VUI5OA\romyw
+17648  chrome.exe                                                          2020-01-05 16:29:33        8            0  running                0       5185789       10355975           14  LAPTOP-O0VUI5OA\romyw
+17672  YourPhone.exe                                                       2020-01-05 15:51:57        8            0  stopped                0        142924              8           12  LAPTOP-O0VUI5OA\romyw
+17876  chrome.exe                                                          2020-01-02 16:13:15        8            0  running                0      13457164        3530315           13  LAPTOP-O0VUI5OA\romyw
+17932  conhost.exe                                                         2019-12-20 10:53:03        8            0  running                0             0              0            2  LAPTOP-O0VUI5OA\romyw
+18012  MicrosoftPdfReader.exe                                              2020-01-06 10:31:14        8            0  running                0         36526              0           14  LAPTOP-O0VUI5OA\romyw
+18160  chrome.exe                                                          2020-01-02 16:07:04        8            0  running                0     172103804       25393756           13  LAPTOP-O0VUI5OA\romyw
+18804  svchost.exe                                                         2019-12-16 08:46:43        0            0  running                0           116            160            5  N/A
+18816  chrome.exe                                                          2020-01-06 10:38:37        8            0  running                0       4017124       13525472           14  LAPTOP-O0VUI5OA\romyw
+18944  chrome.exe                                                          2020-01-06 10:25:40        8            0  running                0      14221076       47006840           14  LAPTOP-O0VUI5OA\romyw
+18972  Notion.exe                                                          2020-01-02 16:15:15        8            0  running                0      62283748        5042984           16  LAPTOP-O0VUI5OA\romyw
+19024  python.exe                                                          2020-01-05 15:54:10        8            0  running                0       3299124          63269            3  LAPTOP-O0VUI5OA\romyw
+19056  cmd.exe                                                             2020-01-05 15:54:07        8            0  running                0             0              0            1  LAPTOP-O0VUI5OA\romyw
+19376  svchost.exe                                                         2019-12-16 08:46:43        0            0  running                0          4961              0            2  N/A
+19452  RuntimeBroker.exe                                                   2020-01-05 15:51:57        8            0  running                0             0              0            1  LAPTOP-O0VUI5OA\romyw
+20032  pycharm64.exe                                                       2019-12-20 10:53:01        8            0  running                0     462009177     1222145108          108  LAPTOP-O0VUI5OA\romyw
+20088  armsvc.exe                                                          2019-12-20 08:28:16        0            0  running                0             0              0            2  N/A
+20340  winpty-agent.exe                                                    2020-01-05 15:54:07        8            0  running                0         10367            715            1  LAPTOP-O0VUI5OA\romyw
+20424  MicrosoftEdgeCP.exe                                                 2019-12-20 10:44:26        8            0  stopped                0          3378         173916           35  LAPTOP-O0VUI5OA\romyw
+20496  SkypeBackgroundHost.exe                                             2020-01-05 15:17:52        8            0  running                0             0              0            2  LAPTOP-O0VUI5OA\romyw
+20724  conhost.exe                                                         2020-01-05 15:54:10        8            0  running                0             0              0            2  LAPTOP-O0VUI5OA\romyw
+21248  svchost.exe                                                         2020-01-06 13:36:09        0            0  running                0          4219              0            4  N/A
+21380  Taskmgr.exe                                                         2020-01-06 13:55:41        8            0  running                0       2063603         199816           14  LAPTOP-O0VUI5OA\romyw
+21808  chrome.exe                                                          2020-01-02 15:57:50        8            0  running                0      11480716       26983571           15  LAPTOP-O0VUI5OA\romyw
+22484  MicrosoftEdgeCP.exe                                                 2020-01-02 15:52:57        8            0  running                0         39304              0           30  LAPTOP-O0VUI5OA\romyw
+23428  conhost.exe                                                         2020-01-06 13:36:18        0            0  running                0             0              0            2  N/A
+24036  rundll32.exe                                                        2020-01-06 11:13:02        8            0  running                0          8551              0            1  LAPTOP-O0VUI5OA\romyw
+24792  MusNotifyIcon.exe                                                   2020-01-06 13:53:40        8            0  running                0        378748           4096            3  LAPTOP-O0VUI5OA\romyw
+24832  SearchProtocolHost.exe                                              2020-01-06 14:54:22        0            0  running                0         97662              0            7  N/A
+24868  wlanext.exe                                                         2020-01-06 13:36:18        0            0  running                0       1154916              0            9  N/A
+25064  chrome.exe                                                          2020-01-06 13:46:07        8            0  running                0      58189963      146477751           14  LAPTOP-O0VUI5OA\romyw
+26084  update_task.exe                                                     2020-01-06 14:52:12        0            0  running                0       1500051           1248            5  N/A
+=====  ==================================================================  ===================  =======  ===========  ========  ==============  ============  =============  ===========  =====================
