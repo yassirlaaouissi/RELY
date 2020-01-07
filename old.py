@@ -1,5 +1,4 @@
-# Functionaliteit van Romy.
-# Deze functionaliteit bevat geen CPU_usage meer.
+# Deze bevat nog cpu_usage, alleen cpu_usage valt niet op te halen.
 import psutil
 from datetime import datetime
 import tabulate
@@ -23,6 +22,8 @@ def proces_list():
                 cores = len(process.cpu_affinity())
             except psutil.AccessDenied:
                 cores = 0
+            # Verkrijg het CPU-gebruikerspercentage
+            cpu_usage = process.cpu_percent()
             # Verkrijg de status van het proces.
             status = process.status()
             try:
@@ -46,7 +47,7 @@ def proces_list():
             'pid': pid, 'name': name, 'create_time': create_time,
             'cores': cores, 'status': status, 'memory_usage': memory_usage,
             'read_bytes': read_bytes, 'write_bytes': write_bytes,
-            'n_threads': n_threads, 'username': username,
+            'n_threads': n_threads, 'cpu_usage' : cpu_usage, 'username': username,
         })
 
     # print(processes)
