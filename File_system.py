@@ -7,11 +7,18 @@ allfilesystem_list = []
 
 # print tabel naar scherm
 def show_list(listname):
-    header = listname[0].keys()
-    rows = [x.values() for x in listname]
-    tablefilesystem = tabulate.tabulate(rows, header, tablefmt='rst')
-    print(tablefilesystem)
-    return tablefilesystem
+    try:
+        header = listname[0].keys()
+        rows = [x.values() for x in listname]
+        tablefilesystem = tabulate.tabulate(rows, header, tablefmt='rst')
+        print(tablefilesystem)
+        return tablefilesystem
+    except IndexError:
+        print('The input is incorrect, try again')
+        main()
+    except MemoryError:
+        print('The path size is too big')
+        main()
 
 # schrijf tabel weg naar bestand
 def save_list(listname):
@@ -31,7 +38,6 @@ def analysefilesystem():
 
     # C:\\ met dubbele \
     pathname = input('Type in the path you want to analyze: ')
-
     for (dirpath, dirnames, filenames) in os.walk(pathname):
         for f in filenames:
             try:
@@ -99,9 +105,7 @@ def filterfiles(listname):
 
     return filteredlist
 
-
-if __name__ == '__main__':
-
+def main():
     resultlist = analysefilesystem()
     tablelist = show_list(resultlist)
 
@@ -111,3 +115,6 @@ if __name__ == '__main__':
         tablelist = show_list(filteredlist)
 
     save_list(tablelist)
+
+if __name__ == '__main__':
+    main()
