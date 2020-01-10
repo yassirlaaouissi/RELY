@@ -9,6 +9,7 @@ def choice_menu():
     geefHKEY = input("Please give an HKEY (e.g. HKEY_LOCAL_MACHINE): ")
     geefPad = input("Please give the path you want to be scanned: ")
 
+    # Wanneer er een enter wordt ingevoerd geeft het programma een fout melding
     if (geefPad == ""):
         print("Please enter a valid choice. Try again by restarting the program")
     elif (geefHKEY == ""):
