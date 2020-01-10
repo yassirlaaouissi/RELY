@@ -34,23 +34,26 @@ def analysefilesystem():
 
     for (dirpath, dirnames, filenames) in os.walk(pathname):
         for f in filenames:
+            try:
+                path = os.path.join(dirpath, f)
+                file_stats = os.stat(path)
+                lastaccess = file_stats.st_atime
+                lastmodified = file_stats.st_mtime
+                creationtime = file_stats.st_ctime
 
-            path = os.path.join(dirpath, f)
-            file_stats = os.stat(path)
-            lastaccess = file_stats.st_atime
-            lastmodified = file_stats.st_mtime
-            creationtime = file_stats.st_ctime
+                #om de datetime te veranderen naar een string
+                last_access = datetime.fromtimestamp(lastaccess)
+                last_access = last_access.strftime('%d/%m/%Y %H:%M:%S')
+                last_modified = datetime.fromtimestamp(lastmodified)
+                last_modified = last_modified.strftime('%d/%m/%Y %H:%M:%S')
+                creation_time = datetime.fromtimestamp(creationtime)
+                creation_time = creation_time.strftime('%d/%m/%Y %H:%M:%S')
+                file_size = file_stats.st_size
 
-            #om de datetime te veranderen naar een string
-            last_access = datetime.fromtimestamp(lastaccess)
-            last_access = last_access.strftime('%d/%m/%Y %H:%M:%S')
-            last_modified = datetime.fromtimestamp(lastmodified)
-            last_modified = last_modified.strftime('%d/%m/%Y %H:%M:%S')
-            creation_time = datetime.fromtimestamp(creationtime)
-            creation_time = creation_time.strftime('%d/%m/%Y %H:%M:%S')
-            file_size = file_stats.st_size
+                allfilesystem_list.append({'File path': path, 'File name': f, 'File size (bytes)': file_size, 'last access': last_access, 'Last modified': last_modified, 'Creation time': creation_time})
+            except OSError:
+                print
 
-            allfilesystem_list.append({'File path': path, 'File name': f, 'File size (bytes)': file_size, 'last access': last_access, 'Last modified': last_modified, 'Creation time': creation_time})
     return allfilesystem_list
 
 def filterfiles(listname):
