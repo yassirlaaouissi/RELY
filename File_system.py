@@ -28,11 +28,11 @@ def show_list(listname):
 def save_list(listname):
     save = input('Do you want to save te results to a file? (Y/N)?: ')
     if save == 'Y':
-        f = open('C:\\Users\lucil\PycharmProjects\RELY\Filesystem.txt', 'w')
+        f = open('C:\\Users\lucil\PycharmProjects\RELY\Filesystem.txt', 'w', encoding="utf-8")
         f.write(listname)
         f.close()
 
-        # locatie moet nog worden bepaald
+        # locatie van de file
         print('\nThe results are saved into a file called Filesystem.txt on the location C:\\Users\lucil\PycharmProjects\RELY\Filesystem.txt')
     else:
         print('The results are not saved.')
