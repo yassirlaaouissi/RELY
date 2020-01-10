@@ -10,47 +10,54 @@ def choice_menu():
     geefPad = input("Please give the path you want to be scanned: ")
 
     # Wanneer er een enter wordt ingevoerd geeft het programma een fout melding
+
     if (geefPad == ""):
-        print("Please enter a valid choice. Try again by restarting the program")
+        print
     elif (geefHKEY == ""):
-        print("Please enter a valid choice. Try again by restarting the program")
-
+        print
     #Leest de gegeven HKEY-input van de gebruiker uit.
-    HKEYFound = False
-    if (geefHKEY == "HKEY_CLASSES_ROOT"):
-        explorer = winreg.OpenKey(
-            winreg.HKEY_CLASSES_ROOT, geefPad)
-        HKEYFound = True
-    elif (geefHKEY == "HKEY_CURRENT_USER"):
-        explorer = winreg.OpenKey(
-            winreg.HKEY_CURRENT_USER, geefPad)
-        HKEYFound = True
-    elif (geefHKEY == "HKEY_LOCAL_MACHINE"):
-        explorer = winreg.OpenKey(
-            winreg.HKEY_LOCAL_MACHINE, geefPad)
-        HKEYFound = True
-    elif (geefHKEY == "HKEY_USERS"):
-        explorer = winreg.OpenKey(
-            winreg.HKEY_USERS, geefPad)
-        HKEYFound = True
-    elif (geefHKEY == "HKEY_PERFORMANCE_DATA"):
-        explorer = winreg.OpenKey(
-            winreg.HKEY_PERFORMANCE_DATA, geefPad)
-        HKEYFound = True
-    elif (geefHKEY == "HKEY_CURRENT_CONFIG"):
-        explorer = winreg.OpenKey(
-            winreg.HKEY_CURRENT_CONFIG, geefPad)
-        HKEYFound = True
-    elif (geefHKEY == "HKEY_DYN_DATA"):
-        explorer = winreg.OpenKey(
-            winreg.HKEY_DYN_DATA, geefPad)
-        HKEYFound = True
+    try:
+        HKEYFound = False
+        if (geefHKEY == "HKEY_CLASSES_ROOT"):
+            explorer = winreg.OpenKey(
+                winreg.HKEY_CLASSES_ROOT, geefPad)
+            HKEYFound = True
+        elif (geefHKEY == "HKEY_CURRENT_USER"):
+            explorer = winreg.OpenKey(
+                winreg.HKEY_CURRENT_USER, geefPad)
+            HKEYFound = True
+        elif (geefHKEY == "HKEY_LOCAL_MACHINE"):
+            explorer = winreg.OpenKey(
+                winreg.HKEY_LOCAL_MACHINE, geefPad)
+            HKEYFound = True
+        elif (geefHKEY == "HKEY_USERS"):
+            explorer = winreg.OpenKey(
+                winreg.HKEY_USERS, geefPad)
+            HKEYFound = True
+        elif (geefHKEY == "HKEY_PERFORMANCE_DATA"):
+            explorer = winreg.OpenKey(
+                winreg.HKEY_PERFORMANCE_DATA, geefPad)
+            HKEYFound = True
+        elif (geefHKEY == "HKEY_CURRENT_CONFIG"):
+            explorer = winreg.OpenKey(
+                winreg.HKEY_CURRENT_CONFIG, geefPad)
+            HKEYFound = True
+        elif (geefHKEY == "HKEY_DYN_DATA"):
+            explorer = winreg.OpenKey(
+                winreg.HKEY_DYN_DATA, geefPad)
+            HKEYFound = True
 
-    if (HKEYFound == False):
-        print("HKEY not found, please restart the program.")
-        return
+        if (HKEYFound == False):
+            print("HKEY not found, try again.")
+            return
 
-    return explorer
+        return explorer
+
+    except:
+        print("Please enter a valid path choice. Try again.")
+        main()
+
+
 
 def reg_reader(exp):
     regristry = []
@@ -87,8 +94,9 @@ def reg_reader(exp):
                 'Name': name, 'Type': type, 'Data': data,
             })
 
-    except WindowsError:
-        print
+    except:
+        print ("Please enter a valid path choice. Try again.")
+        main()
 
     return regristry
 
@@ -114,6 +122,8 @@ def save_keys(regristry):
 
 
 
+def main():
+    save_keys(reg_reader(choice_menu()))
 
 if __name__ == '__main__':
-    save_keys(reg_reader(choice_menu()))
+    main()
