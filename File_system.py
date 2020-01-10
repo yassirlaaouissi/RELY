@@ -16,12 +16,12 @@ def show_list(listname):
 
     #voor als de invoer van het pad niet juist is
     except IndexError:
-        print('The input is incorrect, try again')
+        print('The input is incorrect, try again (example: C:\\...)')
         main()
 
     #Voor als het gekozen pad te groot is om te analyseren
     except MemoryError:
-        print('The path size is too big')
+        print('The path size is too big, try a subfolder of the path')
         main()
 
 # schrijf tabel weg naar bestand
