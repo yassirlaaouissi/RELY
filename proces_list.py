@@ -1,5 +1,6 @@
 # Functionaliteit van Romy.
 # Deze functionaliteit bevat geen CPU_usage meer.
+# psutil is een platformonafhankelijke bibliotheek voor het ophalen van informatie over actieve processen en systeemgebruik in Python.
 import psutil
 from datetime import datetime
 import tabulate
@@ -10,7 +11,7 @@ def proces_list():
     processes = []
     for process in psutil.process_iter():
 
-        # Verkrijg alle proces informatie met one shot.
+        # Verkrijg alle proces informatie met one shot. Hulpprogramma context manager die het ophalen van meerdere procesinformatie tegelijkertijd aanzienlijk versnelt
         with process.oneshot():
             # Verkrijgen van het proces ID.
             pid = process.pid
@@ -41,12 +42,16 @@ def proces_list():
                 username = process.username()
             except psutil.AccessDenied:
                 username = "N/A"
+            try:
+                path = process.exe()
+            except psutil.AccessDenied:
+                path = "-"
 
         processes.append({
             'pid': pid, 'name': name, 'create_time': create_time,
             'cores': cores, 'status': status, 'memory_usage': memory_usage,
             'read_bytes': read_bytes, 'write_bytes': write_bytes,
-            'n_threads': n_threads, 'username': username,
+            'n_threads': n_threads, 'username': username, 'path' : path,
         })
 
     # print(processes)

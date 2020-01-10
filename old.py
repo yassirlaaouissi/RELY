@@ -2,6 +2,7 @@
 import psutil
 from datetime import datetime
 import tabulate
+from ast import literal_eval
 
 
 def proces_list():
@@ -54,6 +55,47 @@ def proces_list():
 
     save_file(processes)
 
+def filterprocesses(processes):
+    filteredlist = []
+
+    #filteroptie op File size
+    # size1 = input('Do you want to filter on file size? Y/N?: ')
+    # if size1 == 'Y':
+        # size2 = input('Type the file size you want to filter on. (bytes): ')
+        # size2 = int(size2)
+        # sizelist = filter(lambda x: x['File size (bytes)'] == size2, processes)
+        # sizelist2 = list(sizelist)
+        # for item in sizelist2:
+            # sizestr = str(item)
+            # sizestr2 = sizestr.replace('[', '')
+            # sizestr3 = sizestr2.replace(']', '')
+            # if sizestr3 == '':
+                # print('No results found')
+            # else:
+                # sizelistdict = literal_eval(sizestr3)
+                # filteredlist.append(sizelistdict)
+    # else:
+        # print('ok')
+
+    #filteroptie op File name
+    names = input('Wilt u filteren op naam? J/N?: ')
+    if names == 'J':
+        name2 = input('Vul de naam in waarop je wilt filteren: ')
+        namelist = filter(lambda x: x['File name'] == name2, processes)
+        namelist2 = list(namelist)
+        for item in namelist2:
+            namestr = str(item)
+            namestr2 = namestr.replace('[', '')
+            namestr3 = namestr2.replace(']', '')
+            if namestr3 == '':
+                print('No results found')
+            else:
+                namelistdict = literal_eval(namestr3)
+                filteredlist.append(namelistdict)
+    else:
+        print('ok')
+
+    return filteredlist
 
 def save_file(processes):
 
@@ -65,11 +107,37 @@ def save_file(processes):
     tableproceslist = tabulate.tabulate(rows, header, tablefmt='rst')
     print(tableproceslist)
 
+    save = input('Wilt u de resultaten oplsaan? (J/N)?: ')
+    if save == 'J':
+        f = open('C://Users/romyw/Documents/ipfit5/Proces_list.txt', 'w')  # extern opslaan
+        # f = open('Proces_list.txt', 'w')  # intern opslaan
+        f.write(tableproceslist)
+        f.close()
+
+        # locatie moet nog worden bepaald
+        print(
+            '\nDe results zijn opgeslagen in een bestand genaamd; Proces_list.txt op de locatie C://Users/romyw/Documents/ipfit5/Proces_list.txt')
+    else:
+        print('De resultaten zijn niet opgeslagen.')
+
     # Hiermee wordt de lijst met uitkomsten opgeslagen in een .txt bestand.
-    f = open('C://Users/romyw/Documents/ipfit5/Proces_list.txt', 'w')  # extern opslaan
+    # f = open('C://Users/romyw/Documents/ipfit5/Proces_list.txt', 'w')  # extern opslaan
     # f = open('Proces_list.txt', 'w')  # intern opslaan
-    f.write(tableproceslist)
-    f.close()
+    # f.write(tableproceslist)
+    # f.close()
+
+    # Keuze geven om het bestand wel of niet op te slaan.
+    # save = input('Wilt u de resultaten oplsaan? (J/N)?: ')
+    # if save == 'J':
+    # f = open('C://Users/romyw/Documents/ipfit5/Proces_list.txt', 'w')  # extern opslaan
+    # f = open('Proces_list.txt', 'w')  # intern opslaan
+    # f.write(tableproceslist)
+    # f.close()
+
+    # locatie moet nog worden bepaald
+    # print('\nDe results zijn opgeslagen in een bestand genaamd; Proces_list.txt op de locatie C://Users/romyw/Documents/ipfit5/Proces_list.txt')
+    # else:
+    # print('De resultaten zijn niet opgeslagen.')
 
 
 def main():
@@ -78,3 +146,12 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# Proces vinden by name
+def find_procs_by_name(name):
+    "Return a list of processes matching 'name'."
+    ls = []
+    for p in psutil.process_iter(attrs=['name']):
+        if p.info['name'] == name:
+            ls.append(p)
+    return ls
