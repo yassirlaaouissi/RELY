@@ -13,9 +13,13 @@ def show_list(listname):
         tablefilesystem = tabulate.tabulate(rows, header, tablefmt='rst')
         print(tablefilesystem)
         return tablefilesystem
+
+    #voor als de invoer van het pad niet juist is
     except IndexError:
         print('The input is incorrect, try again')
         main()
+
+    #Voor als het gekozen pad te groot is om te analyseren
     except MemoryError:
         print('The path size is too big')
         main()
@@ -57,6 +61,7 @@ def analysefilesystem():
                 file_size = file_stats.st_size
 
                 allfilesystem_list.append({'File path': path, 'File name': f, 'File size (bytes)': file_size, 'last access': last_access, 'Last modified': last_modified, 'Creation time': creation_time})
+
             #voor als een file niet te vinden is, dat het programma dan die overslaat en verder gaat.
             except OSError:
                 print
