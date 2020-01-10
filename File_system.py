@@ -83,7 +83,7 @@ def filterfiles(listname):
             sizestr2 = sizestr.replace('[', '')
             sizestr3 = sizestr2.replace(']', '')
             if sizestr3 == '':
-                print('No results found')
+                print
             else:
                 sizelistdict = literal_eval(sizestr3)
                 filteredlist.append(sizelistdict)
@@ -101,14 +101,17 @@ def filterfiles(listname):
             namestr2 = namestr.replace('[', '')
             namestr3 = namestr2.replace(']', '')
             if namestr3 == '':
-                print('No results found')
+                print
             else:
                 namelistdict = literal_eval(namestr3)
                 filteredlist.append(namelistdict)
     else:
         print('ok')
-
-    return filteredlist
+    if filteredlist == []:
+        print('No results found')
+        return listname
+    else:
+        return filteredlist
 
 def main():
     resultlist = analysefilesystem()
