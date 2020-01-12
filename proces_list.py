@@ -1,10 +1,29 @@
 # Functionaliteit van Romy.
 # Deze functionaliteit bevat geen CPU_usage meer.
 # psutil is een platformonafhankelijke bibliotheek voor het ophalen van informatie over actieve processen en systeemgebruik in Python.
+
+
 import psutil
 from datetime import datetime
 import tabulate
+import logging
 
+logging.basicConfig(filename='Logging_example3.0.txt', format='%(asctime)s:%(levelname)s:%(message)s', datefmt='%d/%m/%Y %I:%M:%S %p', filemode='w', level=logging.INFO)
+logging.info('This file includes info of the steps that the program makes.')
+logging.info('Program is getting process id (pid)')
+logging.info('Program is getting process name (name)')
+logging.info('Program is getting process creation time (create_time)')
+logging.info('Program is getting cores used by the process (cores)')
+logging.info('Program is getting the status of the process (status)')
+logging.info('Program is getting information about memory used by the process (memory_usage)')
+logging.info('Program is getting read bytes used by the process (read_bytes)')
+logging.info('Program is getting written bytes used by the process (write_bytes)')
+logging.info('Program is getting threads used by the process (treads)')
+logging.info('Program is getting the username related to the process (username)')
+logging.info('Program is getting the path of the process (path)')
+logging.info('Program got all the information.')
+logging.info('The output of the program is being saved in a file.')
+logging.info('The output of the program has been saved to a file.')
 
 def proces_list():
     # Lijst die alle proces dictionaries bevat.
@@ -51,7 +70,7 @@ def proces_list():
             'pid': pid, 'name': name, 'create_time': create_time,
             'cores': cores, 'status': status, 'memory_usage': memory_usage,
             'read_bytes': read_bytes, 'write_bytes': write_bytes,
-            'n_threads': n_threads, 'username': username, 'path' : path,
+            'n_threads': n_threads, 'username': username, 'path': path,
         })
 
     # print(processes)
