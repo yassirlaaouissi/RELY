@@ -10,11 +10,13 @@ def choice_menu():
     geefPad = input("Please give the path you want to be scanned: ")
 
     # Wanneer er een enter wordt ingevoerd geeft het programma een fout melding
-
     if (geefPad == ""):
-        print
+        print("Path not found, please enter a valid path choice. Try again.")
+        main()
     elif (geefHKEY == ""):
-        print
+        print("HKEY not found, please enter a valid HKEY choice. Try again.")
+        main()
+
     #Leest de gegeven HKEY-input van de gebruiker uit.
     try:
         HKEYFound = False
@@ -48,14 +50,16 @@ def choice_menu():
             HKEYFound = True
 
         if (HKEYFound == False):
-            print("HKEY not found, try again.")
+            print("HKEY not found, please enter a valid HKEY choice. Try again.")
+            main()
             return
 
         return explorer
 
     except:
-        print("Please enter a valid path choice. Try again.")
+        print("Path not found, please enter a valid path choice. Try again.")
         main()
+
 
 
 
@@ -94,9 +98,9 @@ def reg_reader(exp):
                 'Name': name, 'Type': type, 'Data': data,
             })
 
-    except:
-        print ("Please enter a valid path choice. Try again.")
-        main()
+
+    except WindowsError:
+        print
 
     return regristry
 
@@ -116,7 +120,6 @@ def save_keys(regristry):
 
     f.write(tableproceslist)
     f.close()
-
 
 
 
