@@ -9,10 +9,6 @@ def choice_menu():
     geefHKEY = input("Please give an HKEY (e.g. HKEY_LOCAL_MACHINE): ")
     geefPad = input("Please give the path you want to be scanned: ")
 
-
-
-
-
     # Wanneer er een enter wordt ingevoerd geeft het programma een fout melding
     if (geefPad == ""):
         print("Path not found, please enter a valid path choice. Try again.")
@@ -68,7 +64,7 @@ def choice_menu():
 
 
 def reg_reader(exp):
-    regristry = []
+    registry = []
 
     #Geeft bij 'Type' de bijbehoorende state naam aan.
     TYPE_STATE = {0: 'REG_NONE',
@@ -98,25 +94,62 @@ def reg_reader(exp):
             type = str(TYPE_STATE.get(type))
             data = str(data)
 
-            regristry.append({
+            registry.append({
                 'Name': name, 'Type': type, 'Data': data,
             })
-
 
     except WindowsError:
         print
 
-    return regristry
+    return registry
 
 
-def save_keys(regristry):
-    geefNaam = input("Do you want to filter on name? Y/N: ")
-    #geefType = input("Do you want to filter on type? Y/N: ")
-    #geefData = input("Do you want to filter on data? Y/N: ")
 
+def filter_reg(registry):
+    ongefilterdLijst = registry
+    filterLijst = []
+
+    filterVraag = input ("Do you want to filter the registry keys? Y/N: ")
+
+    if(filterVraag == "N"):
+        return ongefilterdLijst
+    elif(filterVraag == "Y"):
+        filterNaam = input("Do you want to filter on name? Please give the name else leave blank and press enter: ")
+        filterType = input("Do you want to filter on type? Please give the type else leave blank and press enter: ")
+
+        if(filterNaam + filterType == ""):
+            return ongefilterdLijst
+        else:
+            if(filterNaam != ""):
+                for key in ongefilterdLijst:
+                    if key in filterLijst:
+                        continue
+                    elif(key['Name'] == filterNaam):
+                        filterLijst.append(key)
+                if(filterLijst == []):
+                    print("Name not found in list of registry keys \n")
+
+            if (filterType != ""):
+                for key in ongefilterdLijst:
+                    if key in filterLijst:
+                        continue
+                    elif (key['Type'] == filterType):
+                        filterLijst.append(key)
+                if (filterLijst == []):
+                    print("Type not found in list of registry keys \n")
+
+            return filterLijst
+
+    else:
+        print("The input you gave did not correspond Y or N.")
+        main()
+
+
+
+def save_keys(finalList):
     #print tabel naar scherm
-    header = regristry[0].keys()
-    rows = [x.values() for x in regristry]
+    header = finalList[0].keys()
+    rows = [x.values() for x in finalList]
     tableregkey = tabulate.tabulate(rows, header, tablefmt='rst')
     print(tableregkey)
 
@@ -127,20 +160,11 @@ def save_keys(regristry):
         f = open('RegistryKeys.txt', 'x')
 
     f.write(tableregkey)
-
-    # Filter input van de gebruiker
-    if geefNaam == "Y":
-        print (regristry[1])
-
-
     f.close()
 
 
-
-
-
 def main():
-    save_keys(reg_reader(choice_menu()))
+    save_keys(filter_reg(reg_reader(choice_menu())))
 
 if __name__ == '__main__':
     main()
