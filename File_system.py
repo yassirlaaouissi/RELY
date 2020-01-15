@@ -5,7 +5,7 @@ from ast import literal_eval
 import logging
 
 logger = logging.getLogger('File System')
-logging.basicConfig(filename='file_system.log', format='%(name)s: %(asctime)s %(levelname)s: %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', level=logging.DEBUG)
+logging.basicConfig(handlers=[logging.FileHandler('file_system.log', 'w', 'utf-8')], format='%(name)s: %(asctime)s %(levelname)s: %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', level=logging.DEBUG)
 
 allfilesystem_list = []
 
@@ -77,7 +77,7 @@ def analysefilesystem():
                 logger.debug('Analyzing file system at the location: ' + dirpath)
                 logger.debug('Analyzing file stats: ' + f)
                 logger.info('Append file stats to allfilesystem_list')
-                allfilesystem_list.append({'File path': path, 'File name': f, 'File size (bytes)': file_size, 'last access': last_access, 'Last modified': last_modified, 'Creation time': creation_time})
+                allfilesystem_list.append({'File path': dirpath, 'File name': f, 'File size (bytes)': file_size, 'last access': last_access, 'Last modified': last_modified, 'Creation time': creation_time})
 
             #voor als een file niet te vinden is, dat het programma dan die overslaat en verder gaat.
             except OSError:
@@ -109,6 +109,31 @@ def filterfiles(listname):
             else:
                 sizelistdict = literal_eval(sizestr3)
                 filteredlist.append(sizelistdict)
+                logger.info('found results')
+                logger.info('append filtered files to allfilesystem_list')
+    else:
+        print('ok')
+
+    logger.info('asked input to filter on file path')
+    # filteroptie op File path
+    path1 = input('Do you want to filter on file path? Y/N?: ')
+    logger.debug('input to filter on file path: ' + path1)
+    if path1 == 'Y':
+        logger.info('asked input to type the file path')
+        path2 = input('Type the file path you want to filter on: ')
+        logger.debug('input file path to filter on: ' + path2)
+        pathlist = filter(lambda x: x['File path'] == path2, listname)
+        logger.info('filtering list')
+        pathlist2 = list(pathlist)
+        for item in pathlist2:
+            pathstr = str(item)
+            pathstr2 = pathstr.replace('[', '')
+            pathstr3 = pathstr2.replace(']', '')
+            if pathstr3 == '':
+                logger.info('No results found on file path: ' + path1)
+            else:
+                pathlistdict = literal_eval(pathstr3)
+                filteredlist.append(pathlistdict)
                 logger.info('found results')
                 logger.info('append filtered files to allfilesystem_list')
     else:
