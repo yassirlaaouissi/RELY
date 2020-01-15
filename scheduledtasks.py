@@ -50,9 +50,9 @@ def filter_tasks(AllTaskDetails):
         return UnfilteredList
     elif(WantToFilter == "Y"):
         #Give values to filter on
-        filterOnName = input("If you want to filter on name of task please give the name, else leave blank and press enter: ")
-        filterOnState = input("If you want to filter on state of task please give the state, else leave blank and press enter: ")
-        filterOnPath = input("If you want to filter on path of task please give the path, else leave blank and press enter: ")
+        filterOnName = input("If you want to filter on name of task please give the name, else leave blank and press enter (e.g: CCleanerSkipUAC ): ")
+        filterOnState = input("If you want to filter on state of task please give the state, else leave blank and press enter (e.g: Completed): ")
+        filterOnPath = input("If you want to filter on path of task please give the path, else leave blank and press enter (e.g: \CCleanerSkipUAC): ")
 
         #The actual filtering
         if(filterOnName + filterOnState + filterOnPath == "" ):
