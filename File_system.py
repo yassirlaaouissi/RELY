@@ -5,7 +5,7 @@ from ast import literal_eval
 import logging
 
 logger = logging.getLogger('File System')
-logging.basicConfig(handlers=[logging.FileHandler('file_system.log', 'w', 'utf-8')], format='%(name)s: %(asctime)s %(levelname)s: %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', level=logging.DEBUG)
+
 
 allfilesystem_list = []
 
@@ -55,7 +55,7 @@ def analysefilesystem():
 
     logger.info('Asked input pathname')
     # C:\\ met dubbele \
-    pathname = input('Type in the path you want to analyze: ')
+    pathname = input('Type in the path you want to analyze (e.g: .\.git): ')
     logger.info('Received input pathname: ' + pathname)
     for (dirpath, dirnames, filenames) in os.walk(pathname):
         for f in filenames:
