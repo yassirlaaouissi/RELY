@@ -8,9 +8,10 @@ from datetime import datetime
 import tabulate
 import logging
 
-logging.basicConfig(filename='Logging_example3.0.txt', format='%(asctime)s:%(levelname)s:%(message)s', datefmt='%d/%m/%Y %I:%M:%S %p', filemode='w', level=logging.INFO)
+
+logging.basicConfig(filename='Logging_example3.0.txt', format='%(name)s:%(asctime)s:%(levelname)s:%(message)s', datefmt='%d/%m/%Y %I:%M:%S %p', filemode='w', level=logging.DEBUG)
 logging.info('This file includes info of the steps that the program makes.')
-logging.info('Program is getting process id (pid)')
+logging.info('Program is getting process id (pid), Process ID:')
 logging.info('Program is getting process name (name)')
 logging.info('Program is getting process creation time (create_time)')
 logging.info('Program is getting cores used by the process (cores)')
@@ -34,6 +35,7 @@ def proces_list():
         with process.oneshot():
             # Verkrijgen van het proces ID.
             pid = process.pid
+            logging.info('Program is getting process id (pid):', pid.str())
             # Naam verkrijgen van het uitgevoerde bestand.
             name = process.name()
             # Tijd verkrijgen van wanneer het proces gecreeerd is.
@@ -61,11 +63,11 @@ def proces_list():
                 username = process.username()
             except psutil.AccessDenied:
                 username = "N/A"
+            logging.info('Program is getting the username related to the process (username): '), username
             try:
                 path = process.exe()
             except psutil.AccessDenied:
                 path = "-"
-
         processes.append({
             'pid': pid, 'name': name, 'create_time': create_time,
             'cores': cores, 'status': status, 'memory_usage': memory_usage,
