@@ -9,6 +9,10 @@ def choice_menu():
     geefHKEY = input("Please give an HKEY (e.g. HKEY_LOCAL_MACHINE): ")
     geefPad = input("Please give the path you want to be scanned: ")
 
+
+
+
+
     # Wanneer er een enter wordt ingevoerd geeft het programma een fout melding
     if (geefPad == ""):
         print("Path not found, please enter a valid path choice. Try again.")
@@ -106,11 +110,15 @@ def reg_reader(exp):
 
 
 def save_keys(regristry):
+    geefNaam = input("Do you want to filter on name? Y/N: ")
+    #geefType = input("Do you want to filter on type? Y/N: ")
+    #geefData = input("Do you want to filter on data? Y/N: ")
+
     #print tabel naar scherm
     header = regristry[0].keys()
     rows = [x.values() for x in regristry]
-    tableproceslist = tabulate.tabulate(rows, header, tablefmt='rst')
-    print(tableproceslist)
+    tableregkey = tabulate.tabulate(rows, header, tablefmt='rst')
+    print(tableregkey)
 
     #schrijf de tabel met uitkomsten naar een .txt bestand.
     if osp.isfile("RegistryKeys.txt"):
@@ -118,7 +126,13 @@ def save_keys(regristry):
     else:
         f = open('RegistryKeys.txt', 'x')
 
-    f.write(tableproceslist)
+    f.write(tableregkey)
+
+    # Filter input van de gebruiker
+    if geefNaam == "Y":
+        print (regristry[1])
+
+
     f.close()
 
 
