@@ -1,7 +1,7 @@
 import logging
 import File_system
+import registry_key
 import scheduled_tasks
-import cowsay
 from pyfiglet import Figlet
 from stringcolor import *
 
@@ -27,6 +27,7 @@ print(cs(ascii_underbanner2, "yellow"))
 #Waarop wil je scannen
 Wanna_use_FS = input("Do you want to scan on file system (Y or N)? ")
 Wanna_use_Tasks = input("Do you want to scan on Scheduled Tasks (Y or N)? ")
+Wanna_use_Keys = input("Do you want to scan on Registry keys (Y or N)? ")
 
 if(Wanna_use_FS == "N"):
     print("")
@@ -40,5 +41,13 @@ if(Wanna_use_Tasks == "N"):
     print("")
 elif(Wanna_use_Tasks == "Y"):
     scheduled_tasks.main()
+else:
+    print("Did not select Y or N, please restart program and try again")
+
+
+if(Wanna_use_Keys == "N"):
+    print("")
+elif(Wanna_use_Keys == "Y"):
+    registry_key.main()
 else:
     print("Did not select Y or N, please restart program and try again")
