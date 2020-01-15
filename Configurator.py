@@ -9,8 +9,8 @@ from stringcolor import *
 
 
 #Logger is aangeroepen over het hele project
-logging.basicConfig(filename="logboek.log", format='%(name)s: %(asctime)s %(levelname)s: %(message)s', datefmt='%d/%m/%Y %I:%M:%S %p', level=logging.DEBUG)
-
+#logging.basicConfig(filename="logboek.log", format='%(name)s: %(asctime)s %(levelname)s: %(message)s', datefmt='%d/%m/%Y %I:%M:%S %p', level=logging.DEBUG)
+logging.basicConfig(handlers=[logging.FileHandler('logboek.log', 'w', 'utf-8')], format='%(name)s: %(asctime)s %(levelname)s: %(message)s', datefmt='%d/%m/%Y %I:%M:%S %p', level=logging.DEBUG)
 #cowsay.daemon("Welcome to RELY, the malware analyser made by team fire breathing rubber duckies")
 
 ascii_banner = Figlet(font='STANDARD')
