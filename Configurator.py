@@ -26,8 +26,6 @@ print(cs(ascii_underbanner2, "yellow"))
 
 #Waarop wil je scannen
 Wanna_use_FS = input("Do you want to scan on file system (Y or N)? ")
-Wanna_use_Tasks = input("Do you want to scan on Scheduled Tasks (Y or N)? ")
-Wanna_use_Keys = input("Do you want to scan on Registry keys (Y or N)? ")
 
 if(Wanna_use_FS == "N"):
     print("")
@@ -37,6 +35,8 @@ else:
     print("Did not select Y or N, please restart program and try again")
 
 
+Wanna_use_Tasks = input("Do you want to scan on Scheduled Tasks (Y or N)? ")
+
 if(Wanna_use_Tasks == "N"):
     print("")
 elif(Wanna_use_Tasks == "Y"):
@@ -44,6 +44,7 @@ elif(Wanna_use_Tasks == "Y"):
 else:
     print("Did not select Y or N, please restart program and try again")
 
+Wanna_use_Keys = input("Do you want to scan on Registry keys (Y or N)? ")
 
 if(Wanna_use_Keys == "N"):
     print("")
@@ -51,3 +52,8 @@ elif(Wanna_use_Keys == "Y"):
     registry_key.main()
 else:
     print("Did not select Y or N, please restart program and try again")
+
+
+
+
+
