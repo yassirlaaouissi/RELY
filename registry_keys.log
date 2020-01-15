@@ -1,0 +1,78 @@
+Registry Keys: 15/01/2020 03:53:21 PM INFO: Asked for input HKEY.
+Registry Keys: 15/01/2020 03:53:21 PM INFO: Received input HKEY: HKEY_LOCAL_MACHINE
+Registry Keys: 15/01/2020 03:53:24 PM INFO: Asked for input path, 
+Registry Keys: 15/01/2020 03:53:24 PM INFO: Received input path: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Git_is1
+root: 15/01/2020 03:53:24 PM INFO: Analyzing HKEY and path choice
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:24 PM INFO: Append values to registry list.
+root: 15/01/2020 03:53:25 PM INFO: input for filter the registry: Y
+root: 15/01/2020 03:53:28 PM INFO: input to filter on name: 
+root: 15/01/2020 03:53:28 PM INFO: input to filter on type: REG_SZ
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Registry key list is filtered on type.
+root: 15/01/2020 03:53:28 PM INFO: Create table of registry keys.
+root: 15/01/2020 03:53:28 PM INFO: Printed table of registry keys.
+root: 15/01/2020 03:53:28 PM INFO: Save list of registry keys.
+Registry Keys: 15/01/2020 03:53:28 PM INFO: writing results to file.
+Registry Keys: 15/01/2020 03:53:28 PM INFO: close txt file.
