@@ -1,601 +1,78 @@
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Created list of taskdetails and connected to scheduled task reader.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Reading scheduled task directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Added task attributes to list.
-Scheduled Tasks: 01/15/2020 02:56:55 PM DEBUG: Returned list of task attributes.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:55 PM INFO: Listing all folders in directory.
-Scheduled Tasks: 01/15/2020 02:56:57 PM DEBUG: Selected yes as filtering choice.
-Scheduled Tasks: 01/15/2020 02:56:58 PM INFO: Returned and printed list of task attributes with table view.
-Scheduled Tasks: 01/15/2020 02:56:58 PM INFO: Saved list of task attributes with table view.
-File System: 01/15/2020 02:57:13 PM INFO: Asked input pathname
-File System: 01/15/2020 02:57:20 PM INFO: Received input pathname: .\.git
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: COMMIT_EDITMSG
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: config
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: description
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: FETCH_HEAD
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: HEAD
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: index
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: ORIG_HEAD
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: packed-refs
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\hooks
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: applypatch-msg.sample
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\hooks
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: commit-msg.sample
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\hooks
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: fsmonitor-watchman.sample
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\hooks
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: post-update.sample
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\hooks
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: pre-applypatch.sample
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\hooks
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: pre-commit.sample
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\hooks
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: pre-merge-commit.sample
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\hooks
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: pre-push.sample
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\hooks
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: pre-rebase.sample
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\hooks
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: pre-receive.sample
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\hooks
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: prepare-commit-msg.sample
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\hooks
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: update.sample
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\info
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: exclude
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\logs
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: HEAD
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\logs\refs\heads
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: Esther
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\logs\refs\heads
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: master
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\logs\refs\heads
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: Samenvoeging
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\logs\refs\heads
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: Yassir
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\logs\refs\remotes\origin
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: HEAD
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\logs\refs\remotes\origin
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: Lucille
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\logs\refs\remotes\origin
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: Samenvoeging
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\logs\refs\remotes\origin
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: Yassir
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\00
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: f401848bee5cc5cb26cfcdd2df8afb2c33d6bb
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\08
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: 6bee61674f921133504b278544e9fefcb00be8
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\09
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: 6fb95ea68608cfc17b581d56531406edfd29d5
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\09
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: 99df71b97da8cb8e2aa4acb1629c5fb706d0b2
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\1f
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: 6828e7a2225af85e3495d3c71789704f6257c5
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\23
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: b933b9c5062fdfaa1ef5dce7cfd812830dc684
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\37
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: 6d9aa04f605fb8724f6909469d419839203fe2
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\42
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: b7a10f387f0ba483ce01ceee46f538921673a1
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\4a
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: 68b8f340e65282dcf9e1118dfc35e389965aac
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\61
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: 1bb8c39b4087e0d1cf4949609104d9c3b0ca56
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\6d
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: e8d485d2eb72273d71cc78e4cd63385320d430
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\83
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: 9e3cbc7dabc8b215f731335fc114238f4b32ee
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\84
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: 71dcafa29758c140262627d29922e542fb0adc
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\87
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: ace23172de561e4c7732e2c95a49ec45104cf8
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\9a
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: 1638d8734b1c6bffa42f809ec631dac47feea7
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\9a
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: 490eb590a18ac2cd97f955090b4589e41873d3
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\a2
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: e120dcc86d18fdcb6ccfbe56c5d0b0dcd7c04a
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\a5
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: 987413deef7609c90da92deae753a3273074ea
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\aa
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: 1ac88249df06c5fcda5d5f0316932d3f0d969f
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\b2
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: 1f3f7fbef234f7f293205b8739b98d5fd48551
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\be
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: cd215e2bfc936b116cd962fa56ff0b45ea8ba9
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\c4
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: 44878a60b4aa9f0806053dcf95844c9151be6a
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\e4
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: 2cc0b3e2fd042306b853c321c6c283611d53d4
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\ff
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: 4ea74cd0e3db4850782f20a805cb9ab97b417e
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\pack
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: pack-15652d4bb5c82085c3d5a45a9bc6624b2f6a2972.idx
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\objects\pack
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: pack-15652d4bb5c82085c3d5a45a9bc6624b2f6a2972.pack
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\refs\heads
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: Esther
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\refs\heads
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: master
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\refs\heads
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: Samenvoeging
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\refs\heads
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: Yassir
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\refs\remotes\origin
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: HEAD
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\refs\remotes\origin
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: Lucille
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\refs\remotes\origin
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: Samenvoeging
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file system at the location: .\.git\refs\remotes\origin
-File System: 01/15/2020 02:57:20 PM DEBUG: Analyzing file stats: Yassir
-File System: 01/15/2020 02:57:20 PM INFO: Append file stats to allfilesystem_list
-File System: 01/15/2020 02:57:20 PM INFO: creating table of allfilesystem_list
-File System: 01/15/2020 02:57:20 PM INFO: printed table to the screen
-File System: 01/15/2020 02:57:20 PM INFO: Asked input to filter the results
-File System: 01/15/2020 02:57:24 PM DEBUG: received input: Y
-File System: 01/15/2020 02:57:24 PM INFO: asked input to filter on file size
-File System: 01/15/2020 02:57:28 PM DEBUG: input to filter on file size: Y
-File System: 01/15/2020 02:57:28 PM INFO: asked input to type the file size in bytes
-File System: 01/15/2020 02:57:36 PM DEBUG: input file size to filter on: 41
-File System: 01/15/2020 02:57:36 PM INFO: filtering list
-File System: 01/15/2020 02:57:36 PM INFO: found results
-File System: 01/15/2020 02:57:36 PM INFO: append filtered files to allfilesystem_list
-File System: 01/15/2020 02:57:36 PM INFO: found results
-File System: 01/15/2020 02:57:36 PM INFO: append filtered files to allfilesystem_list
-File System: 01/15/2020 02:57:36 PM INFO: found results
-File System: 01/15/2020 02:57:36 PM INFO: append filtered files to allfilesystem_list
-File System: 01/15/2020 02:57:36 PM INFO: found results
-File System: 01/15/2020 02:57:36 PM INFO: append filtered files to allfilesystem_list
-File System: 01/15/2020 02:57:36 PM INFO: found results
-File System: 01/15/2020 02:57:36 PM INFO: append filtered files to allfilesystem_list
-File System: 01/15/2020 02:57:36 PM INFO: found results
-File System: 01/15/2020 02:57:36 PM INFO: append filtered files to allfilesystem_list
-File System: 01/15/2020 02:57:36 PM INFO: found results
-File System: 01/15/2020 02:57:36 PM INFO: append filtered files to allfilesystem_list
-File System: 01/15/2020 02:57:36 PM INFO: found results
-File System: 01/15/2020 02:57:36 PM INFO: append filtered files to allfilesystem_list
-File System: 01/15/2020 02:57:36 PM INFO: asked input to filter on file path
-File System: 01/15/2020 02:57:39 PM DEBUG: input to filter on file path: N
-File System: 01/15/2020 02:57:39 PM INFO: asked input to filter on file name
-File System: 01/15/2020 02:57:43 PM DEBUG: input to filter on file name: N
-File System: 01/15/2020 02:57:43 PM INFO: creating table of allfilesystem_list
-File System: 01/15/2020 02:57:43 PM INFO: printed table to the screen
-File System: 01/15/2020 02:57:43 PM INFO: Asked input to save results to file
-File System: 01/15/2020 02:57:50 PM DEBUG: input to save result to file: N
+Registry Keys: 15/01/2020 04:27:55 PM INFO: Asked for input HKEY.
+Registry Keys: 15/01/2020 04:27:55 PM INFO: Received input HKEY: HKEY_LOCAL_MACHINE
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Asked for input path, 
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Received input path: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Git_is1
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Analyzing HKEY and path choice
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:00 PM INFO: Append values to registry list.
+Registry Keys: 15/01/2020 04:28:03 PM INFO: input for filter the registry: Y
+Registry Keys: 15/01/2020 04:28:06 PM INFO: input to filter on name: 
+Registry Keys: 15/01/2020 04:28:06 PM INFO: input to filter on type: REG_SZ
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Registry key list is filtered on type.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Create table of registry keys.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Printed table of registry keys.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: Save list of registry keys.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: writing results to file.
+Registry Keys: 15/01/2020 04:28:06 PM INFO: close txt file.
