@@ -7,6 +7,7 @@ from stringcolor import *
 
 #Logger is aangeroepen over het hele project
 logging.basicConfig(handlers=[logging.FileHandler('logboek.log', 'w', 'utf-8')], format='%(name)s: %(asctime)s %(levelname)s: %(message)s', datefmt='%d/%m/%Y %I:%M:%S %p', level=logging.DEBUG)
+logger = logging.getLogger('Configurator')
 
 #cowsay.daemon("Welcome to RELY, the malware analyser made by team fire breathing rubber duckies")
 
@@ -29,7 +30,32 @@ Wanna_use_FS = input("Do you want to scan on file system (Y or N)? ")
 if(Wanna_use_FS == "N"):
     print("")
 elif(Wanna_use_FS == "Y"):
-    File_system.main()
+
+    filter1 = ''
+    filtersize = ''
+    sizef = ''
+    filtername = ''
+    namef = ''
+    filterpath = ''
+    pathf = ''
+
+    pathname = input('Type in the path you want to analyze (.\.idea): ')
+
+    filter1 = input('Do you want to filter the results? (Y/N): ')
+    if filter1 == 'Y':
+        filtersize = input('Do You want to filter on file size? (Y/N): ')
+        if filtersize == 'Y':
+            sizef = input('Type the file size you want to filter on. (bytes): ')
+        filtername = input('Do You want to filter on file name? (Y/N): ')
+        if filtername == 'Y':
+            namef = input('Type the file name you want to filter on: ')
+        filterpath = input('Do You want to filter on path? (Y/N): ')
+        if filterpath == 'Y':
+            pathf = input('Type the path you want to filter on: ')
+
+    save = input('Do you want to save te results to a file? (Y/N)?: ')
+
+    File_system.main(pathname, filter1, filtersize, sizef, filtername, namef, filterpath, pathf, save)
 else:
     print("Did not select Y or N, please restart program and try again")
 
