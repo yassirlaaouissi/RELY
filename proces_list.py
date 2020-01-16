@@ -14,13 +14,13 @@ logging.basicConfig(handlers=[logging.FileHandler('logboek.log', 'w', 'utf-8')],
 
 logger.info('This file includes info of the steps that the program makes.')
 
+processes = []
 
-
-logger.info('Program got all the information.')
 
 def proces_list():
+    global processes
     # Lijst die alle proces dictionaries bevat.
-    processes = []
+    # processes = []
     for process in psutil.process_iter():
 
         # Verkrijg alle proces informatie met one shot. Hulpprogramma context manager die het ophalen van meerdere procesinformatie tegelijkertijd aanzienlijk versnelt
@@ -77,32 +77,82 @@ def proces_list():
             'n_threads': threads, 'username': username, 'path': path,
         })
 
-    # print(processes)
-
-    save_file(processes)
+    # print("Test")
 
 
-def save_file(processes):
+def filter_processes(processes):
+    # not_filtered_list = processes
+    filtered_list = []
 
-    # print(processes)
+    filter_question = input("Do you want to filter the processes? Y/N: ")
+    logging.info("input for filter the processes: " + filter_question)
+
+    if filter_question.upper() == "N":
+        return processes
+    elif filter_question.upper() == "Y":
+        filter_name = input("Do you want to filter on name? Please give the name else leave blank and press enter: ")
+        filter_path = input("Do you want to filter on type? Please give the type else leave blank and press enter: ")
+
+        # gefilterde_lijst.append(filter_naam)
+
+        logging.info("input to filter on name: " + filter_name)
+        logging.info("input to filter on path: " + filter_path)
+
+        if filter_name == "" and filter_path == "":
+            return processes
+        else:
+            if filter_name != "":
+                for key in processes:
+                    if key in filtered_list:
+                        continue
+                    elif key['name'] == filter_name:
+                        # print("made it")
+                        filtered_list.append(key)
+                        logging.info("Proces list is filtered on name.")
+                if len(filtered_list) == 0:
+                    print("Name not found in list of processes \n")
+                    logging.info("Name not found in the processes list.")
+
+            if filter_path != "":
+                for key in processes:
+                    if key in filtered_list:
+                        continue
+                    elif key['path'] == filter_path:
+                        filtered_list.append(key)
+                        logging.info("Proces list is filtered on type.")
+                if len(filtered_list) == 0:
+                    print("Type not found in list of processes \n")
+                    logging.info("Type not found in the proces list.")
+
+            # print(filtered_list)
+
+    else:
+        print("The input you gave did not correspond Y or N.")
+        logging.info("The input did not correspond with Y or N.")
+        main()
+    save_file(filtered_list)
+
+def save_file(filtered_list):
 
     # Hiermee wordt de lijst netjes weergegeven in de console.
-    header = processes[0].keys()
-    rows = [x.values() for x in processes]
+    header = filtered_list[0].keys()
+    rows = [x.values() for x in filtered_list]
     tableproceslist = tabulate.tabulate(rows, header, tablefmt='rst')
     print(tableproceslist)
 
     # Hiermee wordt de lijst met uitkomsten opgeslagen in een .txt bestand.
     f = open('C://Users/romyw/Documents/ipfit5/Proces_list.txt', 'w')  # extern opslaan
-    # f = open('Proces_list.txt', 'w')  # intern opslaan
+    f = open('Proces_list.txt', 'w')  # intern opslaan
     logger.info('The output of the program is being saved in a file.')
     f.write(tableproceslist)
     f.close()
     logger.info('The output of the program has been saved to a file.')
+    logger.info('Program got all the information.')
 
 
 def main():
     proces_list()
+    filter_processes(processes)
 
 
 if __name__ == '__main__':
