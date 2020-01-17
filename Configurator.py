@@ -133,14 +133,28 @@ elif(Wanna_use_Keys == "Y"):
 
 
 
-#Proces List
-Wanna_use_Proc = input("Do you want to scan on Processes (Y or N)? ")
-if(Wanna_use_Proc== "N"):
+# Proces List
+filter_question = ""
+filter_name = ""
+filter_path = ""
+want_to_use_proceslist = input("Do you want to scan on Processes (Y or N)? ")
+if (want_to_use_proceslist.upper() == "N"):
     print("")
-elif(Wanna_use_Proc == "Y"):
-    proces_list.main()
+elif (want_to_use_proceslist.upper() == "Y"):
+    filter_question = input("Do you want to filter the processes? Y/N: ")
+    if(filter_question.upper() == "Y"):
+        filter_name = input("Do you want to filter on name? Please give the name else leave blank and press enter: ")
+        filter_path = input("Do you want to filter on type? Please give the type else leave blank and press enter: ")
 else:
     print("Did not select Y or N, please restart program and try again")
+    sys.exit(1)
+
+
+
+
+
+
+
 
 
 #pre EXE
@@ -152,3 +166,6 @@ if(Wanna_use_Tasks.upper() == "Y"):
 
 if(Wanna_use_Keys.upper() == "Y"):
     registry_key.main(geefHKEY, geefPad, filterVraag)
+
+if(want_to_use_proceslist.upper() == "Y"):
+    proces_list.main(filter_question, filter_name, filter_path)

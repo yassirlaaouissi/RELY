@@ -1,7 +1,7 @@
 # Functionaliteit van Romy.
 # Deze functionaliteit bevat geen CPU_usage meer.
 # psutil is een platformonafhankelijke bibliotheek voor het ophalen van informatie over actieve processen en systeemgebruik in Python.
-
+import sys
 
 import psutil
 from datetime import datetime
@@ -10,6 +10,7 @@ import logging
 
 
 logger = logging.getLogger('Proces list')
+logging.basicConfig(handlers=[logging.FileHandler('logboek.log', 'w', 'utf-8')], format='%(name)s: %(asctime)s %(levelname)s: %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', level=logging.DEBUG)
 
 logger.info('This file includes info of the steps that the program makes.')
 
@@ -75,25 +76,20 @@ def proces_list():
             'read_bytes': read_bytes, 'write_bytes': write_bytes,
             'n_threads': threads, 'username': username, 'path': path,
         })
-    return processes
+
     # print("Test")
 
 
-def filter_processes(processes):
+def filter_processes(processes, filter_question, filter_name, filter_path):
     # not_filtered_list = processes
     filtered_list = []
-
-    filter_question = input("Do you want to filter the processes? Y/N: ")
     logging.info("input for filter the processes: " + filter_question)
+
 
     if filter_question.upper() == "N":
         return processes
-    elif filter_question.upper() == "Y":
-        filter_name = input("Do you want to filter on name? Please give the name else leave blank and press enter: ")
-        filter_path = input("Do you want to filter on type? Please give the type else leave blank and press enter: ")
-
+    elif(filter_question.upper() == "Y"):
         # gefilterde_lijst.append(filter_naam)
-
         logging.info("input to filter on name: " + filter_name)
         logging.info("input to filter on path: " + filter_path)
 
@@ -128,13 +124,13 @@ def filter_processes(processes):
     else:
         print("The input you gave did not correspond Y or N.")
         logging.info("The input did not correspond with Y or N.")
-        # main()
+        sys.exit(1)
     # save_file()
 
 def save_file(final_list):
+
     # Hiermee wordt de lijst netjes weergegeven in de console.
     header = final_list[0].keys()
-    #header = ['PID','Name','Create time', 'Cores', 'Status', 'Memory usage', 'Read bytes', 'Write bytes', 'Threads', 'Username', 'Path']
     rows = [x.values() for x in final_list]
     tableproceslist = tabulate.tabulate(rows, header, tablefmt='rst')
     print(tableproceslist)
@@ -149,11 +145,10 @@ def save_file(final_list):
     logger.info('Program got all the information.')
 
 
-def main():
+def main(filter_question, filter_name, filter_path):
+    proces_list()
+    final_list = filter_processes(processes, filter_question, filter_name, filter_path)
+    save_file(final_list)
     #proces_list()
-    #final_list = filter_processes(processes)
-    #save_file(final_list)
-    save_file(filter_processes(proces_list()))
 
-if __name__ == '__main__':
-    main()
+
