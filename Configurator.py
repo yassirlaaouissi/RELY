@@ -114,22 +114,29 @@ else:
 
 #Registry Keys
 Wanna_use_Keys = input("Do you want to scan on Registry keys (Y or N)? ")
-if(Wanna_use_Keys == "N"):
+
+if (Wanna_use_Keys.upper() == "N"):
     print("")
-elif(Wanna_use_Keys == "Y"):
+elif (Wanna_use_Keys.upper() == "Y"):
+
+    geefHKEY = ""
+    geefPad = ""
+    filterVraag = ""
+    filterNaam = ""
+    filterType = ""
+
     geefHKEY = input("Please give an HKEY (e.g. HKEY_LOCAL_MACHINE): ")
-    if (geefHKEY == ""):
-        print("HKEY not found, please enter a valid HKEY choice. Try again.")
-    geefPad = input("Please give the path you want to be scanned: ")
-    if (geefPad == ""):
-        print("Path not found, please enter a valid path choice. Try again.")
+    geefPad = input(
+        "Please give the path you want to be scanned (e.g: " + r"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Git_is1" + "): ")
 
     filterVraag = input("Do you want to filter the registry keys? Y/N: ")
     if filterVraag.upper() == "Y":
         filterNaam = input("Do you want to filter on name? Please give the name else leave blank and press enter: ")
         filterType = input("Do you want to filter on type? Please give the type else leave blank and press enter: ")
-    if (filterVraag == ""):
-        print("The input you gave did not correspond Y or N.")
+    if filterVraag.upper() == "N":
+        print()
+else:
+    print("Did not select Y or N, please restart program and try again")
 
 
 
@@ -165,7 +172,7 @@ if(Wanna_use_Tasks.upper() == "Y"):
     scheduled_tasks.main(WantToFilter, filterOnName, filterOnState, filterOnPath, WantToPrintList)
 
 if(Wanna_use_Keys.upper() == "Y"):
-    registry_key.main(geefHKEY, geefPad, filterVraag)
+    registry_key.main(geefHKEY, geefPad, filterVraag, filterNaam, filterType)
 
 if(want_to_use_proceslist.upper() == "Y"):
     proces_list.main(filter_question, filter_name, filter_path)
