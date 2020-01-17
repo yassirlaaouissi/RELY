@@ -21,28 +21,29 @@ def show_list(listname):
 
     #voor als de invoer van het pad niet juist is
     except IndexError:
-        logger.error('The input is incorrect, restarting file_system.py')
-        print('The input is incorrect, try again (example: C:\\...)')
-        main()
+        logger.error('The input is incorrect')
+        print('The input is incorrect, restart the program and try again (example: C:\\...)')
 
     #Voor als het gekozen pad te groot is om te analyseren
     except MemoryError:
-        logger.error('The path size is too big, restarting file_system.py')
-        print('The path size is too big, try a subfolder of the path')
-        main()
+        logger.error('The path size is too big')
+        print('The path size is too big, restart the program and try a different of the path')
+
 
 # schrijf tabel weg naar bestand
 def save_list(listname):
+    try:
+        f = open('Filesystem.txt', 'w', encoding="utf-8")
+        logger.info('open file: Filesystem.txt')
+        f.write(listname)
+        logger.info('writing results to file')
+        f.close()
+        logger.info('close file: Filesystem.txt')
 
-    f = open('Filesystem.txt', 'w', encoding="utf-8")
-    logger.info('open file: Filesystem.txt')
-    f.write(listname)
-    logger.info('writing results to file')
-    f.close()
-    logger.info('close file: Filesystem.txt')
-
-    # locatie van de file
-    print('\nThe results are saved into a file called Filesystem.txt on the location C:\\Users\lucil\PycharmProjects\RELY\Filesystem.txt')
+        # locatie van de file
+        print('\nThe results are saved into a file called Filesystem.txt on the location C:\\Users\lucil\PycharmProjects\RELY\Filesystem.txt')
+    except TypeError:
+        print('')
 
 #om filesystem langs te lopen
 def analysefilesystem(pathname):
@@ -79,7 +80,7 @@ def filterfiles(listname, size1, size2, name1, name2, path1, path2):
     filteredlist = []
 
     #filteroptie op File size
-    if size1 == 'Y':
+    if size1.upper() == 'Y':
         size2 = int(size2)
         sizelist = filter(lambda x: x['File size (bytes)'] == size2, listname)
         logger.info('filtering list')
@@ -97,7 +98,7 @@ def filterfiles(listname, size1, size2, name1, name2, path1, path2):
                 logger.info('append filtered files to allfilesystem_list')
 
     # filteroptie op File path
-    if path1 == 'Y':
+    if path1.upper() == 'Y':
         pathlist = filter(lambda x: x['File path'] == path2, listname)
         logger.info('filtering list')
         pathlist2 = list(pathlist)
@@ -114,7 +115,7 @@ def filterfiles(listname, size1, size2, name1, name2, path1, path2):
                 logger.info('append filtered files to allfilesystem_list')
 
     #filteroptie op File name
-    if name1 == 'Y':
+    if name1.upper() == 'Y':
         namelist = filter(lambda x: x['File name'] == name2, listname)
         logger.info('filtering list')
         namelist2 = list(namelist)
@@ -132,20 +133,18 @@ def filterfiles(listname, size1, size2, name1, name2, path1, path2):
 
     if filteredlist == []:
         print('No results found')
-        return listname
-    else:
-        return filteredlist
+    return filteredlist
 
 def main(pathname, filter1, filtersize, sizef, filtername, namef, filterpath, pathf, save):
     logger.info('Started')
     filesystem_list = analysefilesystem(pathname)
 
-    if filter1 == 'Y':
+    if filter1.upper() == 'Y':
         filesystem_list = filterfiles(filesystem_list, filtersize, sizef, filtername, namef, filterpath, pathf)
 
     tablelist = show_list(filesystem_list)
 
-    if save == 'Y':
+    if save.upper() == 'Y':
         save_list(tablelist)
     logger.info('Finished')
 
