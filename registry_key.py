@@ -141,8 +141,10 @@ def filter_reg(registry):
             if(filterNaam != ""):
                 for key in ongefilterdLijst:
                     if key in filterLijst:
+                        #print("Key in filterlijst")
                         continue
                     elif(key['Name'] == filterNaam):
+                        #print("key name in filtername")
                         filterLijst.append(key)
                         logger.info("Registry key list is filtered on name.")
                 if(filterLijst == []):

@@ -1,0 +1,12 @@
+=====  ==========  ===================  =======  ========  ==============  ============  =============  ===========  =====================  ===========================================================
+  pid  name        create_time            cores  status      memory_usage    read_bytes    write_bytes    n_threads  username               path
+=====  ==========  ===================  =======  ========  ==============  ============  =============  ===========  =====================  ===========================================================
+ 2416  chrome.exe  2020-01-17 10:55:40       12  running                0       7065393       34881450           13  LAPTOP-G1N7SMFF\yassi  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+ 3536  chrome.exe  2020-01-17 10:55:46       12  running                0        151380          36348           14  LAPTOP-G1N7SMFF\yassi  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+ 6308  chrome.exe  2020-01-17 10:55:40       12  running                0          6850            372            7  LAPTOP-G1N7SMFF\yassi  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+ 7360  chrome.exe  2020-01-17 10:55:40       12  running                0     161601983      105182821           27  LAPTOP-G1N7SMFF\yassi  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+10672  chrome.exe  2020-01-17 10:55:40       12  running                0        652530         771132           22  LAPTOP-G1N7SMFF\yassi  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+10816  chrome.exe  2020-01-17 10:55:40       12  running                0        735308         584087           14  LAPTOP-G1N7SMFF\yassi  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+11704  chrome.exe  2020-01-17 10:55:40       12  running                0       1904292         264452           13  LAPTOP-G1N7SMFF\yassi  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+16612  chrome.exe  2020-01-17 10:55:40       12  running                0          5980              0            2  LAPTOP-G1N7SMFF\yassi  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+=====  ==========  ===================  =======  ========  ==============  ============  =============  ===========  =====================  ===========================================================
