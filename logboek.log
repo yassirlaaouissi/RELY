@@ -1,0 +1,724 @@
+File System: 16/01/2020 01:41:04 PM INFO: Started
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: Configurator.py
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: Filesystem.txt
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: file_system.log
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: File_system.py
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: logboek.log
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: README.md
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: COMMIT_EDITMSG
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: config
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: description
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: FETCH_HEAD
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: HEAD
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: index
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: ORIG_HEAD
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: packed-refs
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\hooks
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: applypatch-msg.sample
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\hooks
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: commit-msg.sample
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\hooks
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: fsmonitor-watchman.sample
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\hooks
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: post-update.sample
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\hooks
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: pre-applypatch.sample
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\hooks
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: pre-commit.sample
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\hooks
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: pre-push.sample
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\hooks
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: pre-rebase.sample
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\hooks
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: pre-receive.sample
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\hooks
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: prepare-commit-msg.sample
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\hooks
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: update.sample
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\info
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: exclude
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\logs
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: HEAD
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\logs\refs
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: stash
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\logs\refs\heads
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: Lucille
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\logs\refs\heads
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: master
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\logs\refs\heads
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: Samenvoeging
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\logs\refs\remotes\origin
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: Esther
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\logs\refs\remotes\origin
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: HEAD
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\logs\refs\remotes\origin
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: Lucille
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\logs\refs\remotes\origin
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: Romy
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\logs\refs\remotes\origin
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: Samenvoeging
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\logs\refs\remotes\origin
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: Yassir
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\05
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 6eb31053a765a943e2a9d90007a804d936385e
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\06
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 03620931dd24d386250f1931d32c998d7724bf
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\08
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: d99f3dc59bfa8299e611826291f4d6035fabd7
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\09
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 65da9b4d5bbbdf91d9074d5f7845696ae9ca54
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\09
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 6fb95ea68608cfc17b581d56531406edfd29d5
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\09
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 99df71b97da8cb8e2aa4acb1629c5fb706d0b2
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\0c
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: bd2df52c65f8202576361581de45fc3bc882e8
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\0d
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 410b186f8b23c988f9d75f20a140a6e7448554
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\0d
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: ab752ae8f719383b80e2b9055498017b985f17
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\0e
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 8cd1ff2df109f32d43f29cb27fec59e3306728
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\0f
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 0e6d42f09e88184b413be60e85040f86530cb1
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\10
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 1dc69dd635a2ce8dba183b71d4e054d1f094fd
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\10
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 4e106ecbfdb61f3bf87caf565470e721c20872
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\12
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: a65c9da15d7a82d5c1a1344e65eab8bee7ee1f
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\14
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 0ee2d273833575cfed04c8dab369a9689199dc
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\14
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: eab26650f717f7e22ef26dc183e544158cb87e
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\14
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: f9b988224ebb2cad48c6e3b87b0806f2022bdc
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\15
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: a466282d524459f3c74555ba3da2587d5e8a69
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\16
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: d3d72748b03ffd5778ba34324504434c5b1c18
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\18
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 268600eed50fbac66426ee74119229069e2981
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\19
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 5113865d8d58352f9c56c1bcbd6a1a298834cf
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\1a
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 2183fe5964516affe81379d684b2d0ba52cf0e
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\1b
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 1411c669a73c83271344bc5d5aade140f3ab89
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\1b
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: d24fd1daef1bb6fa51649c8978cba373a68b27
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\1c
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 09fdb96652507877ce4a3ec875687b294bca2a
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\1f
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 6828e7a2225af85e3495d3c71789704f6257c5
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\1f
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 974728418efde2d46c2fb8383912db3e528976
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\1f
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 9e1f8a65cd4ab1d0139540f9f74abb9d97e450
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\21
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 83a5dd491512be26d334358583f1145cdfd9a0
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\21
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 89e57c72f30e3a9293860e219650fceccf1a14
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\23
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: b933b9c5062fdfaa1ef5dce7cfd812830dc684
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\24
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: fe730140d560e51aaf289e88b4c5fdffc4c41e
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\27
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 44c12c738498d9de4eed492e507d6c6311e652
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\28
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 0a0e56a97b6b39c39545d8200921851f9139a4
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\28
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 0cd888e810649fb64f724b6bf8b9c83965dc51
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\28
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 7ca11bed45f67104dafcbdd972d3e97cfae3f3
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\28
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: d90751560ea09531bff9ff6d2d5326777fa79f
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\2a
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 6170cd6ced590aed1b3b1f2d0c94adf2fb5590
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\2c
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 20f9e5b2e29e2a197c1e95678e1e0487324cd2
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\31
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 19288c0b8f46cb4b49242086053e5ca749fd74
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\31
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 32ff5822c4582ac2b9be299a1822f5cee804a6
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\32
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 9ecd3f18070659e9e53c6bd21d39f77e52faa0
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\35
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 3cb6f8f66fbe51156f8b1256ab74c691b9fcc4
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\3f
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 370bafe6bc9d22a1e0f7c16e090cf908118b21
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\40
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 14db97b61404d668254c0ad42f8a8ba94382db
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\40
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 9d5acd98dbc0d6fa28d23b61f7ddfc9cc4af2b
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\42
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: b7a10f387f0ba483ce01ceee46f538921673a1
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\42
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: ea650e4d8e5df34b672e2badb994d1b3679731
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\43
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: a53a528ffb57d28851775686c7d9e5b01be098
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\47
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 59f4d5d274a82bf9ef2a360e9e7eaa60f62d6b
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\49
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 16d95966a7ac6f230177932dd567270d2c0bdd
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\4a
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: b3f4cda8433d4dd76fa73220db21784303cd61
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\4b
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 01c77eab98fb827c2ba9cc98641f6210bbaaad
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\4f
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 313fc8a71f3fdd21ac72bc7bef4580008a9992
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\4f
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 487da1c933730ade9a91069198a80ddba2550e
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\50
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 189245829394250742a971f535e525617b56c2
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\51
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 0b7377965b0f9f4a465b7a62ba73e96fb06628
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\53
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 29a430251b59b39e398b3f9b544dd7da20fc16
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\53
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: f6120ea6fe1fc14b07828d19c139d49c4349eb
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\58
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 037b70d8579e5ad4c77c058f8aeae193dda07c
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\5b
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: e35bcacde730e486e36348adc679188bdd877f
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\5d
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 4b3736ace3f54d86cf0d44881ee9a967b7c8e6
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\5d
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: a062ba010d685fd2388b008fa9430e2142f24e
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\5f
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 9e778d741d6e77cbacf8d9e3d1d25e641b697a
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\61
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 1bb8c39b4087e0d1cf4949609104d9c3b0ca56
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\61
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: eacdf586e75930257776538da0b89ac526dd9d
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\67
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 59761a7ad71e30616e15dac1b5429ead9bf438
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\67
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: aa2902d89afccba39289f29652a199005dfc74
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\69
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 103218edaef503712c195fe7c10ca548fa6cb7
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\6b
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: d6924eb9c3e0cf298d6b481fde84993b26dc7c
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\6c
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 249d838599e890481dd55dd277ce2ee77206fa
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\6c
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: c3cd1fb11ee6582fc0bf01d47117403a01a790
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\6d
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: e8d485d2eb72273d71cc78e4cd63385320d430
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\6e
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 537cba1e8d04731413e0480492f66b62b4fbaa
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\71
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 9510db3f92791a5186c8bb3caaad43cfd07624
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\76
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 11abdab68f629922c4e3b80902a0a41a7cdd5b
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\76
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 744baff1bc8da98a23c40e76ae1b7ffe0a7d55
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\77
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 873b479dd589ad98417cc32b3205dec82085a3
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\77
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 886f91b6b18bddd10b59422133189e3f638cc5
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\77
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: f8bfa2a0271306d37448a5b1abbbb8ecfcf2f8
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\79
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: c52c07f3c3c304538de184b0074d4d69b8cac0
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\7b
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 33a767f043d4178d829bfba0b3882f0df80ead
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\7c
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 69e04ee8fcfdbad02940daa09e757b34210c82
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\80
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 260e33e3fcd25649e4c5474dcff8a08deed057
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\81
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 731654b62a47a79c8fa562d69996c46d24bd1c
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\82
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 3c27ba583cacdaab9d8a57dd6ceedc5abd1e19
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\82
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 96cb18806baf1c30949588751257a6da1393c4
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\83
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 9e3cbc7dabc8b215f731335fc114238f4b32ee
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\84
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 0bbdb0f06f1157d3da779ec1d99d46efb741e4
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\84
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 71dcafa29758c140262627d29922e542fb0adc
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\86
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 62379a6987d338faab233901a7b031614d24b7
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\87
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: a5160103663fd6a8f3402057ae8b71bbc4a11c
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\87
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: ace23172de561e4c7732e2c95a49ec45104cf8
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\8b
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 8c395472a5a6b3598af42086e590417ace9933
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\8f
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 400114aed404c7d8ff7f26a5c9e9cbea6576fd
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\90
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 08283541f61be303a5dd46a3ad76d91fd9e9eb
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\91
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: f0de95b554087af04c3763e1466f4cf42c61fe
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\92
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: cb8bea151cbe1aedd4ee1875b59e84558684b6
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\94
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: cacbe1e15553bd08c2a395e0bcc7695c32db13
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\95
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 1ac1f3f782888e82233e07b016422cb3196c17
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\97
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: c09323a23747f4823ff7aa261a8a8e049acef1
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\99
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 1bc22432467bd3ee1f16971b4e66b96e5bbe9b
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\99
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 280d0bbfd67ddf7fac8aae3d152b73c9b6ce64
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\99
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 8dc50274f77d305de1bee31f618e7e4294d09b
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\9b
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 77cc8fd381afc92581964f4d55721290b841c3
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\9b
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 92b7c63bf1be29faaedbb67eaf930342f7d4a8
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\9d
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 93b6bc1372d0ade1e4c39685bb3d5c6846baa9
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\9e
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 56cf805544fe7b3a75e4a71d8807a24bf85bfc
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\9f
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 4e8d7d622763902f3fdd4749dda7d4e3b8c029
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\a2
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 31c3be52adb41912c4eea52611ab810cb6987c
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\a2
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: e120dcc86d18fdcb6ccfbe56c5d0b0dcd7c04a
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\a3
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: ef4c1d32464725d7ad00ebdbf97ae28909fa3d
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\a4
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: a2c998f24ce2985a096a1bc60e12bce6152fc5
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\a5
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 987413deef7609c90da92deae753a3273074ea
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\a6
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 911b28b9d9938d8bdd8471136cfa70d3dad1f0
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\a7
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: fec0622f2618fed00accdbef08291860f99f7d
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\a9
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 7c7dfc915024af6a3c56e6357b138c7b5108bc
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\aa
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 1ac88249df06c5fcda5d5f0316932d3f0d969f
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\aa
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 1e1ccce6d2108aeb0e30418432ab701a189818
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\aa
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 6b6df65d85d91981dd7e14ffbdc085647db8e8
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\ab
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: a92752ef7094569eda27b4c5f34dc1f6b1f9a4
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\ac
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: f9d094c69c61d6582ea82523dbfbc82a9a6c1a
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\ad
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 62b5d65ba14f4914d00074047087ff545458cb
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\ae
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 327e5356dbb9ec8801c887f1bb8c850d530c58
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\af
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 20ef9139afb205ec618fe2ff780e40030d6325
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\b0
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 634c20c3f73c2540b30c75170df981d850ff36
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\b2
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 0163b05045d6c7ec34bd42de8d299b433187c8
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\b2
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 1f3f7fbef234f7f293205b8739b98d5fd48551
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\b2
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 66d6b6180fa6775bd174de5d597a1b2c54fc35
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\ba
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: d51e609a584a18756f9227848fc4160341fe2e
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\bc
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 3fa840e80ec994048abff1f29cfc981a0ab408
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\bd
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: b197b7a80b913bfa08a6a62f03832193dc4ef2
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\bf
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 1fa08fb7f5ac9bb58949f06bdff097eba8beec
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\bf
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: df1d65611da83c52f3245457ac1418412644cc
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\c1
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 5c5bac30cbdd47d54b01392378ad78e8413e08
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\c2
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: f922e6464b5b702242a6f2a776094f2ac8d18b
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\c4
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 44878a60b4aa9f0806053dcf95844c9151be6a
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\c4
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 75167c0a024355505f546cb5334c6b9dc722f1
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\c4
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: dd0f983a1a424a7f1ce70e1b59f27b2f718204
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\c7
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: b77a18de18e64651c9c4637353a207edb9ce60
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\cb
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: e7cdbc6e2c50bb6c698411c5d23c2b0bb5abc2
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\cd
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 2d4d5feaab2932ba814f09b61b01050b505932
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\ce
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: e6bbe2d187a9b6dd603a799a4cf655862015e5
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\d0
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 876a78d06ac03b5d78c8dcdb95570281c6f1d6
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\d1
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 41c7a2ca757f88f869aa234f1feab4c435dba9
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\d2
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 28351df69b19290565d345bd59779f847baead
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\d3
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 7fa5f8c9527e2881943fbd182eabb3d776b788
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\d4
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: ab785c66c8d938e6a60f988f8be8481bccc8f3
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\d6
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 23677979bfaa0ab08b26213e944b511f6018f7
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\d6
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 72899ff4ba331f764616a670b0e6f3febc3477
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\d7
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: d2cd52da2cd71166e5b9a044f3b79aa36cd081
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\d9
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 516d012e2dde24b759f9bac2e5d1dbd015814a
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\d9
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 568f12dcfd8e3f1d6cd61be9b1e9e71b4aa532
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\da
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 11d7ed1f46952a6440928351741a91131354a9
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\da
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: a36079c3d121e32c652fc718144adb7989cb6a
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\e1
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: bd1008b347c42d857956463a11ac62a9c724fd
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\e4
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 19a6270d778a8ad9b600abef1727d5822ee648
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\e4
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 2cc0b3e2fd042306b853c321c6c283611d53d4
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\e7
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: e9d11d4bf243bffe4bb60b4ac1f9392297f4bf
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\e8
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: df558e52a4f9769ea99fbc851ef3db9a41b94d
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\e8
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: e2fdd8d7dbd51d68bc1b794793a803848503a2
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\ea
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: aecee59fd97e4887778118165e00ddd31b8f40
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\ed
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 30a58f9f13b96865ad76ace75c00370cbc5eba
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\ed
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: b08a88a8b099fbb9c36d654f2892f6ef65d572
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\ef
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: cd4998dbf77d03b03444c3eef4812b0eb1eb66
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\f2
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 498924f8259f20d68147b2f39d7745aa95abc5
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\f2
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: d3092958418e99b69ffc63db2d131723f4e582
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\f3
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: cb2a0e6f337c99c8e51b295758c57f3675db02
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\f9
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 680c77336642998c68c3db5e2ab4d9925864df
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\f9
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 728717034cd5f9dbc7a24b58f32207db78d988
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\fa
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 3bbc1c61ddd01de80411e5d1706a365c1d1eca
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\fc
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: a4b3fc27f3261dbfc98b1669bb8788d3c6617e
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\fc
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: faf3e25c8910e29f7a1565ba460e12223f444b
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\ff
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: 4ea74cd0e3db4850782f20a805cb9ab97b417e
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\ff
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: a4a6da66c347ffad60ef6b41335b11d6a8c778
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\pack
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: pack-497c369b2664ca138d517f43dad5c79c42765a84.idx
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\pack
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: pack-497c369b2664ca138d517f43dad5c79c42765a84.pack
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\pack
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: pack-870aeee745d7252f133a875330fa23062131511e.idx
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\pack
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: pack-870aeee745d7252f133a875330fa23062131511e.pack
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\pack
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: pack-b0244e2d2da59e6b39d93b65615dbc72611c22c1.idx
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\objects\pack
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: pack-b0244e2d2da59e6b39d93b65615dbc72611c22c1.pack
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\refs
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: stash
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\refs\heads
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: Lucille
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\refs\heads
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: master
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\refs\heads
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: Samenvoeging
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\refs\remotes\origin
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: Esther
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\refs\remotes\origin
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: HEAD
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\refs\remotes\origin
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: Lucille
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\refs\remotes\origin
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: Romy
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\refs\remotes\origin
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: Samenvoeging
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.git\refs\remotes\origin
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: Yassir
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.idea
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: .gitignore
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.idea
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: encodings.xml
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.idea
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: misc.xml
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.idea
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: modules.xml
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.idea
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: RELY.iml
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.idea
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: vcs.xml
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.idea
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: workspace.xml
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\.idea\inspectionProfiles
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: profiles_settings.xml
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\__pycache__
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: File_system.cpython-37.pyc
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\__pycache__
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: registry_key.cpython-37.pyc
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file system at the location: .\__pycache__
+File System: 16/01/2020 01:41:04 PM DEBUG: Analyzing file stats: scheduled_tasks.cpython-37.pyc
+File System: 16/01/2020 01:41:04 PM INFO: Append file stats to allfilesystem_list
+File System: 16/01/2020 01:41:04 PM INFO: creating table of allfilesystem_list
+File System: 16/01/2020 01:41:04 PM INFO: printed table to the screen
+File System: 16/01/2020 01:41:04 PM INFO: open file: Filesystem.txt
+File System: 16/01/2020 01:41:04 PM INFO: writing results to file
+File System: 16/01/2020 01:41:04 PM INFO: close file: Filesystem.txt
+File System: 16/01/2020 01:41:04 PM INFO: Finished
