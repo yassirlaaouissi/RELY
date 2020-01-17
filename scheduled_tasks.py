@@ -4,6 +4,7 @@ import tabulate
 import win32com.client
 import logging
 import os.path
+import hashlib
 
 
 # Logging definities
@@ -157,6 +158,28 @@ def save_list_to_file(ListToSave):
     with open(filename, 'w') as f:
         f.write(ListToSave)
         logger.info('Saved list of task attributes with table view.')
+
+    #hashing
+    hasher = hashlib.md5()
+    with open('ScheduledTasks.txt', 'rb') as afile:
+        buf = afile.read()
+        hasher.update(buf)
+    hash1 = 'ScheduledTasks.txt MD5 Hashwaarde: ' + hasher.hexdigest()
+    logger.debug('Generating MD5 hash: ' + hasher.hexdigest())
+
+    hashersha = hashlib.sha256()
+    with open('ScheduledTasks.txt', 'rb') as afile:
+        buf = afile.read()
+        hashersha.update(buf)
+    hash2 = 'ScheduledTasks.txt SHA256 Hashwaarde: ' + hashersha.hexdigest()
+    logger.debug('Generating SHA256 hash: ' + hashersha.hexdigest())
+
+    f = open('hashfile.txt', 'a', encoding="utf-8")
+    logger.info('open file: hashfile.txt')
+    f.write(hash1 + '\n' + hash2 + '\n')
+    logger.info('writing md5 hash to file')
+    f.close()
+    logger.info('close file: hashfile.txt')
 
 
 def main(WantToFilter, filterOnName, filterOnState, filterOnPath, WantToPrintList):

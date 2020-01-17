@@ -8,6 +8,9 @@ import scheduled_tasks
 from pyfiglet import Figlet
 from stringcolor import *
 
+f = open('hashfile.txt', 'w', encoding="utf-8")
+f.close()
+
 #Logger is aangeroepen over het hele project
 logging.basicConfig(handlers=[logging.FileHandler('logboek.log', 'w', 'utf-8')], format='%(name)s: %(asctime)s %(levelname)s: %(message)s', datefmt='%d/%m/%Y %I:%M:%S %p', level=logging.DEBUG)
 
