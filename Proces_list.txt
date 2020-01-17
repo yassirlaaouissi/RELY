@@ -1,0 +1,27 @@
+=====  ==========  ===================  =======  ========  ==============  ============  =============  ===========  =====================  ===========================================================
+  pid  name        create_time            cores  status      memory_usage    read_bytes    write_bytes    n_threads  username               path
+=====  ==========  ===================  =======  ========  ==============  ============  =============  ===========  =====================  ===========================================================
+ 3156  chrome.exe  2020-01-15 14:44:51        8  running                0         29527           5136            7  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+ 3196  chrome.exe  2020-01-16 21:45:00        8  running            12288         69137          78796            9  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+ 3408  chrome.exe  2020-01-15 14:44:51        8  running         30638080     952612704     2233782988           16  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+ 3416  chrome.exe  2020-01-15 15:12:12        8  running         35549184      53743638      169861224           20  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+ 5228  chrome.exe  2020-01-17 09:26:58        8  running           131072      22983876        6730895           15  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+ 6604  chrome.exe  2020-01-15 14:44:51        8  running          1413120    3578199482      537445747           15  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+ 6708  chrome.exe  2020-01-15 15:12:11        8  running          5472256       5032158        2735947           15  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+ 7524  chrome.exe  2020-01-15 15:16:19        8  running        314621952     328038836      566158768           18  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+ 9468  chrome.exe  2020-01-16 13:38:13        8  running          9797632       5640932       19947003           16  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+10596  chrome.exe  2020-01-16 13:44:42        8  running           221184        648068         597668           15  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+10884  chrome.exe  2020-01-15 14:44:51        8  running        187035648    3828695374     4345143849           35  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+12432  chrome.exe  2020-01-15 14:44:51        8  running           143360          5766              0            2  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+12860  chrome.exe  2020-01-16 13:38:55        8  running         10903552       3756116        9890299           16  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+14684  chrome.exe  2020-01-16 13:42:03        8  running          1986560     107258292      103194364           16  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+14976  chrome.exe  2020-01-16 13:46:17        8  running         11145216      23241276       27673396           21  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+15776  chrome.exe  2020-01-16 13:44:46        8  running          2473984       1527132        1284596           15  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+16000  chrome.exe  2020-01-16 13:25:05        8  running          4648960      43321188      123768464           15  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+16356  chrome.exe  2020-01-17 13:54:11        8  running         68685824       2982620        4557679           21  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+19072  chrome.exe  2020-01-17 09:26:26        8  running          1130496       9532196       16578223           15  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+19540  chrome.exe  2020-01-17 09:26:58        8  running          5488640       6721320       14641479           16  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+20004  chrome.exe  2020-01-17 12:19:55        8  running          6451200        174980         121432           15  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+21552  chrome.exe  2020-01-17 13:54:10        8  running           270336        124468          13523           20  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+22168  chrome.exe  2020-01-17 13:54:09        8  running         31588352        316788         322024           21  LAPTOP-O0VUI5OA\romyw  C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+=====  ==========  ===================  =======  ========  ==============  ============  =============  ===========  =====================  ===========================================================

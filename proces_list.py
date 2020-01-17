@@ -83,18 +83,9 @@ def proces_list():
 def filter_processes(processes):
     # not_filtered_list = processes
     filtered_list = []
-
-    filter_question = input("Do you want to filter the processes? Y/N: ")
     logging.info("input for filter the processes: " + filter_question)
 
-    if filter_question.upper() == "N":
-        return processes
-    elif filter_question.upper() == "Y":
-        filter_name = input("Do you want to filter on name? Please give the name else leave blank and press enter: ")
-        filter_path = input("Do you want to filter on type? Please give the type else leave blank and press enter: ")
-
         # gefilterde_lijst.append(filter_naam)
-
         logging.info("input to filter on name: " + filter_name)
         logging.info("input to filter on path: " + filter_path)
 
@@ -129,7 +120,7 @@ def filter_processes(processes):
     else:
         print("The input you gave did not correspond Y or N.")
         logging.info("The input did not correspond with Y or N.")
-        # main()
+        main()
     # save_file()
 
 def save_file(final_list):
