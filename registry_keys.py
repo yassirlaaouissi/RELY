@@ -1,18 +1,19 @@
 # Importeer de juiste bibliotheken om de registry te kunnen lezen
+import sys
 import winreg
 import tabulate
 import os.path as osp
 import logging
+import hashlib
 
 logger = logging.getLogger('Registry Keys')
 logging.basicConfig(handlers=[logging.FileHandler('registry_keys.log', 'w', 'utf-8')], format='%(name)s: %(asctime)s %(levelname)s: %(message)s', datefmt='%d/%m/%Y %I:%M:%S %p', level=logging.DEBUG)
 
-def choice_menu():
+def choice_menu(geefHKEY, geefPad):
     # input vragen aan de gebruiker.
-    geefHKEY = input("Please give an HKEY (e.g. HKEY_LOCAL_MACHINE): ")
+
     logger.info("Asked for input HKEY.")
     logger.info("Received input HKEY: " + geefHKEY)
-    geefPad = input("Please give the path you want to be scanned: ")
     logger.info("Asked for input path, ")
     logger.info("Received input path: " + geefPad)
 
@@ -20,10 +21,10 @@ def choice_menu():
     # Wanneer er een enter wordt ingevoerd geeft het programma een fout melding
     if (geefPad == ""):
         print("Path not found, please enter a valid path choice. Try again.")
-        main()
-    elif (geefHKEY == ""):
+        sys.exit(1)
+    if (geefHKEY == ""):
         print("HKEY not found, please enter a valid HKEY choice. Try again.")
-        main()
+        sys.exit(1)
 
     #Leest de gegeven HKEY-input van de gebruiker uit.
     try:
@@ -61,7 +62,7 @@ def choice_menu():
         if (HKEYFound == False):
             print("HKEY not found, please enter a valid HKEY choice. Try again.")
             logging.info("HKEY not found")
-            main()
+            sys.exit(1)
             return
 
         return explorer
@@ -69,7 +70,7 @@ def choice_menu():
     except:
         print("Path not found, please enter a valid path choice. Try again.")
         logging.info("Path not found")
-        main()
+        sys.exit(1)
 
 
 
@@ -118,19 +119,16 @@ def reg_reader(exp):
 
 
 
-
-def filter_reg(registry):
+def filter_reg(registry, filterVraag, filterNaam, filterType):
     ongefilterdLijst = registry
     filterLijst = []
 
-    filterVraag = input ("Do you want to filter the registry keys? Y/N: ")
+
     logging.info("input for filter the registry: " + filterVraag)
 
-    if(filterVraag == "N"):
+    if(filterVraag.upper() == "N"):
         return ongefilterdLijst
     elif(filterVraag == "Y"):
-        filterNaam = input("Do you want to filter on name? Please give the name else leave blank and press enter: ")
-        filterType = input("Do you want to filter on type? Please give the type else leave blank and press enter: ")
         logging.info("input to filter on name: " + filterNaam)
         logging.info("input to filter on type: " + filterType)
 
@@ -164,7 +162,7 @@ def filter_reg(registry):
     else:
         print("The input you gave did not correspond Y or N.")
         logging.info("The input did not correspond with Y or N.")
-        main()
+        sys.exit(1)
 
 
 
@@ -190,9 +188,34 @@ def save_keys(finalList):
     f.close()
     logger.info('close txt file.')
 
+#hashing
+    hasher = hashlib.md5()
+    with open('RegistryKeys.txt', 'rb') as afile:
+        buf = afile.read()
+        hasher.update(buf)
+    hash1 = 'RegistryKeys.txt MD5 Hashwaarde: ' + hasher.hexdigest()
+    logger.debug('Generating MD5 hash: ' + hasher.hexdigest())
 
-def main():
-    save_keys(filter_reg(reg_reader(choice_menu())))
+    hashersha = hashlib.sha256()
+    with open('RegistryKeys.txt', 'rb') as afile:
+        buf = afile.read()
+        hashersha.update(buf)
+    hash2 = 'RegistryKeys.txt SHA256 Hashwaarde: ' + hashersha.hexdigest()
+    logger.debug('Generating SHA256 hash: ' + hashersha.hexdigest())
+
+    f = open('hashfile.txt', 'a', encoding="utf-8")
+    logger.info('open file: hashfile.txt')
+    f.write(hash1 + '\n' + hash2 + '\n')
+    logger.info('writing md5 hash to file')
+    f.close()
+    logger.info('close file: hashfile.txt')
+
+
+
+
+
+def main(geefHKEY, geefPad, filterVraag, filterNaam, filterType):
+    save_keys(filter_reg(reg_reader(choice_menu(geefHKEY, geefPad)), filterVraag, filterNaam, filterType))
 
 if __name__ == '__main__':
     main()
