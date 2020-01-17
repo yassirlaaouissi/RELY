@@ -90,16 +90,16 @@ else:
 
 
 Wanna_use_Tasks = input("Do you want to scan on Scheduled Tasks (Y or N)? ")
-if(Wanna_use_Tasks == "N"):
+if(Wanna_use_Tasks.upper() == "N"):
     print("")
-elif(Wanna_use_Tasks == "Y"):
+elif(Wanna_use_Tasks.upper() == "Y"):
     WantToFilter = ""
     filterOnName = ""
     filterOnState = ""
     filterOnPath = ""
     WantToPrintList = ""
     WantToFilter = input("Do you want to filter the scheduled tasks? (Y or N): ")
-    if(WantToFilter == "Y"):
+    if(WantToFilter.upper() == "Y"):
         filterOnName = input("If you want to filter on name of task please give the name, else leave blank and press enter (e.g: CCleanerSkipUAC ): ")
         filterOnState = input("If you want to filter on state of task please give the state, else leave blank and press enter (e.g: Completed): ")
         filterOnPath = input("If you want to filter on path of task please give the path, else leave blank and press enter (e.g: \CCleanerSkipUAC): ")
@@ -114,9 +114,19 @@ Wanna_use_Keys = input("Do you want to scan on Registry keys (Y or N)? ")
 if(Wanna_use_Keys == "N"):
     print("")
 elif(Wanna_use_Keys == "Y"):
-    registry_key.main()
-else:
-    print("Did not select Y or N, please restart program and try again")
+    geefHKEY = input("Please give an HKEY (e.g. HKEY_LOCAL_MACHINE): ")
+    if (geefHKEY == ""):
+        print("HKEY not found, please enter a valid HKEY choice. Try again.")
+    geefPad = input("Please give the path you want to be scanned: ")
+    if (geefPad == ""):
+        print("Path not found, please enter a valid path choice. Try again.")
+
+    filterVraag = input("Do you want to filter the registry keys? Y/N: ")
+    if filterVraag.upper() == "Y":
+        filterNaam = input("Do you want to filter on name? Please give the name else leave blank and press enter: ")
+        filterType = input("Do you want to filter on type? Please give the type else leave blank and press enter: ")
+    if (filterVraag == ""):
+        print("The input you gave did not correspond Y or N.")
 
 
 
@@ -131,8 +141,11 @@ else:
 
 
 #pre EXE
-if (Wanna_use_FS == "Y"):
+if (Wanna_use_FS.upper() == "Y"):
     File_system.main(pathname, filter1, filtersize, sizef, filtername, namef, filterpath, pathf, save)
 
-if(Wanna_use_Tasks == "Y"):
+if(Wanna_use_Tasks.upper() == "Y"):
     scheduled_tasks.main(WantToFilter, filterOnName, filterOnState, filterOnPath, WantToPrintList)
+
+if(Wanna_use_Keys.upper() == "Y"):
+    registry_key.main(geefHKEY, geefPad, filterVraag)

@@ -65,10 +65,10 @@ def filter_tasks(AllTaskDetails, WantToFilter, filterOnName, filterOnState, filt
 
 
 
-    if(WantToFilter == "N"):
+    if(WantToFilter.upper() == "N"):
         logger.debug('Selected yes as filtering choice.')
         return UnfilteredList
-    elif(WantToFilter == "Y"):
+    elif(WantToFilter.upper() == "Y"):
         logger.debug('Selected no as filtering choice.')
         logger.debug('Selected' + filterOnName + 'as name to filter on.')
         logger.debug('Selected' + filterOnState + 'as state to filter on.')
@@ -139,11 +139,11 @@ def show_results(list, WantToPrintList):
     tablelist = tabulate.tabulate(row, headers, tablefmt='rst')
     filename = 'ScheduledTasks.txt'
 
-    if(WantToPrintList == "Y"):
+    if(WantToPrintList.upper() == "Y"):
         print(tablelist)
         logger.info('Returned and printed list of task attributes with table view.')
         return tablelist
-    elif(WantToPrintList == "N"):
+    elif(WantToPrintList.upper() == "N"):
         print("File with results will be saved in the same folder as scheduledtasks.py. Name of the file is " + filename)
         logger.info('Returned  list of task attributes with table view.')
         return tablelist
