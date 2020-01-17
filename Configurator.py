@@ -27,9 +27,9 @@ Wanna_use_FS = input("Do you want to scan on file system (Y or N)? ")
 #Wanna_use_Tasks = input("Do you want to scan on Scheduled Tasks (Y or N)? ")
 #Wanna_use_Keys = input("Do you want to scan on Registry keys (Y or N)? ")
 
-if(Wanna_use_FS == "N"):
+if(Wanna_use_FS.upper() == "N"):
     print("")
-elif(Wanna_use_FS == "Y"):
+elif(Wanna_use_FS.upper() == "Y"):
 
     filter1 = ''
     filtersize = ''
@@ -42,24 +42,41 @@ elif(Wanna_use_FS == "Y"):
     pathname = input('Type in the path you want to analyze (.\.idea): ')
 
     filter1 = input('Do you want to filter the results? (Y/N): ')
-    if filter1 == 'Y':
+    if filter1.upper() == 'Y':
         filtersize = input('Do You want to filter on file size? (Y/N): ')
-        if filtersize == 'Y':
+        if filtersize.upper() == 'Y':
             sizef = input('Type the file size you want to filter on. (bytes): ')
-        filtername = input('Do You want to filter on file name? (Y/N): ')
-        if filtername == 'Y':
-            namef = input('Type the file name you want to filter on: ')
-        filterpath = input('Do You want to filter on path? (Y/N): ')
-        if filterpath == 'Y':
-            pathf = input('Type the path you want to filter on: ')
+        if filtersize.upper() == 'N':
+            print()
+        if filtersize.upper() != 'Y' + filtersize.upper() != 'N':
+            print("Did not select Y or N, please restart program and try again")
 
+        filtername = input('Do You want to filter on file name? (Y/N): ')
+        if filtername.upper() == 'Y':
+            namef = input('Type the file name you want to filter on: ')
+        if filtername.upper() == 'N':
+            print()
+        if filtername.upper() != 'Y' + filtername.upper() != 'N':
+            print("Did not select Y or N, please restart program and try again")
+
+        filterpath = input('Do You want to filter on path? (Y/N): ')
+        if filterpath.upper() == 'Y':
+            pathf = input('Type the path you want to filter on: ')
+        if filterpath.upper() == 'N':
+            print()
+        if filterpath.upper() != 'Y' + filterpath.upper() != 'N':
+            print("Did not select Y or N, please restart program and try again")
+
+    if filter1.upper() == 'N':
+        print()
+    else:
+        print("Did not select Y or N, please restart program and try again")
     save = input('Do you want to save te results to a file? (Y/N)?: ')
 
-    File_system.main(pathname, filter1, filtersize, sizef, filtername, namef, filterpath, pathf, save)
 else:
     print("Did not select Y or N, please restart program and try again")
 
-
+File_system.main(pathname, filter1, filtersize, sizef, filtername, namef, filterpath, pathf, save)
 #if(Wanna_use_Tasks == "N"):
 #    print("")
 #elif(Wanna_use_Tasks == "Y"):
