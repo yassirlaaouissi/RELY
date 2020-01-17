@@ -124,19 +124,19 @@ def filter_processes(processes):
                     print("Type not found in list of processes \n")
                     logging.info("Type not found in the proces list.")
 
-            # print(filtered_list)
+            return filtered_list
 
     else:
         print("The input you gave did not correspond Y or N.")
         logging.info("The input did not correspond with Y or N.")
-        main()
-    save_file(filtered_list)
+        # main()
+    # save_file()
 
-def save_file(filtered_list):
+def save_file(final_list):
 
     # Hiermee wordt de lijst netjes weergegeven in de console.
-    header = filtered_list[0].keys()
-    rows = [x.values() for x in filtered_list]
+    header = final_list[0].keys()
+    rows = [x.values() for x in final_list]
     tableproceslist = tabulate.tabulate(rows, header, tablefmt='rst')
     print(tableproceslist)
 
@@ -152,7 +152,8 @@ def save_file(filtered_list):
 
 def main():
     proces_list()
-    filter_processes(processes)
+    final_list = filter_processes(processes)
+    save_file(final_list)
 
 
 if __name__ == '__main__':
