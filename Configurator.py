@@ -51,18 +51,31 @@ elif(Wanna_use_FS == "Y"):
             pathf = input('Type the path you want to filter on: ')
 
     save = input('Do you want to save te results to a file? (Y/N)?: ')
+
 else:
     print("Did not select Y or N, please restart program and try again")
 
-if (Wanna_use_FS == "Y"):
-    File_system.main(pathname, filter1, filtersize, sizef, filtername, namef, filterpath, pathf, save)
+
 
 #scheduled tasks
+
+
 Wanna_use_Tasks = input("Do you want to scan on Scheduled Tasks (Y or N)? ")
 if(Wanna_use_Tasks == "N"):
     print("")
 elif(Wanna_use_Tasks == "Y"):
-    scheduled_tasks.main()
+    WantToFilter = ""
+    filterOnName = ""
+    filterOnState = ""
+    filterOnPath = ""
+    WantToPrintList = ""
+    WantToFilter = input("Do you want to filter the scheduled tasks? (Y or N): ")
+    if(WantToFilter == "Y"):
+        filterOnName = input("If you want to filter on name of task please give the name, else leave blank and press enter (e.g: CCleanerSkipUAC ): ")
+        filterOnState = input("If you want to filter on state of task please give the state, else leave blank and press enter (e.g: Completed): ")
+        filterOnPath = input("If you want to filter on path of task please give the path, else leave blank and press enter (e.g: \CCleanerSkipUAC): ")
+    WantToPrintList = input("Do you want to print the results of the scheduled task scan? (Y or N): ")
+
 else:
     print("Did not select Y or N, please restart program and try again")
 
@@ -85,3 +98,11 @@ elif(Wanna_use_Proc == "Y"):
     proces_list.main()
 else:
     print("Did not select Y or N, please restart program and try again")
+
+
+#pre EXE
+if (Wanna_use_FS == "Y"):
+    File_system.main(pathname, filter1, filtersize, sizef, filtername, namef, filterpath, pathf, save)
+
+if(Wanna_use_Tasks == "Y"):
+    scheduled_tasks.main(WantToFilter, filterOnName, filterOnState, filterOnPath, WantToPrintList)
