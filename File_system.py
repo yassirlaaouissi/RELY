@@ -3,6 +3,7 @@ from datetime import datetime
 import tabulate
 from ast import literal_eval
 import logging
+import hashlib
 
 logger = logging.getLogger('File System')
 
@@ -33,7 +34,7 @@ def show_list(listname):
 # schrijf tabel weg naar bestand
 def save_list(listname):
     try:
-        f = open('C:\\Users\lucil\PycharmProjects\RELY\Filesystem.txt', 'w', encoding="utf-8")
+        f = open('Filesystem.txt', 'w', encoding="utf-8")
         logger.info('open file: Filesystem.txt')
         f.write(listname)
         logger.info('writing results to file')
@@ -44,6 +45,25 @@ def save_list(listname):
         print('\nThe results are saved into a file called Filesystem.txt on the location C:\\Users\lucil\PycharmProjects\RELY\Filesystem.txt')
     except TypeError:
         print('')
+
+    hasher = hashlib.md5()
+    with open('File_system.py', 'rb') as afile:
+        buf = afile.read()
+        hasher.update(buf)
+    hash1 = 'Filesystem.txt MD5 Hashwaarde: ' + hasher.hexdigest()
+
+    hashersha = hashlib.sha256()
+    with open('File_system.py', 'rb') as afile:
+        buf = afile.read()
+        hashersha.update(buf)
+    hash2 = 'Filesystem.txt SHA256 Hashwaarde: ' + hashersha.hexdigest()
+
+    f = open('hashfile.txt', 'a', encoding="utf-8")
+    logger.info('open file: hashfile.txt')
+    f.write(hash1 + '\n' + hash2 + '\n')
+    logger.info('writing md5 hash to file')
+    f.close()
+    logger.info('close file: hashfile.txt')
 
 #om filesystem langs te lopen
 def analysefilesystem(pathname):
