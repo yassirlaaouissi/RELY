@@ -1,6 +1,7 @@
 # Functionaliteit van Romy.
 # Deze functionaliteit bevat geen CPU_usage meer.
 # psutil is een platformonafhankelijke bibliotheek voor het ophalen van informatie over actieve processen en systeemgebruik in Python.
+import hashlib
 import sys
 
 import psutil
@@ -143,6 +144,28 @@ def save_file(final_list):
     f.close()
     logger.info('The output of the program has been saved to a file.')
     logger.info('Program got all the information.')
+
+    # hashing
+    hasher = hashlib.md5()
+    with open('Proces_list.txt', 'rb') as afile:
+        buf = afile.read()
+        hasher.update(buf)
+    hash1 = 'Proces_list.txt MD5 Hashwaarde: ' + hasher.hexdigest()
+    logger.debug('Generating MD5 hash: ' + hasher.hexdigest())
+
+    hashersha = hashlib.sha256()
+    with open('Proces_list.txt', 'rb') as afile:
+        buf = afile.read()
+        hashersha.update(buf)
+    hash2 = 'Proces_list.txt SHA256 Hashwaarde: ' + hashersha.hexdigest()
+    logger.debug('Generating SHA256 hash: ' + hashersha.hexdigest())
+
+    f = open('hashfile.txt', 'a', encoding="utf-8")
+    logger.info('open file: hashfile.txt')
+    f.write(hash1 + '\n' + hash2 + '\n')
+    logger.info('writing md5 hash to file')
+    f.close()
+    logger.info('close file: hashfile.txt')
 
 
 def main(filter_question, filter_name, filter_path):
