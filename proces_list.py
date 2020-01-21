@@ -1,12 +1,12 @@
 # Functionaliteit van Romy.
 # Deze functionaliteit bevat geen CPU_usage meer.
 # psutil is een platformonafhankelijke bibliotheek voor het ophalen van informatie over actieve processen en systeemgebruik in Python.
-
-
 import psutil
 from datetime import datetime
 import tabulate
 import logging
+import hashlib
+import sys
 
 
 logger = logging.getLogger('Proces list')
@@ -80,11 +80,15 @@ def proces_list():
     # print("Test")
 
 
-def filter_processes(processes):
+def filter_processes(processes, filter_question, filter_name, filter_path):
     # not_filtered_list = processes
     filtered_list = []
     logging.info("input for filter the processes: " + filter_question)
 
+
+    if filter_question.upper() == "N":
+        return processes
+    elif(filter_question.upper() == "Y"):
         # gefilterde_lijst.append(filter_naam)
         logging.info("input to filter on name: " + filter_name)
         logging.info("input to filter on path: " + filter_path)
@@ -120,8 +124,9 @@ def filter_processes(processes):
     else:
         print("The input you gave did not correspond Y or N.")
         logging.info("The input did not correspond with Y or N.")
-        main()
+        sys.exit(1)
     # save_file()
+
 
 def save_file(final_list):
 
@@ -133,19 +138,37 @@ def save_file(final_list):
 
     # Hiermee wordt de lijst met uitkomsten opgeslagen in een .txt bestand.
     f = open('C://Users/romyw/Documents/ipfit5/Proces_list.txt', 'w')  # extern opslaan
-    f = open('Proces_list.txt', 'w')  # intern opslaan
+    # f = open('Proces_list.txt', 'w')  # intern opslaan
     logger.info('The output of the program is being saved in a file.')
     f.write(tableproceslist)
     f.close()
     logger.info('The output of the program has been saved to a file.')
     logger.info('Program got all the information.')
 
+    # hashing
+    hasher = hashlib.md5()
+    with open('Proces_list.txt', 'rb') as afile:
+        buf = afile.read()
+        hasher.update(buf)
+    hash1 = 'Proces_list.txt MD5 Hashwaarde: ' + hasher.hexdigest()
+    logger.debug('Generating MD5 hash: ' + hasher.hexdigest())
 
-def main():
+    hashersha = hashlib.sha256()
+    with open('Proces_list.txt', 'rb') as afile:
+        buf = afile.read()
+        hashersha.update(buf)
+    hash2 = 'Proces_list.txt SHA256 Hashwaarde: ' + hashersha.hexdigest()
+    logger.debug('Generating SHA256 hash: ' + hashersha.hexdigest())
+
+    f = open('hashfile.txt', 'a', encoding="utf-8")
+    logger.info('open file: hashfile.txt')
+    f.write(hash1 + '\n' + hash2 + '\n')
+    logger.info('writing md5 hash to file')
+    f.close()
+    logger.info('close file: hashfile.txt')
+
+
+def main(filter_question, filter_name, filter_path):
     proces_list()
-    final_list = filter_processes(processes)
+    final_list = filter_processes(processes, filter_question, filter_name, filter_path)
     save_file(final_list)
-
-
-if __name__ == '__main__':
-    main()
