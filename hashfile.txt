@@ -1,2 +1,2 @@
-RegistryKeys.txt MD5 Hashwaarde: f400b64da3e485cd3cadc85a936c1da0
-RegistryKeys.txt SHA256 Hashwaarde: 8241769ff35821d09f944cf8a8f219989146a8479fdb96a78e9b71aa33963567
+Proces_list.txt MD5 Hashwaarde: 1491ec99894125fc0dad930278a1b941
+Proces_list.txt SHA256 Hashwaarde: 8ef7ef40f2df48c1710321930992323b2e1bbf3232fc724b26dd30ce31fc9cb3

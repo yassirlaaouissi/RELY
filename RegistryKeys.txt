@@ -1,33 +1,40 @@
-===================================================  ======  ==========================================================
-Name                                                 Type    Data
-===================================================  ======  ==========================================================
-Inno Setup: Setup Version                            REG_SZ  5.6.1 (u)
-Inno Setup: App Path                                 REG_SZ  C:\Program Files\Git
-InstallLocation                                      REG_SZ  C:\Program Files\Git\
-Inno Setup: Icon Group                               REG_SZ  Git
-Inno Setup: User                                     REG_SZ  yassi
-Inno Setup: Setup Type                               REG_SZ  default
-Inno Setup: Selected Components                      REG_SZ  ext,ext\shellhere,ext\guihere,gitlfs,assoc,assoc_sh
-Inno Setup: Deselected Components                    REG_SZ  icons,icons\desktop,consolefont,autoupdate
-Inno Setup: Language                                 REG_SZ  default
-DisplayName                                          REG_SZ  Git version 2.24.1.2
-DisplayIcon                                          REG_SZ  C:\Program Files\Git\mingw64\share\git\git-for-windows.ico
-UninstallString                                      REG_SZ  "C:\Program Files\Git\unins000.exe"
-QuietUninstallString                                 REG_SZ  "C:\Program Files\Git\unins000.exe" /SILENT
-DisplayVersion                                       REG_SZ  2.24.1.2
-Publisher                                            REG_SZ  The Git Development Community
-URLInfoAbout                                         REG_SZ  https://gitforwindows.org/
-HelpLink                                             REG_SZ  https://github.com/git-for-windows/git/wiki/Contact
-InstallDate                                          REG_SZ  20191215
-Inno Setup CodeFile: Editor Option                   REG_SZ  Nano
-Inno Setup CodeFile: Path Option                     REG_SZ  Cmd
-Inno Setup CodeFile: SSH Option                      REG_SZ  OpenSSH
-Inno Setup CodeFile: Tortoise Option                 REG_SZ  false
-Inno Setup CodeFile: CURL Option                     REG_SZ  OpenSSL
-Inno Setup CodeFile: CRLF Option                     REG_SZ  CRLFAlways
-Inno Setup CodeFile: Bash Terminal Option            REG_SZ  MinTTY
-Inno Setup CodeFile: Performance Tweaks FSCache      REG_SZ  Enabled
-Inno Setup CodeFile: Use Credential Manager          REG_SZ  Enabled
-Inno Setup CodeFile: Enable Symlinks                 REG_SZ  Disabled
-Inno Setup CodeFile: Enable Builtin Interactive Add  REG_SZ  Disabled
-===================================================  ======  ==========================================================
+===================================================  =========  =======================================================================
+Name                                                 Type       Data
+===================================================  =========  =======================================================================
+Inno Setup: Setup Version                            REG_SZ     5.6.1 (u)
+Inno Setup: App Path                                 REG_SZ     C:\Program Files\Git
+InstallLocation                                      REG_SZ     C:\Program Files\Git\
+Inno Setup: Icon Group                               REG_SZ     Git
+Inno Setup: User                                     REG_SZ     eouwe
+Inno Setup: Setup Type                               REG_SZ     default
+Inno Setup: Selected Components                      REG_SZ     icons,icons\desktop,ext,ext\shellhere,ext\guihere,gitlfs,assoc,assoc_sh
+Inno Setup: Deselected Components                    REG_SZ     consolefont,autoupdate
+Inno Setup: Language                                 REG_SZ     default
+DisplayName                                          REG_SZ     Git version 2.24.1.2
+DisplayIcon                                          REG_SZ     C:\Program Files\Git\mingw64\share\git\git-for-windows.ico
+UninstallString                                      REG_SZ     "C:\Program Files\Git\unins000.exe"
+QuietUninstallString                                 REG_SZ     "C:\Program Files\Git\unins000.exe" /SILENT
+DisplayVersion                                       REG_SZ     2.24.1.2
+Publisher                                            REG_SZ     The Git Development Community
+URLInfoAbout                                         REG_SZ     https://gitforwindows.org/
+HelpLink                                             REG_SZ     https://github.com/git-for-windows/git/wiki/Contact
+NoModify                                             REG_DWORD  1
+NoRepair                                             REG_DWORD  1
+InstallDate                                          REG_SZ     20191219
+MajorVersion                                         REG_DWORD  2
+MinorVersion                                         REG_DWORD  24
+VersionMajor                                         REG_DWORD  2
+VersionMinor                                         REG_DWORD  24
+EstimatedSize                                        REG_DWORD  260673
+Inno Setup CodeFile: Editor Option                   REG_SZ     VIM
+Inno Setup CodeFile: Path Option                     REG_SZ     Cmd
+Inno Setup CodeFile: SSH Option                      REG_SZ     OpenSSH
+Inno Setup CodeFile: Tortoise Option                 REG_SZ     false
+Inno Setup CodeFile: CURL Option                     REG_SZ     OpenSSL
+Inno Setup CodeFile: CRLF Option                     REG_SZ     CRLFAlways
+Inno Setup CodeFile: Bash Terminal Option            REG_SZ     MinTTY
+Inno Setup CodeFile: Performance Tweaks FSCache      REG_SZ     Enabled
+Inno Setup CodeFile: Use Credential Manager          REG_SZ     Enabled
+Inno Setup CodeFile: Enable Symlinks                 REG_SZ     Disabled
+Inno Setup CodeFile: Enable Builtin Interactive Add  REG_SZ     Disabled
+===================================================  =========  =======================================================================
