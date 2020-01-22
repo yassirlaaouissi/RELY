@@ -4,6 +4,7 @@ import tabulate
 import win32com.client
 import logging
 import os.path
+import hashlib
 
 
 # Logging definities
@@ -59,25 +60,19 @@ def read_folders_of_tasks():
 
 
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!FILTERING!!!!!!!!!!!!!!!!!!!!!!!
-def filter_tasks(AllTaskDetails):
+def filter_tasks(AllTaskDetails, WantToFilter, filterOnName, filterOnState, filterOnPath):
     UnfilteredList = AllTaskDetails
     FilteredList = []
 
-    WantToFilter = input("Do you want to filter the scheduled tasks? (Y or N): ")
 
 
-
-    if(WantToFilter == "N"):
+    if(WantToFilter.upper() == "N"):
         logger.debug('Selected yes as filtering choice.')
         return UnfilteredList
-    elif(WantToFilter == "Y"):
+    elif(WantToFilter.upper() == "Y"):
         logger.debug('Selected no as filtering choice.')
-        #Give values to filter on
-        filterOnName = input("If you want to filter on name of task please give the name, else leave blank and press enter (e.g: CCleanerSkipUAC ): ")
         logger.debug('Selected' + filterOnName + 'as name to filter on.')
-        filterOnState = input("If you want to filter on state of task please give the state, else leave blank and press enter (e.g: Completed): ")
         logger.debug('Selected' + filterOnState + 'as state to filter on.')
-        filterOnPath = input("If you want to filter on path of task please give the path, else leave blank and press enter (e.g: \CCleanerSkipUAC): ")
         logger.debug('Selected' + filterOnPath + 'as path to filter on.')
 
         #The actual filtering
@@ -137,7 +132,7 @@ def filter_tasks(AllTaskDetails):
         print("The input you gave did not correspond Y or N, please restart the program and try again.")
         logger.error('Input did not correspond with Y or N.')
 
-def show_results(list):
+def show_results(list, WantToPrintList):
     headers = ["Name", "Path", "State", "Last time runned"]
     for key in list:
         row = list
@@ -145,14 +140,11 @@ def show_results(list):
     tablelist = tabulate.tabulate(row, headers, tablefmt='rst')
     filename = 'ScheduledTasks.txt'
 
-
-
-    WantToPrintList = input("Do you want to print the results of the scheduled task scan? (Y or N): ")
-    if(WantToPrintList == "Y"):
+    if(WantToPrintList.upper() == "Y"):
         print(tablelist)
         logger.info('Returned and printed list of task attributes with table view.')
         return tablelist
-    elif(WantToPrintList == "N"):
+    elif(WantToPrintList.upper() == "N"):
         print("File with results will be saved in the same folder as scheduledtasks.py. Name of the file is " + filename)
         logger.info('Returned  list of task attributes with table view.')
         return tablelist
@@ -167,6 +159,29 @@ def save_list_to_file(ListToSave):
         f.write(ListToSave)
         logger.info('Saved list of task attributes with table view.')
 
+    #hashing
+    hasher = hashlib.md5()
+    with open('ScheduledTasks.txt', 'rb') as afile:
+        buf = afile.read()
+        hasher.update(buf)
+    hash1 = 'ScheduledTasks.txt MD5 Hashwaarde: ' + hasher.hexdigest()
+    logger.debug('Generating MD5 hash: ' + hasher.hexdigest())
 
-def main():
-    save_list_to_file(show_results(filter_tasks(read_folders_of_tasks())))
+    hashersha = hashlib.sha256()
+    with open('ScheduledTasks.txt', 'rb') as afile:
+        buf = afile.read()
+        hashersha.update(buf)
+    hash2 = 'ScheduledTasks.txt SHA256 Hashwaarde: ' + hashersha.hexdigest()
+    logger.debug('Generating SHA256 hash: ' + hashersha.hexdigest())
+
+    f = open('hashfile.txt', 'a', encoding="utf-8")
+    logger.info('open file: hashfile.txt')
+    f.write(hash1 + '\n' + hash2 + '\n')
+    logger.info('writing md5 hash to file')
+    f.close()
+    logger.info('close file: hashfile.txt')
+
+
+def main(WantToFilter, filterOnName, filterOnState, filterOnPath, WantToPrintList):
+
+    save_list_to_file(show_results(filter_tasks(read_folders_of_tasks(), WantToFilter, filterOnName, filterOnState, filterOnPath), WantToPrintList))

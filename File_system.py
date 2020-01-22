@@ -3,9 +3,9 @@ from datetime import datetime
 import tabulate
 from ast import literal_eval
 import logging
+import hashlib
 
 logger = logging.getLogger('File System')
-
 
 allfilesystem_list = []
 
@@ -22,23 +22,19 @@ def show_list(listname):
 
     #voor als de invoer van het pad niet juist is
     except IndexError:
-        logger.error('The input is incorrect, restarting file_system.py')
-        print('The input is incorrect, try again (example: C:\\...)')
-        main()
+        logger.error('The input is incorrect')
+        print('The input is incorrect, restart the program and try again (example: C:\\...)')
 
     #Voor als het gekozen pad te groot is om te analyseren
     except MemoryError:
-        logger.error('The path size is too big, restarting file_system.py')
-        print('The path size is too big, try a subfolder of the path')
-        main()
+        logger.error('The path size is too big')
+        print('The path size is too big, restart the program and try a different of the path')
+
 
 # schrijf tabel weg naar bestand
 def save_list(listname):
-    logger.info('Asked input to save results to file')
-    save = input('Do you want to save te results to a file? (Y/N)?: ')
-    logger.debug('input to save result to file: ' + save)
-    if save == 'Y':
-        f = open('C:\\Users\lucil\PycharmProjects\RELY\Filesystem.txt', 'w', encoding="utf-8")
+    try:
+        f = open('Filesystem.txt', 'w', encoding="utf-8")
         logger.info('open file: Filesystem.txt')
         f.write(listname)
         logger.info('writing results to file')
@@ -46,17 +42,35 @@ def save_list(listname):
         logger.info('close file: Filesystem.txt')
 
         # locatie van de file
-        print('\nThe results are saved into a file called Filesystem.txt on the location C:\\Users\lucil\PycharmProjects\RELY\Filesystem.txt')
-    else:
-        print('The results are not saved.')
+        print('\nThe results are saved into a file called Filesystem.txt on the location .\Filesystem.txt')
+    except TypeError:
+        print('')
+
+    hasher = hashlib.md5()
+    with open('Filesystem.txt', 'rb') as afile:
+        buf = afile.read()
+        hasher.update(buf)
+    hash1 = 'Filesystem.txt MD5 Hashwaarde: ' + hasher.hexdigest()
+    logger.debug('Generating MD5 hash: ' + hasher.hexdigest())
+
+    hashersha = hashlib.sha256()
+    with open('Filesystem.txt', 'rb') as afile:
+        buf = afile.read()
+        hashersha.update(buf)
+    hash2 = 'Filesystem.txt SHA256 Hashwaarde: ' + hashersha.hexdigest()
+    logger.debug('Generating SHA256 hash: ' + hashersha.hexdigest())
+
+    f = open('hashfile.txt', 'a', encoding="utf-8")
+    logger.info('open file: hashfile.txt')
+    f.write(hash1 + '\n' + hash2 + '\n')
+    logger.info('writing md5 hash to file')
+    f.close()
+    logger.info('close file: hashfile.txt')
+
 
 #om filesystem langs te lopen
-def analysefilesystem():
+def analysefilesystem(pathname):
 
-    logger.info('Asked input pathname')
-    # C:\\ met dubbele \
-    pathname = input('Type in the path you want to analyze (e.g: .\.git): ')
-    logger.info('Received input pathname: ' + pathname)
     for (dirpath, dirnames, filenames) in os.walk(pathname):
         for f in filenames:
             try:
@@ -85,17 +99,11 @@ def analysefilesystem():
 
     return allfilesystem_list
 
-def filterfiles(listname):
+def filterfiles(listname, size1, size2, name1, name2, path1, path2):
     filteredlist = []
 
-    logger.info('asked input to filter on file size')
     #filteroptie op File size
-    size1 = input('Do you want to filter on file size? Y/N?: ')
-    logger.debug('input to filter on file size: ' + size1)
-    if size1 == 'Y':
-        logger.info('asked input to type the file size in bytes')
-        size2 = input('Type the file size you want to filter on. (bytes): ')
-        logger.debug('input file size to filter on: ' + size2)
+    if size1.upper() == 'Y':
         size2 = int(size2)
         sizelist = filter(lambda x: x['File size (bytes)'] == size2, listname)
         logger.info('filtering list')
@@ -111,17 +119,9 @@ def filterfiles(listname):
                 filteredlist.append(sizelistdict)
                 logger.info('found results')
                 logger.info('append filtered files to allfilesystem_list')
-    else:
-        print('ok')
 
-    logger.info('asked input to filter on file path')
     # filteroptie op File path
-    path1 = input('Do you want to filter on file path? Y/N?: ')
-    logger.debug('input to filter on file path: ' + path1)
-    if path1 == 'Y':
-        logger.info('asked input to type the file path')
-        path2 = input('Type the file path you want to filter on: ')
-        logger.debug('input file path to filter on: ' + path2)
+    if path1.upper() == 'Y':
         pathlist = filter(lambda x: x['File path'] == path2, listname)
         logger.info('filtering list')
         pathlist2 = list(pathlist)
@@ -136,17 +136,9 @@ def filterfiles(listname):
                 filteredlist.append(pathlistdict)
                 logger.info('found results')
                 logger.info('append filtered files to allfilesystem_list')
-    else:
-        print('ok')
 
-    logger.info('asked input to filter on file name')
     #filteroptie op File name
-    name1 = input('Do you want to filter on file name? Y/N?: ')
-    logger.debug('input to filter on file name: ' + name1)
-    if name1 == 'Y':
-        logger.info('asked input to type the file name')
-        name2 = input('Type the name of the file you want to filter on: ')
-        logger.debug('input file name to filter on: ' + name2)
+    if name1.upper() == 'Y':
         namelist = filter(lambda x: x['File name'] == name2, listname)
         logger.info('filtering list')
         namelist2 = list(namelist)
@@ -161,28 +153,23 @@ def filterfiles(listname):
                 filteredlist.append(namelistdict)
                 logger.info('found results')
                 logger.info('append filtered files to allfilesystem_list')
-    else:
-        print('ok')
+
     if filteredlist == []:
         print('No results found')
-        return listname
-    else:
-        return filteredlist
+    return filteredlist
 
-def main():
-    resultlist = analysefilesystem()
-    tablelist = show_list(resultlist)
+def main(pathname, filter1, filtersize, sizef, filtername, namef, filterpath, pathf, save):
+    logger.info('Started')
+    filesystem_list = analysefilesystem(pathname)
 
-    logger.info('Asked input to filter the results')
-    filtervraag = input('Do you want to filter the results? (Y/N)?: ')
-    logger.debug('received input: ' + filtervraag)
-    if filtervraag == 'Y':
-        filteredlist = filterfiles(allfilesystem_list)
-        tablelist = show_list(filteredlist)
+    if filter1.upper() == 'Y':
+        filesystem_list = filterfiles(filesystem_list, filtersize, sizef, filtername, namef, filterpath, pathf)
 
-    save_list(tablelist)
+    tablelist = show_list(filesystem_list)
+
+    if save.upper() == 'Y':
+        save_list(tablelist)
+    logger.info('Finished')
 
 if __name__ == '__main__':
-    logger.info('Started')
     main()
-    logger.info('Finished')

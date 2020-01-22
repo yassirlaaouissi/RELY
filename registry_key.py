@@ -1,35 +1,37 @@
 # Importeer de juiste bibliotheken om de registry te kunnen lezen
+import sys
 import winreg
 import tabulate
 import os.path as osp
 import logging
+import hashlib
 
 logger = logging.getLogger('Registry Keys')
+logging.basicConfig(handlers=[logging.FileHandler('registry_keys.log', 'w', 'utf-8')],
+                    format='%(name)s: %(asctime)s %(levelname)s: %(message)s', datefmt='%d/%m/%Y %I:%M:%S %p',
+                    level=logging.DEBUG)
 
 
-def choice_menu():
+def choice_menu(geefHKEY, geefPad):
     # input vragen aan de gebruiker.
-    geefHKEY = input("Please give an HKEY (e.g. HKEY_LOCAL_MACHINE): ")
+
     logger.info("Asked for input HKEY.")
     logger.info("Received input HKEY: " + geefHKEY)
-    geefPad = input("Please give the path you want to be scanned (e.g: " +r"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Git_is1" +"): ")
     logger.info("Asked for input path, ")
     logger.info("Received input path: " + geefPad)
-
 
     # Wanneer er een enter wordt ingevoerd geeft het programma een fout melding
     if (geefPad == ""):
         print("Path not found, please enter a valid path choice. Try again.")
-        main()
-    elif (geefHKEY == ""):
+        sys.exit(1)
+    if (geefHKEY == ""):
         print("HKEY not found, please enter a valid HKEY choice. Try again.")
-        main()
+        sys.exit(1)
 
-    #Leest de gegeven HKEY-input van de gebruiker uit.
+    # Leest de gegeven HKEY-input van de gebruiker uit.
     try:
-
         HKEYFound = False
-        logger.info("Analyzing HKEY and path choice")
+        logging.info("Analyzing HKEY and path choice")
         if (geefHKEY == "HKEY_CLASSES_ROOT"):
             explorer = winreg.OpenKey(
                 winreg.HKEY_CLASSES_ROOT, geefPad)
@@ -61,24 +63,22 @@ def choice_menu():
 
         if (HKEYFound == False):
             print("HKEY not found, please enter a valid HKEY choice. Try again.")
-            logger.info("HKEY not found")
-            main()
+            logging.info("HKEY not found")
+            sys.exit(1)
             return
 
         return explorer
 
     except:
         print("Path not found, please enter a valid path choice. Try again.")
-        logger.info("Path not found")
-        main()
-
-
+        logging.info("Path not found")
+        sys.exit(1)
 
 
 def reg_reader(exp):
     registry = []
 
-    #Geeft bij 'Type' de bijbehoorende state naam aan.
+    # Geeft bij 'Type' de bijbehoorende state naam aan.
     TYPE_STATE = {0: 'REG_NONE',
                   1: 'REG_SZ',
                   2: 'REG_EXPAND_SZ',
@@ -92,7 +92,6 @@ def reg_reader(exp):
                   10: 'REG_RESOURCE_REQUIREMENTS_LIST',
                   11: 'REG_QWORD '}
 
-
     # Waardes in de lijst van de registry keys
     try:
         i = 0
@@ -100,7 +99,7 @@ def reg_reader(exp):
             name, data, type = winreg.EnumValue(exp, i)
             i += 1
 
-            #Tabelontwerp creeëren
+            # Tabelontwerp creeëren
             name = str(name)
             type = str(TYPE_STATE.get(type))
             data = str(data)
@@ -109,45 +108,39 @@ def reg_reader(exp):
                 'Name': name, 'Type': type, 'Data': data,
             })
 
-            logger.info("Append values to registry list.")
+            logging.info("Append values to registry list.")
 
     except WindowsError:
         print
 
-
     return registry
 
 
-
-
-def filter_reg(registry):
+def filter_reg(registry, filterVraag, filterNaam, filterType):
     ongefilterdLijst = registry
     filterLijst = []
 
-    filterVraag = input ("Do you want to filter the registry keys? Y/N: ")
-    logger.info("input for filter the registry: " + filterVraag)
+    logging.info("input for filter the registry: " + filterVraag)
 
-    if(filterVraag == "N"):
+    if (filterVraag.upper() == "N"):
         return ongefilterdLijst
-    elif(filterVraag == "Y"):
-        filterNaam = input("Do you want to filter on name? Please give the name else leave blank and press enter: ")
-        filterType = input("Do you want to filter on type? Please give the type else leave blank and press enter: ")
-        logger.info("input to filter on name: " + filterNaam)
-        logger.info("input to filter on type: " + filterType)
+    elif (filterVraag.upper() == "Y"):
+        logging.info("input to filter on name: " + filterNaam)
+        logging.info("input to filter on type: " + filterType)
 
-        if(filterNaam + filterType == ""):
+        if (filterNaam + filterType == ""):
             return ongefilterdLijst
         else:
-            if(filterNaam != ""):
+            if (filterNaam != ""):
                 for key in ongefilterdLijst:
                     if key in filterLijst:
                         continue
-                    elif(key['Name'] == filterNaam):
+                    elif (key['Name'] == filterNaam):
                         filterLijst.append(key)
-                        logger.info("Registry key list is filtered on name.")
-                if(filterLijst == []):
+                        logging.info("Registry key list is filtered on name.")
+                if (filterLijst == []):
                     print("Name not found in list of registry keys \n")
-                    logger.info("Name not found in the registry keys list.")
+                    logging.info("Name not found in the registry keys list.")
 
             if (filterType != ""):
                 for key in ongefilterdLijst:
@@ -155,35 +148,35 @@ def filter_reg(registry):
                         continue
                     elif (key['Type'] == filterType):
                         filterLijst.append(key)
-                        logger.info("Registry key list is filtered on type.")
+                        logging.info("Registry key list is filtered on type.")
                 if (filterLijst == []):
                     print("Type not found in list of registry keys \n")
-                    logger.info("Type not found in the registry keys list.")
+                    logging.info("Type not found in the registry keys list.")
 
             return filterLijst
 
     else:
         print("The input you gave did not correspond Y or N.")
-        logger.info("The input did not correspond with Y or N.")
-        main()
-
+        logging.info("The input did not correspond with Y or N.")
+        print("WAHOOO")
+        #sys.exit(1)
 
 
 def save_keys(finalList):
-    #print tabel naar scherm
+    # print tabel naar scherm
     header = finalList[0].keys()
     rows = [x.values() for x in finalList]
     tableregkey = tabulate.tabulate(rows, header, tablefmt='rst')
-    logger.info("Create table of registry keys.")
+    logging.info("Create table of registry keys.")
     print(tableregkey)
-    logger.info("Printed table of registry keys.")
+    logging.info("Printed table of registry keys.")
 
-    #schrijf de tabel met uitkomsten naar een .txt bestand.
+    # schrijf de tabel met uitkomsten naar een .txt bestand.
     if osp.isfile("RegistryKeys.txt"):
         f = open('RegistryKeys.txt', 'w')
     else:
         f = open('RegistryKeys.txt', 'x')
-    logger.info("Save list of registry keys.")
+    logging.info("Save list of registry keys.")
 
     f.write(tableregkey)
     logger.info('writing results to file.')
@@ -191,9 +184,32 @@ def save_keys(finalList):
     f.close()
     logger.info('close txt file.')
 
+    # hashing
+    hasher = hashlib.md5()
+    with open('RegistryKeys.txt', 'rb') as afile:
+        buf = afile.read()
+        hasher.update(buf)
+    hash1 = 'RegistryKeys.txt MD5 Hashwaarde: ' + hasher.hexdigest()
+    logger.debug('Generating MD5 hash: ' + hasher.hexdigest())
 
-def main():
-    save_keys(filter_reg(reg_reader(choice_menu())))
+    hashersha = hashlib.sha256()
+    with open('RegistryKeys.txt', 'rb') as afile:
+        buf = afile.read()
+        hashersha.update(buf)
+    hash2 = 'RegistryKeys.txt SHA256 Hashwaarde: ' + hashersha.hexdigest()
+    logger.debug('Generating SHA256 hash: ' + hashersha.hexdigest())
+
+    f = open('hashfile.txt', 'a', encoding="utf-8")
+    logger.info('open file: hashfile.txt')
+    f.write(hash1 + '\n' + hash2 + '\n')
+    logger.info('writing md5 hash to file')
+    f.close()
+    logger.info('close file: hashfile.txt')
+
+
+def main(geefHKEY, geefPad, filterVraag, filterNaam, filterType):
+    save_keys(filter_reg(reg_reader(choice_menu(geefHKEY, geefPad)), filterVraag, filterNaam, filterType))
+
 
 if __name__ == '__main__':
     main()
