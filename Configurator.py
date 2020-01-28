@@ -5,8 +5,10 @@ import File_system
 import proces_list
 import registry_key
 import scheduled_tasks
-from pyfiglet import Figlet
-from stringcolor import *
+#from pyfiglet import *
+import pyfiglet.fonts
+
+#from stringcolor import *
 
 f = open('hashfile.txt', 'w', encoding="utf-8")
 f.close()
@@ -16,25 +18,23 @@ logging.basicConfig(handlers=[logging.FileHandler('logboek.log', 'w', 'utf-8')],
 
 
 #Welcome banner
-ascii_banner = Figlet(font='STANDARD')
-ascii_banner2 = ascii_banner.renderText("Welcome to RELY")
-print(cs(ascii_banner2, "blue"))
-ascii_banner = Figlet(font='digital')
-ascii_underbanner = ascii_banner.renderText("Team firebreathing rubberduckies")
-ascii_underbanner2 = ascii_underbanner.replace("|", " ")
-print(cs(ascii_underbanner2, "yellow"))
+#ascii_banner = Figlet(font='STANDARD')
+#ascii_banner2 = ascii_banner.renderText("Welcome to RELY")
+#print(cs(ascii_banner2, "blue"))
+#ascii_banner = Figlet(font='digital')
+#ascii_underbanner = ascii_banner.renderText("Team firebreathing rubberduckies")
+#ascii_underbanner2 = ascii_underbanner.replace("|", " ")
+#print(cs(ascii_underbanner2, "yellow"))
 #ascii_banner = pyfiglet.figlet_format("Welcome  to  RELY")
 #ascii_under = pyfiglet.print_figlet("", "big", 33)
 
 
 # File System
 Wanna_use_FS = input("Do you want to scan on file system (Y or N)? ")
-#Wanna_use_Tasks = input("Do you want to scan on Scheduled Tasks (Y or N)? ")
-#Wanna_use_Keys = input("Do you want to scan on Registry keys (Y or N)? ")
 
-if(Wanna_use_FS.upper() == "N"):
+if (Wanna_use_FS.upper() == "N"):
     print("")
-elif(Wanna_use_FS.upper() == "Y"):
+elif (Wanna_use_FS.upper() == "Y"):
 
     filter1 = ''
     filtersize = ''
@@ -48,40 +48,41 @@ elif(Wanna_use_FS.upper() == "Y"):
 
     filter1 = input('Do you want to filter the results? (Y/N): ')
     if filter1.upper() == 'Y':
+
         filtersize = input('Do You want to filter on file size? (Y/N): ')
         if filtersize.upper() == 'Y':
             sizef = input('Type the file size you want to filter on. (bytes): ')
-        if filtersize.upper() == 'N':
+        elif filtersize.upper() == 'N':
             print()
-        if filtersize.upper() != 'Y' + filtersize.upper() != 'N':
+        else:
             print("Did not select Y or N, please restart program and try again")
-            sys.exit(1)
+
         filtername = input('Do You want to filter on file name? (Y/N): ')
         if filtername.upper() == 'Y':
             namef = input('Type the file name you want to filter on: ')
-        if filtername.upper() == 'N':
+        elif filtername.upper() == 'N':
             print()
-        if filtername.upper() != 'Y' + filtername.upper() != 'N':
+        else:
             print("Did not select Y or N, please restart program and try again")
-            sys.exit(1)
 
         filterpath = input('Do You want to filter on path? (Y/N): ')
         if filterpath.upper() == 'Y':
             pathf = input('Type the path you want to filter on: ')
-        if filterpath.upper() == 'N':
+        elif filterpath.upper() == 'N':
             print()
-        if filterpath.upper() != 'Y' + filterpath.upper() != 'N':
+        else:
             print("Did not select Y or N, please restart program and try again")
-            sys.exit(1)
 
-
-    if filter1.upper() == 'N':
+    elif filter1.upper() == 'N':
         print()
     else:
         print("Did not select Y or N, please restart program and try again")
-        sys.exit(1)
 
     save = input('Do you want to save te results to a file? (Y/N)?: ')
+    if save.upper() == 'N' or save.upper() == 'Y':
+        print()
+    else:
+        print("Did not select Y or N, please restart program and try again")
 
 else:
     print("Did not select Y or N, please restart program and try again")

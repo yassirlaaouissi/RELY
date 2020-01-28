@@ -1,4 +1,5 @@
 import os
+import sys
 from datetime import datetime
 import tabulate
 from ast import literal_eval
@@ -156,6 +157,7 @@ def filterfiles(listname, size1, size2, name1, name2, path1, path2):
 
     if filteredlist == []:
         print('No results found')
+        sys.exit(1)
     return filteredlist
 
 def main(pathname, filter1, filtersize, sizef, filtername, namef, filterpath, pathf, save):
