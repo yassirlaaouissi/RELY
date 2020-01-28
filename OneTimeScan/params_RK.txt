@@ -1,0 +1,7 @@
+##Registry keys Params##,
+HKEY: ,
+Path: ,
+WannaFilter: ,
+Name: ,
+Type: ,
+END

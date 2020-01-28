@@ -1,0 +1,7 @@
+##Scheduled tasks Params##
+Name: ,
+State: ,
+Path: ,
+printlist: ,
+WantToFilter: ,
+END

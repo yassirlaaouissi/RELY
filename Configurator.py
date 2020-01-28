@@ -9,12 +9,10 @@ from pyfiglet import *
 
 #from stringcolor import *
 
-f = open('hashfile.txt', 'w', encoding="utf-8")
-f.close()
+
 
 #Logger is aangeroepen over het hele project
 
-logging.basicConfig(handlers=[logging.FileHandler('logboek.log', 'w', 'utf-8')], format='%(name)s: %(asctime)s %(levelname)s: %(message)s', datefmt='%d/%m/%Y %I:%M:%S %p', level=logging.DEBUG)
 
 
 #Welcome banner
@@ -86,17 +84,20 @@ else:
     print("Did not select Y or N, please restart program and try again")
     sys.exit(1)
 
-z = open("OneTimeScan/params.txt","w+")
-z.write("##Filesystem Params##\n")
-z.write("pathname: " + str(pathname) + "\n")
-z.write("filter1: " + str(filter1) + "\n")
-z.write("filtersize: " + str(filtersize) + "\n")
-z.write("filtername: " + str(filtername) + "\n")
-z.write("filterpath: " + str(filterpath) + "\n")
-z.write("save: " + str(save) + "\n")
-z.write("sizef: " + str(sizef) + "\n")
-z.write("namef: " + str(namef) + "\n")
-z.write("pathf: " + str(pathf) + "\n")
+z = open("OneTimeScan/params_FS.txt","w+")
+z.write("##Filesystem Params##, \n")
+z.write("pathname: " + str(pathname) + ",\n")
+z.write("filter1: " + str(filter1) + ",\n")
+z.write("filtersize: " + str(filtersize) + ",\n")
+z.write("filtername: " + str(filtername) + ",\n")
+z.write("filterpath: " + str(filterpath) + ",\n")
+z.write("save: " + str(save) + ",\n")
+z.write("sizef: " + str(sizef) + ",\n")
+z.write("namef: " + str(namef) + ",\n")
+z.write("pathf: " + str(pathf) + ",\n")
+z.write("Wanna_use_FS: " + str(Wanna_use_FS) + ",\n")
+z.write("END")
+
 z.write("\n")
 
 
@@ -124,13 +125,15 @@ else:
     print("Did not select Y or N, please restart program and try again")
     sys.exit(1)
 
-z.write("##Scheduled tasks Params##\n")
-z.write("Name: " + str(filterOnName) + "\n")
-z.write("State: " + str(filterOnState) + "\n")
-z.write("Path: " + str(filterOnPath) + "\n")
-z.write("printlist: " + str(WantToPrintList) + "\n")
-z.write("WantToFilter: " + str(WantToFilter) + "\n")
-z.write("\n")
+x = open("OneTimeScan/params_ST.txt","w+")
+x.write("##Scheduled tasks Params##\n")
+x.write("Name: " + str(filterOnName) + ",\n")
+x.write("State: " + str(filterOnState) + ",\n")
+x.write("Path: " + str(filterOnPath) + ",\n")
+x.write("printlist: " + str(WantToPrintList) + ",\n")
+x.write("WantToFilter: " + str(WantToFilter) + ",\n")
+x.write("END")
+x.write("\n")
 
 
 
@@ -163,14 +166,15 @@ elif (Wanna_use_Keys.upper() == "Y"):
 else:
     print("Did not select Y or N, please restart program and try again")
 
-
-z.write("##Registry keys Params##\n")
-z.write("HKEY: " + str(geef_HKEY) + "\n")
-z.write("Path: " + str(geef_pad) + "\n")
-z.write("WannaFilter: " + str(filter_vraag) + "\n")
-z.write("Name: " + str(filter_naam) + "\n")
-z.write("Type: " + str(filter_type) + "\n")
-z.write("\n")
+y = open("OneTimeScan/params_RK.txt","w+")
+y.write("##Registry keys Params##,\n")
+y.write("HKEY: " + str(geef_HKEY) + ",\n")
+y.write("Path: " + str(geef_pad) + ",\n")
+y.write("WannaFilter: " + str(filter_vraag) + ",\n")
+y.write("Name: " + str(filter_naam) + ",\n")
+y.write("Type: " + str(filter_type) + ",\n")
+y.write("END")
+y.write("\n")
 
 
 # Proces List
@@ -190,12 +194,13 @@ else:
     print("Did not select Y or N, please restart program and try again")
     sys.exit(1)
 
-z.write("##Proces list Params##\n")
-z.write("WannaFilter: " + str(filter_question) + "\n")
-z.write("Name: " + str(filter_name) + "\n")
-z.write("Pad: " + str(filter_path) + "\n")
-
-z.write("\n")
+g = open("OneTimeScan/params_PL.txt","w+")
+g.write("##Proces list Params##,\n")
+g.write("WannaFilter: " + str(filter_question) + ",\n")
+g.write("Name: " + str(filter_name) + ",\n")
+g.write("Pad: " + str(filter_path) + ",\n")
+g.write("END")
+g.write("\n")
 
 
 
