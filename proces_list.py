@@ -104,7 +104,7 @@ def filter_processes(processes, filter_question, filter_name, filter_path):
                     elif key['name'] == filter_name:
                         # print("made it")
                         filtered_list.append(key)
-                        logger.info("Proces list is filtered on name.")
+                logger.info("Proces list is filtered on name.")
                 if len(filtered_list) == 0:
                     print("Name not found in list of processes \n")
                     logger.info("Name not found in the processes list.")

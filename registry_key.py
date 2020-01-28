@@ -7,9 +7,6 @@ import logging
 import hashlib
 
 logger = logging.getLogger('Registry Keys')
-logging.basicConfig(handlers=[logging.FileHandler('registry_keys.log', 'w', 'utf-8')],
-                    format='%(name)s: %(asctime)s %(levelname)s: %(message)s', datefmt='%d/%m/%Y %I:%M:%S %p',
-                    level=logging.DEBUG)
 
 
 def choice_menu(geef_HKEY, geef_pad):

@@ -1,219 +1,83 @@
-=====  ==================================================================  ===================  =======  ========  ==============  ============  =============  ===========  =====================  ===============================================================================================================
-  pid  name                                                                create_time            cores  status      memory_usage    read_bytes    write_bytes    n_threads  username               path
-=====  ==================================================================  ===================  =======  ========  ==============  ============  =============  ===========  =====================  ===============================================================================================================
-    0  System Idle Process                                                 2020-01-24 18:09:44        0  running                0             0              0           12  NT AUTHORITY\SYSTEM    -
-    4  System                                                              2020-01-24 18:09:44        0  running                0    1839349656     2567724013          236  NT AUTHORITY\SYSTEM    -
-  144  Registry                                                            2020-01-24 18:09:47        0  running                0          2048      144568320            4  N/A                    -
-  444  SkypeApp.exe                                                        2020-01-28 10:25:13       12  stopped                0      16636635        2229210           42  LAPTOP-G1N7SMFF\yassi  C:\Program Files\WindowsApps\Microsoft.SkypeApp_14.55.131.0_x64__kzf8qxf38zg5c\SkypeApp.exe
-  476  smss.exe                                                            2020-01-24 18:09:53        0  running                0       1853236          24724            2  N/A                    -
-  556  svchost.exe                                                         2020-01-24 18:10:01        0  running                0             0              0            2  N/A                    -
-  760  fsnotifier64.exe                                                    2020-01-28 10:25:38       12  running                0        889292        3657770            3  LAPTOP-G1N7SMFF\yassi  C:\Program Files\JetBrains\PyCharm Community Edition 2019.3\bin\fsnotifier64.exe
-  780  csrss.exe                                                           2020-01-24 18:09:59        0  running                0        414076              0           11  N/A                    -
-  880  wininit.exe                                                         2020-01-24 18:10:00        0  running                0       1572704              0            1  N/A                    -
-  952  services.exe                                                        2020-01-24 18:10:00        0  running                0     202551804         156908            7  N/A                    -
-  960  lsass.exe                                                           2020-01-24 18:10:00        0  running                0       4853038        2407201            8  N/A                    -
- 1040  fontdrvhost.exe                                                     2020-01-24 18:10:01        0  running                0             0              0            5  N/A                    -
- 1048  svchost.exe                                                         2020-01-24 18:10:01        0  running                0     801692332        1747912           23  N/A                    -
- 1132  WUDFHost.exe                                                        2020-01-24 18:10:01        0  running                0       2967450          39936           11  N/A                    -
- 1200  svchost.exe                                                         2020-01-24 18:10:01        0  running                0        122368              0           16  N/A                    -
- 1216  svchost.exe                                                         2020-01-24 18:10:01        0  running                0             0              0            3  N/A                    -
- 1244  svchost.exe                                                         2020-01-24 18:10:01        0  running                0             0              0            3  N/A                    -
- 1308  svchost.exe                                                         2020-01-25 14:53:19        0  running                0          1143          28575            5  N/A                    -
- 1320  winlogon.exe                                                        2020-01-27 22:26:21        0  running                0       1404185            160            5  N/A                    -
- 1420  svchost.exe                                                         2020-01-24 18:10:01        0  running                0             0              0            3  N/A                    -
- 1436  svchost.exe                                                         2020-01-24 18:10:01        0  running                0             0              0            6  N/A                    -
- 1452  svchost.exe                                                         2020-01-24 18:10:01        0  running                0             0              0           10  N/A                    -
- 1648  svchost.exe                                                         2020-01-24 18:10:01        0  running                0             0              0            5  N/A                    -
- 1664  svchost.exe                                                         2020-01-24 18:10:01        0  running                0             0              0            2  N/A                    -
- 1680  WUDFHost.exe                                                        2020-01-24 18:10:01        0  running                0             0              0            5  N/A                    -
- 1740  svchost.exe                                                         2020-01-24 18:10:01        0  running                0     296269032      231749376            7  N/A                    -
- 1796  svchost.exe                                                         2020-01-24 18:10:01        0  running                0    1360334535        3389770            9  N/A                    -
- 1820  svchost.exe                                                         2020-01-24 18:10:01        0  running                0             0              0            3  N/A                    -
- 1936  svchost.exe                                                         2020-01-24 18:10:01        0  running                0             0              0            3  N/A                    -
- 1944  svchost.exe                                                         2020-01-24 18:10:01        0  running                0          5236        7721120            3  N/A                    -
- 1972  svchost.exe                                                         2020-01-24 18:10:01        0  running                0            86              0            5  N/A                    -
- 1980  svchost.exe                                                         2020-01-24 18:10:01        0  running                0           714              0            5  N/A                    -
- 2004  MicrosoftEdge.exe                                                   2020-01-28 11:20:29       12  stopped                0       1302791          67637           34  LAPTOP-G1N7SMFF\yassi  C:\Windows\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\MicrosoftEdge.exe
- 2232  svchost.exe                                                         2020-01-24 18:10:01        0  running                0        191488              0            2  N/A                    -
- 2244  svchost.exe                                                         2020-01-24 18:10:01        0  running                0         42716              0            2  N/A                    -
- 2284  svchost.exe                                                         2020-01-24 18:10:01        0  running                0        532480              0            6  N/A                    -
- 2296  svchost.exe                                                         2020-01-24 18:10:01        0  running                0             0              0            6  N/A                    -
- 2304  svchost.exe                                                         2020-01-24 18:12:06        0  running                0          1392           1920            8  N/A                    -
- 2308  svchost.exe                                                         2020-01-24 18:10:01        0  running                0           460              0           12  N/A                    -
- 2336  svchost.exe                                                         2020-01-24 18:10:01        0  running                0             0              0            2  N/A                    -
- 2476  svchost.exe                                                         2020-01-24 18:10:01        0  running                0             0              0            3  N/A                    -
- 2516  svchost.exe                                                         2020-01-24 18:10:01        0  running                0             0              0            3  N/A                    -
- 2580  igfxCUIService.exe                                                  2020-01-24 18:10:01        0  running                0       5413608              0            2  N/A                    -
- 2636  svchost.exe                                                         2020-01-24 18:10:01        0  running                0          3828           5280            8  N/A                    -
- 2668  svchost.exe                                                         2020-01-24 18:10:01        0  running                0       2476524       42870658            4  N/A                    -
- 2768  dasHost.exe                                                         2020-01-24 18:10:01        0  running                0             0              0            3  N/A                    -
- 2808  svchost.exe                                                         2020-01-24 18:10:01        0  running                0             0              0            4  N/A                    -
- 2824  svchost.exe                                                         2020-01-24 18:10:01        0  running                0             0              0            3  N/A                    -
- 2864  svchost.exe                                                         2020-01-24 18:10:01        0  running                0     104503672         156912            4  N/A                    -
- 2964  svchost.exe                                                         2020-01-24 18:10:01        0  running                0             0              0            8  N/A                    -
- 3040  NVDisplay.Container.exe                                             2020-01-24 18:10:01        0  running                0       9172072         159683            7  N/A                    -
- 3084  sihost.exe                                                          2020-01-28 10:25:03       12  running                0        110080              0           12  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\sihost.exe
- 3112  HPCommRecovery.exe                                                  2020-01-24 18:12:04        0  running                0      18420526        2511040           10  N/A                    -
- 3164  svchost.exe                                                         2020-01-24 18:10:01        0  running                0             0          16608            3  N/A                    -
- 3172  svchost.exe                                                         2020-01-24 18:10:01        0  running                0             0              0           14  N/A                    -
- 3200  Memory Compression                                                  2020-01-24 18:10:01        0  running                0             0              0          238  N/A                    -
- 3432  svchost.exe                                                         2020-01-24 18:10:02        0  running                0             0              0            7  N/A                    -
- 3456  svchost.exe                                                         2020-01-24 18:10:02        0  running                0      14739800              0           12  N/A                    -
- 3524  RtkAudioService64.exe                                               2020-01-24 18:10:02        0  running                0             0              0            4  N/A                    -
- 3544  fontdrvhost.exe                                                     2020-01-27 22:26:22        0  running                0          2437              0            5  N/A                    -
- 3556  csrss.exe                                                           2020-01-27 22:26:21        0  running                0       5531404             99           12  N/A                    -
- 3776  dasHost.exe                                                         2020-01-24 18:10:02        0  running                0             0              0            1  N/A                    -
- 3816  PresentationFontCache.exe                                           2020-01-24 18:10:02        0  running                0       1812970              0            4  N/A                    -
- 4008  svchost.exe                                                         2020-01-24 18:10:02        0  running                0        180134              0            5  N/A                    -
- 4028  svchost.exe                                                         2020-01-24 18:13:14        0  running                0         11783              0            4  N/A                    -
- 4156  svchost.exe                                                         2020-01-24 18:10:02        0  running                0         61712              0            4  N/A                    -
- 4176  svchost.exe                                                         2020-01-24 18:10:02        0  running                0             0              0            8  N/A                    -
- 4184  svchost.exe                                                         2020-01-24 18:10:02        0  running                0             0              0            5  N/A                    -
- 4236  conhost.exe                                                         2020-01-28 12:45:04       12  running                0             0              0            2  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\conhost.exe
- 4400  svchost.exe                                                         2020-01-24 18:10:02        0  running                0        348016            160           19  N/A                    -
- 4508  svchost.exe                                                         2020-01-24 18:10:02        0  running                0             0              0            5  N/A                    -
- 4644  spoolsv.exe                                                         2020-01-24 18:10:02        0  running                0           232           2114            7  N/A                    -
- 4744  wlanext.exe                                                         2020-01-24 18:10:02        0  running                0        936777              0            9  N/A                    -
- 4760  svchost.exe                                                         2020-01-24 18:10:02        0  running                0           116          32928           12  N/A                    -
- 4772  conhost.exe                                                         2020-01-24 18:10:02        0  running                0             0              0            2  N/A                    -
- 4856  HPSupportSolutionsFrameworkService.exe                              2020-01-24 18:12:05        0  running                0      22665455        3783023           34  N/A                    -
- 4924  svchost.exe                                                         2020-01-24 18:10:02        0  running                0        120896         206872            4  N/A                    -
- 4956  svchost.exe                                                         2020-01-24 18:28:35        0  running                0           328              0            5  N/A                    -
- 5036  HPJumpStartBridge.exe                                               2020-01-24 18:12:04        0  running                0        784497              0            5  N/A                    -
- 5220  svchost.exe                                                         2020-01-28 11:27:02        0  running                0          4197              0            5  N/A                    -
- 5256  svchost.exe                                                         2020-01-25 16:34:10        0  running                0        634880         139264            5  N/A                    -
- 5360  svchost.exe                                                         2020-01-24 18:10:03        0  running                0         20350          90793           13  N/A                    -
- 5600  vmware-authd.exe                                                    2020-01-24 18:10:03        0  running                0      16927687           4952            6  N/A                    -
- 5716  svchost.exe                                                         2020-01-24 18:10:03        0  running                0      91710324        3333984           11  N/A                    -
- 5724  svchost.exe                                                         2020-01-24 18:10:03        0  running                0       3350626         188552            6  N/A                    -
- 5732  svchost.exe                                                         2020-01-24 18:10:03        0  running                0        126500              0            5  N/A                    -
- 5740  svchost.exe                                                         2020-01-24 18:10:03        0  running                0       7078779        4121163           10  N/A                    -
- 5748  IntelCpHDCPSvc.exe                                                  2020-01-24 18:10:03        0  running                0          1126              0            3  N/A                    -
- 5756  BTDevMgr.exe                                                        2020-01-24 18:10:03        0  running                0             0          36501            2  N/A                    -
- 5764  svchost.exe                                                         2020-01-24 18:10:03        0  running                0     239537246      225396736           18  N/A                    -
- 5780  esif_uf.exe                                                         2020-01-24 18:10:03        0  running                0             0             48            3  N/A                    -
- 5788  ETDService.exe                                                      2020-01-24 18:10:03        0  running                0      14497408              0            4  N/A                    -
- 5820  OfficeClickToRun.exe                                                2020-01-24 18:10:03        0  running                0      33126559        2023611           20  N/A                    -
- 5924  postgres.exe                                                        2020-01-24 18:10:03        0  running                0      59463269          11713            3  N/A                    -
- 5988  pg_ctl.exe                                                          2020-01-24 18:10:03        0  running                0      12987457              0            2  N/A                    -
- 5996  svchost.exe                                                         2020-01-24 18:10:03        0  running                0             0              0            2  N/A                    -
- 6008  RtkBtManServ.exe                                                    2020-01-24 18:10:03        0  running                0             0          15293            4  N/A                    -
- 6020  NvTelemetryContainer.exe                                            2020-01-24 18:10:03        0  running                0        590604       33272490            9  N/A                    -
- 6028  svchost.exe                                                         2020-01-24 18:10:03        0  running                0         24064           2048            3  N/A                    -
- 6044  svchost.exe                                                         2020-01-24 18:10:03        0  running                0           116            160            5  N/A                    -
- 6048  OxyPipeServer.exe                                                   2020-01-24 18:10:03        0  running                0             0              0            5  N/A                    -
- 6060  Updater.exe                                                         2020-01-24 18:10:03        0  running                0             0              0            3  N/A                    -
- 6072  vmnetdhcp.exe                                                       2020-01-24 18:10:03        0  running                0        122500          10005            2  N/A                    -
- 6100  svchost.exe                                                         2020-01-24 18:10:03        0  running                0        315561         164960            7  N/A                    -
- 6112  vmnat.exe                                                           2020-01-24 18:10:03        0  running                0      21852003       43772883            4  N/A                    -
- 6120  MsMpEng.exe                                                         2020-01-24 18:10:03        0  running                0   14839155436     3244481440           52  N/A                    -
- 6168  CodeMeter.exe                                                       2020-01-24 18:10:03        0  running                0           174         745476           17  N/A                    -
- 6188  vmware-usbarbitrator64.exe                                          2020-01-24 18:10:03        0  running                0          7282          73097            3  N/A                    -
- 6456  IntelCpHeciSvc.exe                                                  2020-01-24 18:10:03        0  running                0          1282            124            3  N/A                    -
- 6560  httpd.exe                                                           2020-01-25 19:02:06        0  running                0        281851           1400            4  N/A                    -
- 6616  svchost.exe                                                         2020-01-24 18:10:03        0  running                0             0              0           18  N/A                    -
- 6668  svchost.exe                                                         2020-01-24 18:10:03        0  running                0             0              0            3  N/A                    -
- 6756  svchost.exe                                                         2020-01-24 18:10:03        0  running                0        327560        2111384            6  N/A                    -
- 7124  svchost.exe                                                         2020-01-24 18:10:03        0  running                0           232            320           14  N/A                    -
- 7252  conhost.exe                                                         2020-01-24 18:10:03        0  running                0             0              0            4  N/A                    -
- 7604  vmware-hostd.exe                                                    2020-01-24 18:10:03        0  running                0      20363358         446913           22  N/A                    -
- 7840  svchost.exe                                                         2020-01-24 18:10:17        0  running                0       4742890        4321080            7  N/A                    -
- 8212  firefox.exe                                                         2020-01-28 10:29:50       12  running                0     143181360      152852044           65  LAPTOP-G1N7SMFF\yassi  C:\Program Files\Mozilla Firefox\firefox.exe
- 8436  postgres.exe                                                        2020-01-24 18:10:04        0  running                0         42702            892            3  N/A                    -
- 8604  firefox.exe                                                         2020-01-28 10:27:19       12  running                0      90118289       62574180            9  LAPTOP-G1N7SMFF\yassi  C:\Program Files\Mozilla Firefox\firefox.exe
- 8660  postgres.exe                                                        2020-01-24 18:10:04        0  running                0         35852              0            2  N/A                    -
- 8760  postgres.exe                                                        2020-01-24 18:10:04        0  running                0         35852              0            2  N/A                    -
- 8836  postgres.exe                                                        2020-01-24 18:10:04        0  running                0         35852              0            2  N/A                    -
- 8884  firefox.exe                                                         2020-01-28 12:35:17       12  running                0       3554616        1990952           40  LAPTOP-G1N7SMFF\yassi  C:\Program Files\Mozilla Firefox\firefox.exe
- 8908  postgres.exe                                                        2020-01-24 18:10:04        0  running                0        997529            140            2  N/A                    -
- 8944  postgres.exe                                                        2020-01-24 18:10:04        0  running                0         36085         317580            2  N/A                    -
- 8964  SearchIndexer.exe                                                   2020-01-24 18:10:04        0  running                0     151486580      141392338           17  N/A                    -
- 9288  jhi_service.exe                                                     2020-01-24 18:12:05        0  running                0             0              0            2  N/A                    -
- 9420  svchost.exe                                                         2020-01-24 18:10:05        0  running                0       1128103         170968            4  N/A                    -
- 9452  browser_broker.exe                                                  2020-01-28 11:20:29       12  running                0          5393              0            2  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\browser_broker.exe
- 9600  ApplicationFrameHost.exe                                            2020-01-28 10:25:29       12  running                0         23203              8            4  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\ApplicationFrameHost.exe
- 9660  svchost.exe                                                         2020-01-24 18:10:05        0  running                0       1232442         129594            6  N/A                    -
- 9836  ctfmon.exe                                                          2020-01-28 10:25:04       12  running                0             0              0           11  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\ctfmon.exe
-10044  dwm.exe                                                             2020-01-27 22:26:22        0  running                0        120411              0           13  N/A                    -
-10052  WmiPrvSE.exe                                                        2020-01-24 18:10:05        0  running                0             0              0            8  N/A                    -
-10176  IAStorDataMgrSvc.exe                                                2020-01-24 18:12:05        0  running                0        564166              0            7  N/A                    -
-10312  SecurityHealthService.exe                                           2020-01-24 18:10:15        0  running                0        242000           4096           15  N/A                    -
-10508  NisSrv.exe                                                          2020-01-24 18:10:06        0  running                0             0              0           10  N/A                    -
-10588  RAVBg64.exe                                                         2020-01-28 10:25:34       12  running                0             0              0            5  LAPTOP-G1N7SMFF\yassi  C:\Program Files\Realtek\Audio\HDA\RAVBg64.exe
-10600  RuntimeBroker.exe                                                   2020-01-28 10:25:06       12  running                0        920008            320           11  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\RuntimeBroker.exe
-10640  svchost.exe                                                         2020-01-24 18:10:06        0  running                0     603517768          65536            3  N/A                    -
-10652  RuntimeBroker.exe                                                   2020-01-28 10:25:07       12  running                0       6761425            160            2  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\RuntimeBroker.exe
-10736  dllhost.exe                                                         2020-01-24 18:10:13        0  running                0       3002368        2129920            6  N/A                    -
-10740  ETDCtrlHelper.exe                                                   2020-01-27 22:26:27        0  running                0          6344              0            1  N/A                    -
-10808  taskhostw.exe                                                       2020-01-28 10:25:04       12  running                0       2019960        3579904            8  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\taskhostw.exe
-10980  cmd.exe                                                             2020-01-28 12:21:46       12  running                0          8845              0            2  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\cmd.exe
-11332  GoogleCrashHandler.exe                                              2020-01-24 18:10:09        0  running                0         15668           7904            3  N/A                    -
-11380  GoogleCrashHandler64.exe                                            2020-01-24 18:10:10        0  running                0           916            560            3  N/A                    -
-11504  explorer.exe                                                        2020-01-28 10:25:04       12  running                0      80238185         805999           64  LAPTOP-G1N7SMFF\yassi  C:\Windows\explorer.exe
-11704  svchost.exe                                                         2020-01-24 18:10:28        0  running                0      12585044       38199526           10  N/A                    -
-11720  HPJumpStartLaunch.exe                                               2020-01-28 10:25:04       12  running                0           102              0            1  LAPTOP-G1N7SMFF\yassi  C:\Program Files (x86)\HP\HP JumpStart Launch\HPJumpStartLaunch.exe
-11948  svchost.exe                                                         2020-01-24 18:12:06        0  running                0       4454649         222208            8  N/A                    -
-12112  SgrmBroker.exe                                                      2020-01-24 18:12:06        0  running                0         79300              0            5  N/A                    -
-12140  svchost.exe                                                         2020-01-28 10:25:10        0  running                0         10031            712            5  N/A                    -
-12188  smartscreen.exe                                                     2020-01-28 11:20:19       12  running                0         17569          93756           14  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\smartscreen.exe
-12224  Telegram.exe                                                        2020-01-28 12:30:36       12  running                0       9614829         206283           34  LAPTOP-G1N7SMFF\yassi  C:\Users\yassi\Desktop\Telegram.exe
-12820  SkypeBridge.exe                                                     2020-01-28 10:25:15       12  running                0        202963          28818           14  LAPTOP-G1N7SMFF\yassi  C:\Program Files\WindowsApps\Microsoft.SkypeApp_14.55.131.0_x64__kzf8qxf38zg5c\SkypeBridge\SkypeBridge.exe
-13192  svchost.exe                                                         2020-01-24 18:10:28        0  running                0           252              0            3  N/A                    -
-13300  SearchProtocolHost.exe                                              2020-01-28 12:43:05        0  running                0         52351              0            6  N/A                    -
-13516  ETDCtrl.exe                                                         2020-01-28 10:25:03       12  running                0        161646              0           11  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\ETDCtrl.exe
-13632  msdtc.exe                                                           2020-01-24 18:12:06        0  running                0           116          98464           48  N/A                    -
-13688  RuntimeBroker.exe                                                   2020-01-28 10:25:05       12  running                0        195705            160            3  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\RuntimeBroker.exe
-13692  SkypeBackgroundHost.exe                                             2020-01-28 10:25:07       12  stopped                0           512              0            2  LAPTOP-G1N7SMFF\yassi  C:\Program Files\WindowsApps\Microsoft.SkypeApp_14.55.131.0_x64__kzf8qxf38zg5c\SkypeBackgroundHost.exe
-13800  hpqwmiex.exe                                                        2020-01-24 18:10:33        0  running                0          6474              0            4  N/A                    -
-13856  CoolSense.exe                                                       2020-01-28 10:25:34       12  running                0       1361237            112            2  LAPTOP-G1N7SMFF\yassi  C:\Program Files (x86)\HP\HP CoolSense\CoolSense.exe
-14172  RuntimeBroker.exe                                                   2020-01-28 10:25:14       12  running                0         22140              0            2  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\RuntimeBroker.exe
-14176  SettingSyncHost.exe                                                 2020-01-28 10:25:10       12  running                0       3014656         524288            3  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\SettingSyncHost.exe
-14416  svchost.exe                                                         2020-01-28 10:25:04       12  running                0             0              0            2  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\svchost.exe
-14700  firefox.exe                                                         2020-01-28 11:07:49       12  running                0         63420          48768            5  LAPTOP-G1N7SMFF\yassi  C:\Program Files\Mozilla Firefox\firefox.exe
-15388  mysqld.exe                                                          2020-01-25 19:02:07        0  running                0       5503426        2167459           32  N/A                    -
-15808  audiodg.exe                                                         2020-01-28 10:38:57       12  running                0         77000              0           15  N/A                    C:\Windows\System32\audiodg.exe
-15820  CompPkgSrv.exe                                                      2020-01-28 10:27:20       12  running                0          5406              0            1  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\CompPkgSrv.exe
-15912  svchost.exe                                                         2020-01-28 10:25:10        0  running                0          3705              0            4  N/A                    -
-15996  firefox.exe                                                         2020-01-28 10:27:20       12  running                0     497078316      587023848           30  LAPTOP-G1N7SMFF\yassi  C:\Program Files\Mozilla Firefox\firefox.exe
-16004  svchost.exe                                                         2020-01-28 10:25:04       12  running                0        483429        1751032            7  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\svchost.exe
-16080  httpd.exe                                                           2020-01-25 19:02:07        0  running                0        731286           4309           67  N/A                    -
-16220  YourPhone.exe                                                       2020-01-28 10:25:13       12  stopped                0         98682           7557           15  LAPTOP-G1N7SMFF\yassi  C:\Program Files\WindowsApps\Microsoft.YourPhone_1.19122.138.0_x64__8wekyb3d8bbwe\YourPhone.exe
-16304  HPWMISVC.exe                                                        2020-01-27 19:09:54        0  running                0          5380          22012            2  N/A                    -
-16312  winpty-agent.exe                                                    2020-01-28 12:21:46       12  running                0       1177550            622            1  LAPTOP-G1N7SMFF\yassi  C:\Program Files\JetBrains\PyCharm Community Edition 2019.3\lib\pty4j-native\win\x86_64\winpty-agent.exe
-16560  HPMSGSVC.exe                                                        2020-01-28 10:25:19       12  running                0       2136755            902            1  LAPTOP-G1N7SMFF\yassi  C:\Program Files (x86)\HP\HP System Event\HPMSGSVC.exe
-16932  firefox.exe                                                         2020-01-28 11:33:48       12  running                0      15821456        3784484           37  LAPTOP-G1N7SMFF\yassi  C:\Program Files\Mozilla Firefox\firefox.exe
-17000  igfxEM.exe                                                          2020-01-28 10:25:04       12  running                0      46833784         315701            7  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\DriverStore\FileRepository\cui_dch.inf_amd64_92cf9d9d84f1d3db\igfxEM.exe
-17232  HPAudioSwitch.exe                                                   2020-01-28 10:26:04       12  running                0        835183           2345            9  LAPTOP-G1N7SMFF\yassi  C:\Program Files (x86)\HP\HPAudioSwitch\HPAudioSwitch.exe
-17436  SearchUI.exe                                                        2020-01-28 10:25:06       12  stopped                0      13949273        3489553           32  LAPTOP-G1N7SMFF\yassi  C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\SearchUI.exe
-17788  RtlS5Wake.exe                                                       2020-01-28 10:25:18       12  running                0         11213              0            3  LAPTOP-G1N7SMFF\yassi  C:\Program Files (x86)\Realtek\PCIE Wireless LAN\RtlS5Wake\RtlS5Wake.exe
-17848  MicrosoftEdgeCP.exe                                                 2020-01-28 11:20:29       12  stopped                0             0              0           16  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\MicrosoftEdgeCP.exe
-17924  firefox.exe                                                         2020-01-28 11:13:55       12  running                0      53771716       16436144           36  LAPTOP-G1N7SMFF\yassi  C:\Program Files\Mozilla Firefox\firefox.exe
-18044  ETDTouch.exe                                                        2020-01-28 10:25:04       12  running                0             0              0            2  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\ETDTouch.exe
-18168  MicrosoftEdgeSH.exe                                                 2020-01-28 11:20:29       12  stopped                0          8666              0            9  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\MicrosoftEdgeSH.exe
-18688  conhost.exe                                                         2020-01-28 12:21:46       12  running                0            60              0            5  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\conhost.exe
-18960  notepad.exe                                                         2020-01-28 11:58:38       12  running                0          2538              0            1  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\notepad.exe
-19084  firefox.exe                                                         2020-01-28 12:07:21       12  running                0      39381788        6085444           31  LAPTOP-G1N7SMFF\yassi  C:\Program Files\Mozilla Firefox\firefox.exe
-19472  WindowsInternal.ComposableShell.Experiences.TextInput.InputApp.exe  2020-01-28 10:30:25       12  running                0         47105              8           10  LAPTOP-G1N7SMFF\yassi  C:\Windows\SystemApps\InputApp_cw5n1h2txyewy\WindowsInternal.ComposableShell.Experiences.TextInput.InputApp.exe
-19492  StartMenuExperienceHost.exe                                         2020-01-28 10:25:05       12  running                0        885674              8            9  LAPTOP-G1N7SMFF\yassi  C:\Windows\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe
-19592  RAVBg64.exe                                                         2020-01-28 10:25:34       12  running                0             0              0            5  LAPTOP-G1N7SMFF\yassi  C:\Program Files\Realtek\Audio\HDA\RAVBg64.exe
-19732  RuntimeBroker.exe                                                   2020-01-28 10:25:14       12  running                0          4533              0            2  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\RuntimeBroker.exe
-20296  NVDisplay.Container.exe                                             2020-01-27 22:26:24        0  running                0       1646021           7635           23  N/A                    -
-20676  RuntimeBroker.exe                                                   2020-01-28 10:25:30       12  running                0          8838              0            2  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\RuntimeBroker.exe
-20696  python.exe                                                          2020-01-28 12:45:04       12  running                0       3581356         245764            3  LAPTOP-G1N7SMFF\yassi  C:\Users\yassi\AppData\Local\Programs\Python\Python37\python.exe
-20892  svchost.exe                                                         2020-01-28 10:27:04       12  running                0             0              0            2  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\svchost.exe
-21096  firefox.exe                                                         2020-01-28 11:28:55       12  running                0      10062852        4451812           39  LAPTOP-G1N7SMFF\yassi  C:\Program Files\Mozilla Firefox\firefox.exe
-21120  svchost.exe                                                         2020-01-28 10:25:04       12  running                0     936555319       32894339           14  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\svchost.exe
-21136  RuntimeBroker.exe                                                   2020-01-28 10:25:41       12  running                0        217931              0            3  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\RuntimeBroker.exe
-21268  conhost.exe                                                         2020-01-28 10:25:38       12  running                0          7203              0            2  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\conhost.exe
-21372  svchost.exe                                                         2020-01-28 10:25:04       12  running                0         96628              0            6  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\svchost.exe
-21460  pycharm64.exe                                                       2020-01-28 10:25:32       12  running                0     521164110     2685127669           65  LAPTOP-G1N7SMFF\yassi  C:\Program Files\JetBrains\PyCharm Community Edition 2019.3\bin\pycharm64.exe
-21512  unsecapp.exe                                                        2020-01-28 10:25:19       12  running                0             0              0            3  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\wbem\unsecapp.exe
-21548  WinStore.App.exe                                                    2020-01-28 10:25:29       12  stopped                0         11841              8           12  LAPTOP-G1N7SMFF\yassi  C:\Program Files\WindowsApps\Microsoft.WindowsStore_12001.1001.1.0_x64__8wekyb3d8bbwe\WinStore.App.exe
-21556  firefox.exe                                                         2020-01-28 10:27:20       12  running                0      52937073       13781528           41  LAPTOP-G1N7SMFF\yassi  C:\Program Files\Mozilla Firefox\firefox.exe
-21620  HelpPane.exe                                                        2020-01-28 11:20:19       12  running                0           512              0            4  LAPTOP-G1N7SMFF\yassi  C:\Windows\HelpPane.exe
-21804  firefox.exe                                                         2020-01-28 10:27:20       12  running                0      20044634       20508792           38  LAPTOP-G1N7SMFF\yassi  C:\Program Files\Mozilla Firefox\firefox.exe
-22116  SystemSettings.exe                                                  2020-01-28 10:25:57       12  stopped                0         10431             81           23  LAPTOP-G1N7SMFF\yassi  C:\Windows\ImmersiveControlPanel\SystemSettings.exe
-22140  RtkNGUI64.exe                                                       2020-01-28 10:27:04       12  running                0          5664              0            6  LAPTOP-G1N7SMFF\yassi  C:\Program Files\Realtek\Audio\HDA\RtkNGUI64.exe
-22276  SecurityHealthSystray.exe                                           2020-01-28 10:25:17       12  running                0             0              0            1  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\SecurityHealthSystray.exe
-22472  firefox.exe                                                         2020-01-28 10:27:19       12  running                0    1229990269     1164790542           81  LAPTOP-G1N7SMFF\yassi  C:\Program Files\Mozilla Firefox\firefox.exe
-=====  ==================================================================  ===================  =======  ========  ==============  ============  =============  ===========  =====================  ===============================================================================================================
+=====  ===========  ===================  =======  ========  ==============  ============  =============  ===========  =====================  ===============================
+  pid  name         create_time            cores  status      memory_usage    read_bytes    write_bytes    n_threads  username               path
+=====  ===========  ===================  =======  ========  ==============  ============  =============  ===========  =====================  ===============================
+  556  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            2  N/A                    -
+ 1048  svchost.exe  2020-01-24 18:10:01        0  running                0     870802292        1877096           22  N/A                    -
+ 1200  svchost.exe  2020-01-24 18:10:01        0  running                0        128512              0           18  N/A                    -
+ 1216  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            4  N/A                    -
+ 1244  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            3  N/A                    -
+ 1308  svchost.exe  2020-01-25 14:53:19        0  running                0          1143          32004            5  N/A                    -
+ 1420  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            3  N/A                    -
+ 1436  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            6  N/A                    -
+ 1452  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0           10  N/A                    -
+ 1648  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            5  N/A                    -
+ 1664  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            2  N/A                    -
+ 1740  svchost.exe  2020-01-24 18:10:01        0  running                0     306645736      254363816            8  N/A                    -
+ 1796  svchost.exe  2020-01-24 18:10:01        0  running                0    1472773863        3537674            7  N/A                    -
+ 1820  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            3  N/A                    -
+ 1936  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            3  N/A                    -
+ 1944  svchost.exe  2020-01-24 18:10:01        0  running                0          5236        7721120            3  N/A                    -
+ 1972  svchost.exe  2020-01-24 18:10:01        0  running                0            86              0            5  N/A                    -
+ 1980  svchost.exe  2020-01-24 18:10:01        0  running                0           714              0            5  N/A                    -
+ 2232  svchost.exe  2020-01-24 18:10:01        0  running                0        191488              0            2  N/A                    -
+ 2244  svchost.exe  2020-01-24 18:10:01        0  running                0         46336              0            2  N/A                    -
+ 2284  svchost.exe  2020-01-24 18:10:01        0  running                0        532480              0            6  N/A                    -
+ 2296  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            5  N/A                    -
+ 2304  svchost.exe  2020-01-24 18:12:06        0  running                0          1508           2080            8  N/A                    -
+ 2308  svchost.exe  2020-01-24 18:10:01        0  running                0           460              0            9  N/A                    -
+ 2336  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            2  N/A                    -
+ 2476  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            3  N/A                    -
+ 2516  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            3  N/A                    -
+ 2636  svchost.exe  2020-01-24 18:10:01        0  running                0          4524           6240            8  N/A                    -
+ 2668  svchost.exe  2020-01-24 18:10:01        0  running                0       2793942       50444549            6  N/A                    -
+ 2808  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            4  N/A                    -
+ 2824  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            3  N/A                    -
+ 2864  svchost.exe  2020-01-24 18:10:01        0  running                0     110229832         156912            5  N/A                    -
+ 2964  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            9  N/A                    -
+ 3164  svchost.exe  2020-01-24 18:10:01        0  running                0             0          16608            3  N/A                    -
+ 3172  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            5  N/A                    -
+ 3432  svchost.exe  2020-01-24 18:10:02        0  running                0             0              0            8  N/A                    -
+ 3456  svchost.exe  2020-01-24 18:10:02        0  running                0      14739800              0            9  N/A                    -
+ 4008  svchost.exe  2020-01-24 18:10:02        0  running                0        185955              0            5  N/A                    -
+ 4028  svchost.exe  2020-01-24 18:13:14        0  running                0         11783              0            4  N/A                    -
+ 4156  svchost.exe  2020-01-24 18:10:02        0  running                0         61712              0            4  N/A                    -
+ 4176  svchost.exe  2020-01-24 18:10:02        0  running                0             0              0            8  N/A                    -
+ 4184  svchost.exe  2020-01-24 18:10:02        0  running                0             0              0            5  N/A                    -
+ 4400  svchost.exe  2020-01-24 18:10:02        0  running                0        348610            160           18  N/A                    -
+ 4508  svchost.exe  2020-01-24 18:10:02        0  running                0           760              0            5  N/A                    -
+ 4760  svchost.exe  2020-01-24 18:10:02        0  running                0           116          32928           12  N/A                    -
+ 4924  svchost.exe  2020-01-24 18:10:02        0  running                0        131960         225484            4  N/A                    -
+ 4956  svchost.exe  2020-01-24 18:28:35        0  running                0           328              0            5  N/A                    -
+ 5256  svchost.exe  2020-01-25 16:34:10        0  running                0        634880         139264            5  N/A                    -
+ 5360  svchost.exe  2020-01-24 18:10:03        0  running                0         20350          90793           12  N/A                    -
+ 5716  svchost.exe  2020-01-24 18:10:03        0  running                0      95708020        3465732           10  N/A                    -
+ 5724  svchost.exe  2020-01-24 18:10:03        0  running                0       3569264         202026            6  N/A                    -
+ 5732  svchost.exe  2020-01-24 18:10:03        0  running                0        134750              0            5  N/A                    -
+ 5740  svchost.exe  2020-01-24 18:10:03        0  running                0       7265929        4660675           10  N/A                    -
+ 5764  svchost.exe  2020-01-24 18:10:03        0  running                0     242408542      246962176           22  N/A                    -
+ 5996  svchost.exe  2020-01-24 18:10:03        0  running                0             0              0            2  N/A                    -
+ 6028  svchost.exe  2020-01-24 18:10:03        0  running                0         24064           2048            3  N/A                    -
+ 6044  svchost.exe  2020-01-24 18:10:03        0  running                0           116            160            5  N/A                    -
+ 6100  svchost.exe  2020-01-24 18:10:03        0  running                0        319657         164960            7  N/A                    -
+ 6616  svchost.exe  2020-01-24 18:10:03        0  running                0             0              0           18  N/A                    -
+ 6668  svchost.exe  2020-01-24 18:10:03        0  running                0             0              0            3  N/A                    -
+ 6756  svchost.exe  2020-01-24 18:10:03        0  running                0        347220        2268812            6  N/A                    -
+ 7124  svchost.exe  2020-01-24 18:10:03        0  running                0           232            320           13  N/A                    -
+ 7840  svchost.exe  2020-01-24 18:10:17        0  running                0       4742890        4321080            7  N/A                    -
+ 8428  svchost.exe  2020-01-28 12:52:35        0  running                0       2798959          78411           14  N/A                    -
+ 8592  svchost.exe  2020-01-28 15:40:37        0  running                0       2708543            999            3  N/A                    -
+ 9420  svchost.exe  2020-01-24 18:10:05        0  running                0       1128103         170968            4  N/A                    -
+ 9660  svchost.exe  2020-01-24 18:10:05        0  running                0       1232442         129594            8  N/A                    -
+10640  svchost.exe  2020-01-24 18:10:06        0  running                0     619144850          65536            3  N/A                    -
+11704  svchost.exe  2020-01-24 18:10:28        0  running                0      12585044       39282534           10  N/A                    -
+11948  svchost.exe  2020-01-24 18:12:06        0  running                0       4455161         239104            8  N/A                    -
+12140  svchost.exe  2020-01-28 10:25:10        0  running                0         10031            712            5  N/A                    -
+13192  svchost.exe  2020-01-24 18:10:28        0  running                0           852              0            3  N/A                    -
+14416  svchost.exe  2020-01-28 10:25:04       12  running                0             0              0            2  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\svchost.exe
+15912  svchost.exe  2020-01-28 10:25:10        0  running                0          3705              0            4  N/A                    -
+16004  svchost.exe  2020-01-28 10:25:04       12  running                0        487525        3502032            9  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\svchost.exe
+20892  svchost.exe  2020-01-28 10:27:04       12  running                0       7217156         237572            4  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\svchost.exe
+21120  svchost.exe  2020-01-28 10:25:04       12  running                0    2889130807      103737395           13  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\svchost.exe
+21372  svchost.exe  2020-01-28 10:25:04       12  running                0        233272              0           13  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\svchost.exe
+20952  dllhost.exe  2020-01-28 12:52:35       12  running                0       9280983        1826816            5  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\dllhost.exe
+=====  ===========  ===================  =======  ========  ==============  ============  =============  ===========  =====================  ===============================
