@@ -4,6 +4,7 @@ import tabulate
 from ast import literal_eval
 import logging
 import hashlib
+import sys
 
 logger = logging.getLogger('File System')
 
@@ -47,16 +48,18 @@ def save_list(listname):
         print('')
 
     hasher = hashlib.md5()
-    with open('File_system.py', 'rb') as afile:
+    with open('Filesystem.txt', 'rb') as afile:
         buf = afile.read()
         hasher.update(buf)
     hash1 = 'Filesystem.txt MD5 Hashwaarde: ' + hasher.hexdigest()
+    logger.debug('Generating MD5 hash: ' + hasher.hexdigest())
 
     hashersha = hashlib.sha256()
-    with open('File_system.py', 'rb') as afile:
+    with open('Filesystem.txt', 'rb') as afile:
         buf = afile.read()
         hashersha.update(buf)
     hash2 = 'Filesystem.txt SHA256 Hashwaarde: ' + hashersha.hexdigest()
+    logger.debug('Generating SHA256 hash: ' + hashersha.hexdigest())
 
     f = open('hashfile.txt', 'a', encoding="utf-8")
     logger.info('open file: hashfile.txt')
@@ -153,6 +156,8 @@ def filterfiles(listname, size1, size2, name1, name2, path1, path2):
 
     if filteredlist == []:
         print('No results found')
+        sys.exit()
+
     return filteredlist
 
 def main(pathname, filter1, filtersize, sizef, filtername, namef, filterpath, pathf, save):

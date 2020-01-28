@@ -5,7 +5,7 @@ import File_system
 from pyfiglet import Figlet
 from stringcolor import *
 
-f = open('hashfile.txt', 'a', encoding="utf-8")
+f = open('hashfile.txt', 'w', encoding="utf-8")
 f.close()
 
 #Logger is aangeroepen over het hele project
@@ -46,35 +46,41 @@ elif(Wanna_use_FS.upper() == "Y"):
 
     filter1 = input('Do you want to filter the results? (Y/N): ')
     if filter1.upper() == 'Y':
+
         filtersize = input('Do You want to filter on file size? (Y/N): ')
         if filtersize.upper() == 'Y':
             sizef = input('Type the file size you want to filter on. (bytes): ')
-        if filtersize.upper() == 'N':
+        elif filtersize.upper() == 'N':
             print()
-        if filtersize.upper() != 'Y' + filtersize.upper() != 'N':
+        else:
             print("Did not select Y or N, please restart program and try again")
 
         filtername = input('Do You want to filter on file name? (Y/N): ')
         if filtername.upper() == 'Y':
             namef = input('Type the file name you want to filter on: ')
-        if filtername.upper() == 'N':
+        elif filtername.upper() == 'N':
             print()
-        if filtername.upper() != 'Y' + filtername.upper() != 'N':
+        else:
             print("Did not select Y or N, please restart program and try again")
 
         filterpath = input('Do You want to filter on path? (Y/N): ')
         if filterpath.upper() == 'Y':
             pathf = input('Type the path you want to filter on: ')
-        if filterpath.upper() == 'N':
+        elif filterpath.upper() == 'N':
             print()
-        if filterpath.upper() != 'Y' + filterpath.upper() != 'N':
+        else:
             print("Did not select Y or N, please restart program and try again")
 
-    if filter1.upper() == 'N':
+    elif filter1.upper() == 'N':
         print()
     else:
         print("Did not select Y or N, please restart program and try again")
+
     save = input('Do you want to save te results to a file? (Y/N)?: ')
+    if save.upper() == 'N' or save.upper() == 'Y':
+        print()
+    else:
+        print("Did not select Y or N, please restart program and try again")
 
 else:
     print("Did not select Y or N, please restart program and try again")
