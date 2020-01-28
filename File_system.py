@@ -156,8 +156,10 @@ def filterfiles(listname, size1, size2, name1, name2, path1, path2):
                 logger.info('append filtered files to allfilesystem_list')
 
     if filteredlist == []:
-        print('No results found')
+        print("Did not find IOC in: File System ")
         sys.exit(1)
+    else:
+        print("Found IOC, possible malware in: File System ")
     return filteredlist
 
 def main(pathname, filter1, filtersize, sizef, filtername, namef, filterpath, pathf, save):

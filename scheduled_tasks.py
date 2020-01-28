@@ -1,9 +1,9 @@
-from operator import contains
+import sys
 
 import tabulate
 import win32com.client
 import logging
-import os.path
+
 import hashlib
 
 
@@ -92,6 +92,7 @@ def filter_tasks(AllTaskDetails, WantToFilter, filterOnName, filterOnState, filt
                 if(FilteredList == []):
                     print("Name not found in list of scheduled tasks \n")
                     logger.error('Name not found in the list of scheduled tasks.')
+                    #sys.exit(1)
             #for task in FilteredList:
             #    print(task)
 
@@ -106,6 +107,7 @@ def filter_tasks(AllTaskDetails, WantToFilter, filterOnName, filterOnState, filt
                 if (FilteredList == []):
                     print("State not found in list of scheduled tasks \n")
                     logger.error('State not found in the list of scheduled tasks.')
+                    #sys.exit(1)
             #for task in FilteredList:
             #    print(task)
 
@@ -120,9 +122,14 @@ def filter_tasks(AllTaskDetails, WantToFilter, filterOnName, filterOnState, filt
                 if (FilteredList == []):
                     print("Path not found in list of scheduled tasks \n")
                     logger.error('Path not found in the list of scheduled tasks.')
-            #for task in FilteredList:
-            #    print(task)
+                    #sys.exit(1)
 
+
+            if FilteredList == []:
+                print("Did not find IOC in: Scheduled Tasks ")
+                sys.exit(1)
+            else:
+                print("Found IOC, possible malware in: Scheduled Tasks ")
 
 
             #return the filtered list after done with filtering

@@ -84,15 +84,15 @@ def proces_list():
 def filter_processes(processes, filter_question, filter_name, filter_path):
     # not_filtered_list = processes
     filtered_list = []
-    logging.info("input for filter the processes: " + filter_question)
+    logger.info("input for filter the processes: " + filter_question)
 
 
     if filter_question.upper() == "N":
         return processes
     elif(filter_question.upper() == "Y"):
         # gefilterde_lijst.append(filter_naam)
-        logging.info("input to filter on name: " + filter_name)
-        logging.info("input to filter on path: " + filter_path)
+        logger.info("input to filter on name: " + filter_name)
+        logger.info("input to filter on path: " + filter_path)
 
         if filter_name == "" and filter_path == "":
             return processes
@@ -104,10 +104,10 @@ def filter_processes(processes, filter_question, filter_name, filter_path):
                     elif key['name'] == filter_name:
                         # print("made it")
                         filtered_list.append(key)
-                        logging.info("Proces list is filtered on name.")
+                        logger.info("Proces list is filtered on name.")
                 if len(filtered_list) == 0:
                     print("Name not found in list of processes \n")
-                    logging.info("Name not found in the processes list.")
+                    logger.info("Name not found in the processes list.")
 
             if filter_path != "":
                 for key in processes:
@@ -115,16 +115,23 @@ def filter_processes(processes, filter_question, filter_name, filter_path):
                         continue
                     elif key['path'] == filter_path:
                         filtered_list.append(key)
-                        logging.info("Proces list is filtered on type.")
+                        logger.info("Proces list is filtered on type.")
                 if len(filtered_list) == 0:
                     print("Type not found in list of processes \n")
-                    logging.info("Type not found in the proces list.")
+                    logger.info("Type not found in the proces list.")
+
+            if filtered_list == []:
+                print("Did not find IOC in: Proces list ")
+                sys.exit(1)
+            else:
+                print("Found IOC, possible malware in: Proces list ")
 
             return filtered_list
 
+
     else:
         print("The input you gave did not correspond Y or N.")
-        logging.info("The input did not correspond with Y or N.")
+        logger.info("The input did not correspond with Y or N.")
         sys.exit(1)
     # save_file()
 

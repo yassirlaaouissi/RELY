@@ -13,6 +13,7 @@ f = open('hashfile.txt', 'w', encoding="utf-8")
 f.close()
 
 #Logger is aangeroepen over het hele project
+
 logging.basicConfig(handlers=[logging.FileHandler('logboek.log', 'w', 'utf-8')], format='%(name)s: %(asctime)s %(levelname)s: %(message)s', datefmt='%d/%m/%Y %I:%M:%S %p', level=logging.DEBUG)
 
 
@@ -56,7 +57,7 @@ elif (Wanna_use_FS.upper() == "Y"):
 
         filtername = input('Do You want to filter on file name? (Y/N): ')
         if filtername.upper() == 'Y':
-            namef = input('Type the file name you want to filter on: ')
+            namef = input('Type the file name you want to filter on (e.g: blank.pys): ')
         elif filtername.upper() == 'N':
             print()
         else:
@@ -64,7 +65,7 @@ elif (Wanna_use_FS.upper() == "Y"):
 
         filterpath = input('Do You want to filter on path? (Y/N): ')
         if filterpath.upper() == 'Y':
-            pathf = input('Type the path you want to filter on: ')
+            pathf = input('Type the path you want to filter on (e.g: .\dist\Configurator ): ')
         elif filterpath.upper() == 'N':
             print()
         else:
@@ -117,21 +118,21 @@ if (Wanna_use_Keys.upper() == "N"):
     print("")
 elif (Wanna_use_Keys.upper() == "Y"):
 
-    geefHKEY = ""
-    geefPad = ""
-    filterVraag = ""
-    filterNaam = ""
-    filterType = ""
+    geef_HKEY = ""
+    geef_pad = ""
+    filter_vraag = ""
+    filter_naam = ""
+    filter_type = ""
 
-    geefHKEY = input("Please give an HKEY (e.g. HKEY_LOCAL_MACHINE): ")
-    geefPad = input(
+    geef_HKEY = input("Please give an HKEY (e.g. HKEY_LOCAL_MACHINE): ")
+    geef_pad = input(
         "Please give the path you want to be scanned (e.g: " + r"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Git_is1" + "): ")
 
-    filterVraag = input("Do you want to filter the registry keys? Y/N: ")
-    if filterVraag.upper() == "Y":
-        filterNaam = input("Do you want to filter on name? Please give the name else leave blank and press enter: ")
-        filterType = input("Do you want to filter on type? Please give the type else leave blank and press enter: ")
-    if filterVraag.upper() == "N":
+    filter_vraag = input("Do you want to filter the registry keys? Y/N: ")
+    if filter_vraag.upper() == "Y":
+        filter_naam = input("Do you want to filter on name? Please give the name else leave blank and press enter (e.g: DisplayName): ")
+        filter_type = input("Do you want to filter on type? Please give the type else leave blank and press enter (e.g: REG_SZ): ")
+    if filter_vraag.upper() == "N":
         print()
 else:
     print("Did not select Y or N, please restart program and try again")
@@ -170,7 +171,9 @@ if(Wanna_use_Tasks.upper() == "Y"):
     scheduled_tasks.main(WantToFilter, filterOnName, filterOnState, filterOnPath, WantToPrintList)
 
 if(Wanna_use_Keys.upper() == "Y"):
-    registry_key.main(geefHKEY, geefPad, filterVraag, filterNaam, filterType)
+    registry_key.main(geef_HKEY, geef_pad, filter_vraag, filter_naam, filter_type)
 
 if(want_to_use_proceslist.upper() == "Y"):
     proces_list.main(filter_question, filter_name, filter_path)
+
+

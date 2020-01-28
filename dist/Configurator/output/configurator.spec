@@ -3,8 +3,8 @@
 block_cipher = None
 
 
-a = Analysis(['configurator.py'],
-             pathex=['D:\\HS Leiden bestanden\\Jaar 2\\IPFIT5\\RELY'],
+a = Analysis(['Configurator.py'],
+             pathex=['D:\\HS Leiden bestanden\\Jaar 2\\IPFIT5\\RELY\\dist\\Configurator\\output'],
              binaries=[],
              datas=[('C:/Python37/Lib/site-packages/pyfiglet', './pyfiglet')],
              hiddenimports=[],
@@ -23,7 +23,7 @@ exe = EXE(pyz,
           a.zipfiles,
           a.datas,
           [],
-          name='configurator',
+          name='Configurator',
           debug=False,
           bootloader_ignore_signals=False,
           strip=False,
