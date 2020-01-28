@@ -1,0 +1,2 @@
+Proces_list.txt MD5 Hashwaarde: 66676e8f5d59441b6fbb819303bd340d
+Proces_list.txt SHA256 Hashwaarde: ccee196e84e3f9f04d3eb9deacf0ea3923e15fe1fa0f9cc4cfa2ecccb628c3b9

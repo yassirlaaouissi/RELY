@@ -5,8 +5,7 @@ import File_system
 import proces_list
 import registry_key
 import scheduled_tasks
-#from pyfiglet import *
-import pyfiglet.fonts
+from pyfiglet import *
 
 #from stringcolor import *
 
@@ -18,15 +17,13 @@ logging.basicConfig(handlers=[logging.FileHandler('logboek.log', 'w', 'utf-8')],
 
 
 #Welcome banner
-#ascii_banner = Figlet(font='STANDARD')
-#ascii_banner2 = ascii_banner.renderText("Welcome to RELY")
-#print(cs(ascii_banner2, "blue"))
-#ascii_banner = Figlet(font='digital')
-#ascii_underbanner = ascii_banner.renderText("Team firebreathing rubberduckies")
-#ascii_underbanner2 = ascii_underbanner.replace("|", " ")
-#print(cs(ascii_underbanner2, "yellow"))
-#ascii_banner = pyfiglet.figlet_format("Welcome  to  RELY")
-#ascii_under = pyfiglet.print_figlet("", "big", 33)
+ascii_banner = Figlet(font='STANDARD')
+ascii_banner2 = ascii_banner.renderText("Welcome to RELY")
+print(ascii_banner2)
+ascii_banner = Figlet(font='digital')
+ascii_underbanner = ascii_banner.renderText("Team firebreathing rubberduckies")
+print(ascii_underbanner)
+
 
 
 # File System
@@ -151,8 +148,8 @@ if (want_to_use_proceslist.upper() == "N"):
 elif (want_to_use_proceslist.upper() == "Y"):
     filter_question = input("Do you want to filter the processes? Y/N: ")
     if(filter_question.upper() == "Y"):
-        filter_name = input("Do you want to filter on name? Please give the name else leave blank and press enter: ")
-        filter_path = input("Do you want to filter on type? Please give the type else leave blank and press enter: ")
+        filter_name = input("Do you want to filter on name? Please give the name else leave blank and press enter (e.g. svchost.exe): ")
+        filter_path = input("Do you want to filter on type? Please give the type else leave blank and press enter (e.g. C:\Windows\System32\dllhost.exe): ")
 else:
     print("Did not select Y or N, please restart program and try again")
     sys.exit(1)
