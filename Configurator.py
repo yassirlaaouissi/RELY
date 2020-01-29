@@ -41,9 +41,9 @@ elif (Wanna_use_FS.upper() == "Y"):
         else:
             print("Did not select Y or N, please restart program and try again")
 
-        filtername = input('Do you want to filter on file name? (Y/N): ')
+        filtername = input('Do you want to filter on file name or extension? (Y/N): ')
         if filtername.upper() == 'Y':
-            namef = input('Type the file name you want to filter on (e.g: blank.pys): ')
+            namef = input('Type the file name or extension you want to filter on (e.g: blank.pys): ')
         elif filtername.upper() == 'N':
             uselessvar=""
         else:
@@ -134,6 +134,7 @@ geef_pad = ""
 filter_vraag = ""
 filter_naam = ""
 filter_type = ""
+filter_data = ""
 Wanna_use_Keys = input("Do you want to scan on Registry keys (Y or N)? ")
 
 if (Wanna_use_Keys.upper() == "N"):
@@ -150,6 +151,7 @@ elif (Wanna_use_Keys.upper() == "Y"):
     if filter_vraag.upper() == "Y":
         filter_naam = input("Do you want to filter on name? Please give the name otherwise leave blank and press enter (e.g: DisplayName): ")
         filter_type = input("Do you want to filter on type? Please give the type otherwise leave blank and press enter (e.g: REG_SZ): ")
+        filter_data = input("Do you want to filter on data? Please give the type otherwise leave blank and press enter (e.g: Cmd):")
     if filter_vraag.upper() == "N":
         uselessvar=""
 else:
@@ -163,6 +165,7 @@ y.write("WannaFilter: " + str(filter_vraag) + ",\n")
 y.write("Name: " + str(filter_naam) + ",\n")
 y.write("Type: " + str(filter_type) + ",\n")
 y.write("Wanna_use_Keys: " + str(Wanna_use_Keys) + ",\n")
+y.write("Data: " + str(filter_data) + ",\n")
 y.write("END")
 y.write("\n")
 

@@ -140,7 +140,7 @@ def filterfiles(listname, size1, size2, name1, name2, path1, path2):
 
     #filteroptie op File name
     if name1.upper() == 'Y':
-        namelist = filter(lambda x: x['File name'] == name2, listname)
+        namelist = filter(lambda x: name2 in x['File name'], listname)
         logger.info('filtering list')
         namelist2 = list(namelist)
         for item in namelist2:

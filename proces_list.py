@@ -106,7 +106,7 @@ def filter_processes(processes, filter_question, filter_name, filter_path):
                         filtered_list.append(key)
                 logger.info("Proces list is filtered on name.")
                 if len(filtered_list) == 0:
-                    print("Name not found in list of processes \n")
+                    print("Name not found in list of processes\n")
                     logger.info("Name not found in the processes list.")
 
             if filter_path != "":
@@ -132,7 +132,7 @@ def filter_processes(processes, filter_question, filter_name, filter_path):
     else:
         print("The input you gave did not correspond Y or N.")
         logger.info("The input did not correspond with Y or N.")
-        sys.exit(1)
+        #sys.exit(1)
     # save_file()
 
 def save_file(final_list):

@@ -104,6 +104,7 @@ with open('OneTimeScan/params_RK.txt') as b:
     unfilteredName = lines[4]
     unfilteredType = lines[5]
     unfilteredWannaUseKeys = lines[6]
+    unfilteredData = lines[7]
 #Reg filter
     geef_HKEY1 = unfilteredHKEY.replace("HKEY: ", "")
     geef_HKEY = geef_HKEY1.replace(",\n", "")
@@ -123,6 +124,9 @@ with open('OneTimeScan/params_RK.txt') as b:
     Wanna_use_Keys1 = unfilteredWannaUseKeys.replace("Wanna_use_Keys: ", "")
     Wanna_use_Keys = Wanna_use_Keys1.replace(",\n", "")
 
+    filter_data1 = unfilteredData.replace("Data: ", "")
+    filter_data = filter_data1.replace(",\n", "")
+
     #print(lines)
 
 #Scheduled tasks read
@@ -135,6 +139,7 @@ with open('OneTimeScan/params_ST.txt') as c:
     unfilteredPrintList = lines[4]
     unfilteredWannaFilterTasks = lines[5]
     unfilteredWannaUseTasks = lines[6]
+
 #Tasks filter
     WantToFilter1 = unfilteredWannaFilterTasks.replace("WantToFilter: ", "")
     WantToFilter = WantToFilter1.replace(",\n", "")
@@ -154,6 +159,7 @@ with open('OneTimeScan/params_ST.txt') as c:
     Wanna_use_Tasks1 = unfilteredWannaUseTasks.replace("Wanna_use_Tasks: ", "")
     Wanna_use_Tasks = Wanna_use_Tasks1.replace(",\n", "")
 
+
     #print(lines)
 
 
@@ -169,7 +175,7 @@ if(Wanna_use_Tasks.upper() == "Y"):
 
 print()
 if(Wanna_use_Keys.upper() == "Y"):
-    registry_key.main(geef_HKEY, geef_pad, filter_vraag, filter_naam, filter_type)
+    registry_key.main(geef_HKEY, geef_pad, filter_vraag, filter_naam, filter_type, filter_data)
 
 print()
 if(want_to_use_proceslist.upper() == "Y"):

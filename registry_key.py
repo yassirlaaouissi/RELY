@@ -113,7 +113,7 @@ def reg_reader(exp):
     return registry
 
 
-def filter_reg(registry, filter_vraag, filter_naam, filter_type):
+def filter_reg(registry, filter_vraag, filter_naam, filter_type, filter_data):
     ongefilterd_lijst = registry
     filter_lijst = []
 
@@ -124,8 +124,9 @@ def filter_reg(registry, filter_vraag, filter_naam, filter_type):
     elif (filter_vraag.upper() == "Y"):
         logger.info("input to filter on name: " + filter_naam)
         logger.info("input to filter on type: " + filter_type)
+        logger.info("input to filter on data: " + filter_data)
 
-        if (filter_naam + filter_type == ""):
+        if (filter_naam + filter_type + filter_data == ""):
             return ongefilterd_lijst
         else:
             if (filter_naam != ""):
@@ -150,6 +151,16 @@ def filter_reg(registry, filter_vraag, filter_naam, filter_type):
                     print("Type not found in list of registry keys \n")
                     logger.info("Type not found in the registry keys list.")
 
+            if (filter_data != ""):
+                for key in ongefilterd_lijst:
+                    if key in filter_lijst:
+                        continue
+                    elif ( filter_data in key['Data']):
+                        filter_lijst.append(key)
+                        logger.info("Registry key list is filtered on data.")
+                if (filter_lijst == []):
+                    print("Data not found in list of registry keys \n")
+                    logger.info("Data not found in the registry keys list.")
 
 
 
@@ -215,8 +226,8 @@ def save_keys(final_list):
     logger.info('close file: hashfile.txt')
 
 
-def main(geef_HKEY, geef_pad, filter_vraag, filter_naam, filter_type):
-    save_keys(filter_reg(reg_reader(choice_menu(geef_HKEY, geef_pad)), filter_vraag, filter_naam, filter_type))
+def main(geef_HKEY, geef_pad, filter_vraag, filter_naam, filter_type, filter_data):
+    save_keys(filter_reg(reg_reader(choice_menu(geef_HKEY, geef_pad)), filter_vraag, filter_naam, filter_type, filter_data))
 
 
 if __name__ == '__main__':
