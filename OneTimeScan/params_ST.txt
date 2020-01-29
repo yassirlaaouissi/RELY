@@ -1,7 +1,8 @@
 ##Scheduled tasks Params##
-Name: ,
-State: ,
+Name: CCleanerSkipUAC,
+State: Completed,
 Path: ,
-printlist: ,
-WantToFilter: ,
+printlist: Y,
+WantToFilter: Y,
+Wanna_use_Tasks: Y,
 END

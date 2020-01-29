@@ -77,6 +77,7 @@ with open('params_PL.txt') as a:
     unfilteredWannaFilterProc = lines[1]
     unfilteredName = lines[2]
     unfilteredPad = lines[3]
+    unfilteredWannaUseProcList = lines[4]
 
 #Proces list filter
     filter_question1 = unfilteredWannaFilterProc.replace("WannaFilter: ", "")
@@ -88,6 +89,9 @@ with open('params_PL.txt') as a:
     filter_path1 = unfilteredPad.replace("Pad: ", "")
     filter_path = filter_path1.replace(",\n", "")
 
+    want_to_use_proceslist1 = unfilteredWannaUseProcList.replace("want_to_use_proceslist: ", "")
+    want_to_use_proceslist = want_to_use_proceslist1.replace(",\n", "")
+
     #print(lines)
 
 #Registry keys read
@@ -98,6 +102,7 @@ with open('params_RK.txt') as b:
     unfilteredWannaFilterReg = lines[3]
     unfilteredName = lines[4]
     unfilteredType = lines[5]
+    unfilteredWannaUseKeys = lines[6]
 #Reg filter
     geef_HKEY1 = unfilteredHKEY.replace("HKEY: ", "")
     geef_HKEY = geef_HKEY1.replace(",\n", "")
@@ -114,6 +119,9 @@ with open('params_RK.txt') as b:
     filter_type1 = unfilteredType.replace("Type: ", "")
     filter_type = filter_type1.replace(",\n", "")
 
+    Wanna_use_Keys1 = unfilteredWannaUseKeys.replace("Wanna_use_Keys: ", "")
+    Wanna_use_Keys = Wanna_use_Keys1.replace(",\n", "")
+
     #print(lines)
 
 #Scheduled tasks read
@@ -125,21 +133,25 @@ with open('params_ST.txt') as c:
     unfilteredPadTasks = lines[3]
     unfilteredPrintList = lines[4]
     unfilteredWannaFilterTasks = lines[5]
+    unfilteredWannaUseTasks = lines[6]
 #Tasks filter
     WantToFilter1 = unfilteredWannaFilterTasks.replace("WantToFilter: ", "")
     WantToFilter = WantToFilter1.replace(",\n", "")
 
     FilterOnName1 = unfilteredName.replace("Name: ", "")
-    FilterOnName = FilterOnName1.replace(",\n", "")
+    filterOnName = FilterOnName1.replace(",\n", "")
 
     FilterOnState1 = unfilteredState.replace("State: ", "")
-    FilterOnState = FilterOnState1.replace(",\n", "")
+    filterOnState = FilterOnState1.replace(",\n", "")
 
     FilterOnPath1 = unfilteredPadTasks.replace("Path: ", "")
-    FilterOnPath = FilterOnPath1.replace(",\n", "")
+    filterOnPath = FilterOnPath1.replace(",\n", "")
 
     WantToPrintList1 = unfilteredPrintList.replace("printlist: ", "")
     WantToPrintList = WantToPrintList1.replace(",\n", "")
+
+    Wanna_use_Tasks1 = unfilteredWannaUseTasks.replace("Wanna_use_Tasks: ", "")
+    Wanna_use_Tasks = Wanna_use_Tasks1.replace(",\n", "")
 
     #print(lines)
 
@@ -150,14 +162,14 @@ with open('params_ST.txt') as c:
 if (Wanna_use_FS.upper() == "Y"):
     File_system.main(pathname, filter1, filtersize, sizef, filtername, namef, filterpath, pathf, save)
 
-# print()
-# if(Wanna_use_Tasks.upper() == "Y"):
-#     scheduled_tasks.main(WantToFilter, filterOnName, filterOnState, filterOnPath, WantToPrintList)
-#
-# print()
-# if(Wanna_use_Keys.upper() == "Y"):
-#     registry_key.main(geef_HKEY, geef_pad, filter_vraag, filter_naam, filter_type)
-#
-# print()
-# if(want_to_use_proceslist.upper() == "Y"):
-#     proces_list.main(filter_question, filter_name, filter_path)
+print()
+if(Wanna_use_Tasks.upper() == "Y"):
+    scheduled_tasks.main(WantToFilter, filterOnName, filterOnState, filterOnPath, WantToPrintList)
+
+print()
+if(Wanna_use_Keys.upper() == "Y"):
+    registry_key.main(geef_HKEY, geef_pad, filter_vraag, filter_naam, filter_type)
+
+print()
+if(want_to_use_proceslist.upper() == "Y"):
+    proces_list.main(filter_question, filter_name, filter_path)

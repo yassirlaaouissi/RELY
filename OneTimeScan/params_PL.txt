@@ -1,5 +1,6 @@
 ##Proces list Params##,
-WannaFilter: ,
-Name: ,
+WannaFilter: Y,
+Name: svchost.exe,
 Pad: ,
+want_to_use_proceslist: Y,
 END

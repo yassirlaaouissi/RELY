@@ -1,17 +1,5 @@
-import logging
 import sys
-
-import File_system
-import proces_list
-import registry_key
-import scheduled_tasks
 from pyfiglet import *
-
-#from stringcolor import *
-
-
-
-#Logger is aangeroepen over het hele project
 
 
 
@@ -132,6 +120,7 @@ x.write("State: " + str(filterOnState) + ",\n")
 x.write("Path: " + str(filterOnPath) + ",\n")
 x.write("printlist: " + str(WantToPrintList) + ",\n")
 x.write("WantToFilter: " + str(WantToFilter) + ",\n")
+x.write("Wanna_use_Tasks: " + str(Wanna_use_Tasks) + ",\n")
 x.write("END")
 x.write("\n")
 
@@ -173,6 +162,7 @@ y.write("Path: " + str(geef_pad) + ",\n")
 y.write("WannaFilter: " + str(filter_vraag) + ",\n")
 y.write("Name: " + str(filter_naam) + ",\n")
 y.write("Type: " + str(filter_type) + ",\n")
+y.write("Wanna_use_Keys: " + str(Wanna_use_Keys) + ",\n")
 y.write("END")
 y.write("\n")
 
@@ -199,30 +189,15 @@ g.write("##Proces list Params##,\n")
 g.write("WannaFilter: " + str(filter_question) + ",\n")
 g.write("Name: " + str(filter_name) + ",\n")
 g.write("Pad: " + str(filter_path) + ",\n")
+g.write("want_to_use_proceslist: " + str(want_to_use_proceslist) + ",\n")
 g.write("END")
 g.write("\n")
 
 
 
-#pre EXE
-print()
-if (Wanna_use_FS.upper() == "Y"):
-    File_system.main(pathname, filter1, filtersize, sizef, filtername, namef, filterpath, pathf, save)
 
 print()
-if(Wanna_use_Tasks.upper() == "Y"):
-    scheduled_tasks.main(WantToFilter, filterOnName, filterOnState, filterOnPath, WantToPrintList)
-
-print()
-if(Wanna_use_Keys.upper() == "Y"):
-    registry_key.main(geef_HKEY, geef_pad, filter_vraag, filter_naam, filter_type)
-
-print()
-if(want_to_use_proceslist.upper() == "Y"):
-    proces_list.main(filter_question, filter_name, filter_path)
-
-print()
-WannaExit = input("To exit the program press Y? ")
+WannaExit = input("To exit the program press Y and then enter: ")
 if WannaExit.upper() == "Y":
     sys.exit(1)
 
