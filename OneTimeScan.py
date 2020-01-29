@@ -1,4 +1,5 @@
 import logging
+import sys
 
 from pyfiglet import Figlet
 
@@ -9,10 +10,10 @@ import scheduled_tasks
 
 
 
-f = open('hashfile.txt', 'w', encoding="utf-8")
+f = open('OneTimeScan/hashfile.txt', 'w', encoding="utf-8")
 f.close()
 
-logging.basicConfig(handlers=[logging.FileHandler('logboek.log', 'w', 'utf-8')], format='%(name)s: %(asctime)s %(levelname)s: %(message)s', datefmt='%d/%m/%Y %I:%M:%S %p', level=logging.DEBUG)
+logging.basicConfig(handlers=[logging.FileHandler('OneTimeScan/logboek.log', 'w', 'utf-8')], format='%(name)s: %(asctime)s %(levelname)s: %(message)s', datefmt='%d/%m/%Y %I:%M:%S %p', level=logging.DEBUG)
 
 
 #Welcome banner
@@ -24,7 +25,7 @@ ascii_underbanner = ascii_banner.renderText("Team firebreathing rubberduckies")
 print(ascii_underbanner)
 
 #Filesystem read
-with open('params_FS.txt') as f:
+with open('OneTimeScan/params_FS.txt') as f:
     lines = f.readlines()
     unfilteredPath = lines[1]
     unfilteredFilter1 = lines[2]
@@ -72,7 +73,7 @@ with open('params_FS.txt') as f:
 
 #Proces List read
 
-with open('params_PL.txt') as a:
+with open('OneTimeScan/params_PL.txt') as a:
     lines = a.readlines()
     unfilteredWannaFilterProc = lines[1]
     unfilteredName = lines[2]
@@ -95,7 +96,7 @@ with open('params_PL.txt') as a:
     #print(lines)
 
 #Registry keys read
-with open('params_RK.txt') as b:
+with open('OneTimeScan/params_RK.txt') as b:
     lines = b.readlines()
     unfilteredHKEY = lines[1]
     unfilteredPath = lines[2]
@@ -125,7 +126,7 @@ with open('params_RK.txt') as b:
     #print(lines)
 
 #Scheduled tasks read
-with open('params_ST.txt') as c:
+with open('OneTimeScan/params_ST.txt') as c:
     lines = c.readlines()
 
     unfilteredName = lines[1]
@@ -173,3 +174,9 @@ if(Wanna_use_Keys.upper() == "Y"):
 print()
 if(want_to_use_proceslist.upper() == "Y"):
     proces_list.main(filter_question, filter_name, filter_path)
+
+
+print()
+WannaExit = input("To exit the program press Y and then enter: ")
+if WannaExit.upper() == "Y":
+    sys.exit(1)

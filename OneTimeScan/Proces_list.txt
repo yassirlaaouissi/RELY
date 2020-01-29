@@ -1,84 +1,96 @@
 =====  ===========  ===================  =======  ========  ==============  ============  =============  ===========  =====================  ===============================
   pid  name         create_time            cores  status      memory_usage    read_bytes    write_bytes    n_threads  username               path
 =====  ===========  ===================  =======  ========  ==============  ============  =============  ===========  =====================  ===============================
-    8  svchost.exe  2020-01-29 10:44:20       12  running                0             0              0            2  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\svchost.exe
-  556  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            2  N/A                    -
- 1048  svchost.exe  2020-01-24 18:10:01        0  running                0    1140270732        2209192           22  N/A                    -
- 1060  svchost.exe  2020-01-29 11:32:13        0  running                0       2714832            999            3  N/A                    -
- 1200  svchost.exe  2020-01-24 18:10:01        0  running                0        169984              0           18  N/A                    -
- 1216  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            5  N/A                    -
- 1244  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            5  N/A                    -
- 1308  svchost.exe  2020-01-25 14:53:19        0  running                0          1143          37719            6  N/A                    -
- 1420  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            3  N/A                    -
- 1436  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            5  N/A                    -
- 1452  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0           10  N/A                    -
- 1648  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            5  N/A                    -
- 1664  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            2  N/A                    -
- 1740  svchost.exe  2020-01-24 18:10:01        0  running                0     401752680      317981820            9  N/A                    -
- 1796  svchost.exe  2020-01-24 18:10:01        0  running                0    1729686951        3964396           12  N/A                    -
- 1820  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            3  N/A                    -
- 1936  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            3  N/A                    -
- 1944  svchost.exe  2020-01-24 18:10:01        0  running                0          7284       11071648            3  N/A                    -
- 1972  svchost.exe  2020-01-24 18:10:01        0  running                0           116              0            7  N/A                    -
- 1980  svchost.exe  2020-01-24 18:10:01        0  running                0           714              0            5  N/A                    -
- 2232  svchost.exe  2020-01-24 18:10:01        0  running                0        191488              0            2  N/A                    -
- 2244  svchost.exe  2020-01-24 18:10:01        0  running                0         66608              0            3  N/A                    -
- 2284  svchost.exe  2020-01-24 18:10:01        0  running                0        745472              0            7  N/A                    -
- 2296  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            7  N/A                    -
- 2304  svchost.exe  2020-01-24 18:12:06        0  running                0          2204           3040            8  N/A                    -
- 2308  svchost.exe  2020-01-24 18:10:01        0  running                0           694              0           10  N/A                    -
- 2336  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            2  N/A                    -
- 2476  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            3  N/A                    -
- 2516  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            3  N/A                    -
- 2636  svchost.exe  2020-01-24 18:10:01        0  running                0          5568           7680           10  N/A                    -
- 2668  svchost.exe  2020-01-24 18:10:01        0  running                0       3111360       62573522            5  N/A                    -
- 2808  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            6  N/A                    -
- 2824  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            3  N/A                    -
- 2864  svchost.exe  2020-01-24 18:10:01        0  running                0     133251744         168688            5  N/A                    -
- 2964  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0           11  N/A                    -
- 3164  svchost.exe  2020-01-24 18:10:01        0  running                0             0          20304            3  N/A                    -
- 3172  svchost.exe  2020-01-24 18:10:01        0  running                0             0              0            5  N/A                    -
- 3432  svchost.exe  2020-01-24 18:10:02        0  running                0             0              0            8  N/A                    -
- 3456  svchost.exe  2020-01-24 18:10:02        0  running                0      15329392              0           10  N/A                    -
- 4008  svchost.exe  2020-01-24 18:10:02        0  running                0        275668              0            6  N/A                    -
- 4028  svchost.exe  2020-01-24 18:13:14        0  running                0         12143              0            4  N/A                    -
- 4156  svchost.exe  2020-01-24 18:10:02        0  running                0         84240              0            4  N/A                    -
- 4176  svchost.exe  2020-01-24 18:10:02        0  running                0             0              0           10  N/A                    -
- 4184  svchost.exe  2020-01-24 18:10:02        0  running                0             0              0            5  N/A                    -
- 4252  svchost.exe  2020-01-29 10:44:55        0  running                0             0              0            7  N/A                    -
- 4400  svchost.exe  2020-01-24 18:10:02        0  running                0        357575            160           17  N/A                    -
- 4508  svchost.exe  2020-01-24 18:10:02        0  running                0           932              0            5  N/A                    -
- 4760  svchost.exe  2020-01-24 18:10:02        0  running                0           116          32928           12  N/A                    -
- 4924  svchost.exe  2020-01-24 18:10:02        0  running                0        168072         284540            6  N/A                    -
- 4956  svchost.exe  2020-01-24 18:28:35        0  running                0           328              0            3  N/A                    -
- 5256  svchost.exe  2020-01-25 16:34:10        0  running                0        634880         139264            5  N/A                    -
- 5360  svchost.exe  2020-01-24 18:10:03        0  running                0         20350         128562           12  N/A                    -
- 5716  svchost.exe  2020-01-24 18:10:03        0  running                0     116581236        4033684           10  N/A                    -
- 5724  svchost.exe  2020-01-24 18:10:03        0  running                0       4271014         250584            6  N/A                    -
- 5732  svchost.exe  2020-01-24 18:10:03        0  running                0        187000              0            5  N/A                    -
- 5740  svchost.exe  2020-01-24 18:10:03        0  running                0       7726673        5904635           16  N/A                    -
- 5764  svchost.exe  2020-01-24 18:10:03        0  running                0     301223006      297797632           19  N/A                    -
- 5996  svchost.exe  2020-01-24 18:10:03        0  running                0             0              0            2  N/A                    -
- 6028  svchost.exe  2020-01-24 18:10:03        0  running                0         24064           2048            3  N/A                    -
- 6044  svchost.exe  2020-01-24 18:10:03        0  running                0           116            160            6  N/A                    -
- 6100  svchost.exe  2020-01-24 18:10:03        0  running                0        339989         197920            7  N/A                    -
- 6616  svchost.exe  2020-01-24 18:10:03        0  running                0             0              0           18  N/A                    -
- 6668  svchost.exe  2020-01-24 18:10:03        0  running                0             0              0            3  N/A                    -
- 6756  svchost.exe  2020-01-24 18:10:03        0  running                0        416372        2759080            6  N/A                    -
- 7124  svchost.exe  2020-01-24 18:10:03        0  running                0           232            320           13  N/A                    -
- 7840  svchost.exe  2020-01-24 18:10:17        0  running                0       4807034        4321080           11  N/A                    -
- 9420  svchost.exe  2020-01-24 18:10:05        0  running                0       1418556         215193            6  N/A                    -
- 9660  svchost.exe  2020-01-24 18:10:05        0  running                0       1662768         161422            7  N/A                    -
-10640  svchost.exe  2020-01-24 18:10:06        0  running                0     622981954          77824            3  N/A                    -
-11704  svchost.exe  2020-01-24 18:10:28        0  running                0      12585812      186000735           12  N/A                    -
-11948  svchost.exe  2020-01-24 18:12:06        0  running                0       5283891         284160            8  N/A                    -
-12832  svchost.exe  2020-01-28 21:30:02        0  running                0          4256              0           10  N/A                    -
-13192  svchost.exe  2020-01-24 18:10:28        0  running                0          1116              0            4  N/A                    -
-13716  svchost.exe  2020-01-29 10:45:00        0  running                0           116            160            5  N/A                    -
-17420  svchost.exe  2020-01-29 10:42:20       12  running                0             0              0            3  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\svchost.exe
-17804  svchost.exe  2020-01-29 10:42:21       12  running                0         39984              0           12  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\svchost.exe
-17940  svchost.exe  2020-01-29 11:15:07        0  running                0          3544              0            5  N/A                    -
-19672  svchost.exe  2020-01-29 10:42:20       12  running                0     270790593       11396663           17  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\svchost.exe
-20808  svchost.exe  2020-01-29 10:42:20       12  running                0        524389        2307232            9  LAPTOP-G1N7SMFF\yassi  C:\Windows\System32\svchost.exe
-21736  svchost.exe  2020-01-29 10:45:00        0  running                0             0              0            2  N/A                    -
+  324  svchost.exe  2020-01-22 15:03:39        0  running                0             0              0            1  N/A                    -
+  452  svchost.exe  2020-01-22 15:03:39        0  running                0      49858426        2483624           21  N/A                    -
+  864  svchost.exe  2020-01-22 15:04:22        0  running                0        658806         345082            7  N/A                    -
+ 1036  svchost.exe  2020-01-22 15:03:39        0  running                0        356352              0           10  N/A                    -
+ 1080  svchost.exe  2020-01-22 15:03:39        0  running                0             0              0            4  N/A                    -
+ 1412  svchost.exe  2020-01-22 15:03:39        0  running                0          4138              0            5  N/A                    -
+ 1432  svchost.exe  2020-01-22 15:03:39        0  running                0             0              0            6  N/A                    -
+ 1444  svchost.exe  2020-01-22 15:03:39        0  running                0             0              0            2  N/A                    -
+ 1492  svchost.exe  2020-01-22 15:04:24        8  running          2449408             0              0            6  DESKTOP-N6ESA10\eouwe  C:\Windows\System32\svchost.exe
+ 1552  svchost.exe  2020-01-22 15:03:39        0  running                0             0              0            6  N/A                    -
+ 1560  svchost.exe  2020-01-22 15:03:39        0  running                0             0              0            2  N/A                    -
+ 1676  svchost.exe  2020-01-22 15:03:39        0  running                0             0              0            2  N/A                    -
+ 1696  svchost.exe  2020-01-22 15:03:39        0  running                0             0              0            5  N/A                    -
+ 1712  svchost.exe  2020-01-22 15:03:39        0  running                0           714              0            4  N/A                    -
+ 1800  svchost.exe  2020-01-22 15:03:39        0  running                0     429164376      237096092            8  N/A                    -
+ 1848  svchost.exe  2020-01-22 15:03:39        0  running                0             0              0            2  N/A                    -
+ 1916  svchost.exe  2020-01-22 15:03:39        0  running                0             0              0            1  N/A                    -
+ 1928  svchost.exe  2020-01-22 15:03:39        0  running                0             0              0            4  N/A                    -
+ 1944  svchost.exe  2020-01-22 15:03:39        0  running                0         45676              0            3  N/A                    -
+ 2076  svchost.exe  2020-01-22 15:03:39        0  running                0             0              0            4  N/A                    -
+ 2128  svchost.exe  2020-01-24 16:28:12        0  running                0      12865221       24671598           16  N/A                    -
+ 2176  svchost.exe  2020-01-22 15:03:39        0  running                0             0              0           11  N/A                    -
+ 2196  svchost.exe  2020-01-22 15:03:39        0  running                0             0              0            3  N/A                    -
+ 2304  svchost.exe  2020-01-22 15:04:22        0  running                0         90962           2480            5  N/A                    -
+ 2372  svchost.exe  2020-01-22 15:03:40        0  running                0         35148          48480           13  N/A                    -
+ 2424  svchost.exe  2020-01-22 15:03:40        0  running                0     172462512         904048            4  N/A                    -
+ 2528  svchost.exe  2020-01-22 15:03:40        0  running                0        811830       14825830            9  N/A                    -
+ 2564  svchost.exe  2020-01-22 15:03:40        0  running                0          8192              0            2  N/A                    -
+ 2712  svchost.exe  2020-01-22 15:03:40        0  running                0      10906748        8893047            5  N/A                    -
+ 2724  svchost.exe  2020-01-22 15:03:40        0  running                0             0              0           12  N/A                    -
+ 2796  svchost.exe  2020-01-22 15:03:40        0  running                0          3272              0            6  N/A                    -
+ 2884  svchost.exe  2020-01-29 12:18:35        0  running                0       1768825            999            6  N/A                    -
+ 3040  svchost.exe  2020-01-22 15:03:40        0  running                0       1207984              0           12  N/A                    -
+ 3108  svchost.exe  2020-01-22 15:03:40        0  running                0             0              0            4  N/A                    -
+ 3196  svchost.exe  2020-01-22 15:03:40        0  running                0      84444584        2463560           14  N/A                    -
+ 3224  svchost.exe  2020-01-22 15:03:40        0  running                0       3067764       41866958            3  N/A                    -
+ 3228  svchost.exe  2020-01-22 15:03:40        0  running                0        542076        1222448            7  N/A                    -
+ 3332  svchost.exe  2020-01-29 12:10:44        0  running                0          4924              0            2  N/A                    -
+ 3660  svchost.exe  2020-01-28 14:59:05        0  running                0       2805009        1157433           15  N/A                    -
+ 4048  svchost.exe  2020-01-22 15:04:22        0  running                0         25148          98142            7  N/A                    -
+ 4104  svchost.exe  2020-01-22 15:03:40        0  running                0             0              0            3  N/A                    -
+ 4208  svchost.exe  2020-01-22 15:03:40        0  running                0             0              0            5  N/A                    -
+ 4248  svchost.exe  2020-01-22 15:03:40        0  running                0             0              0            3  N/A                    -
+ 4264  svchost.exe  2020-01-22 15:04:22        0  running                0             0              0            9  N/A                    -
+ 4328  svchost.exe  2020-01-26 16:53:58        0  running                0             0              0            4  N/A                    -
+ 4504  svchost.exe  2020-01-22 15:03:40        0  running                0         76432              0            7  N/A                    -
+ 4668  svchost.exe  2020-01-22 15:03:41        0  running                0             0              0            2  N/A                    -
+ 4712  svchost.exe  2020-01-22 15:03:41        0  running                0          5120           2048           11  N/A                    -
+ 4736  svchost.exe  2020-01-22 15:03:41        0  running                0             0              0            7  N/A                    -
+ 5012  svchost.exe  2020-01-22 15:03:41        0  running                0         75922        7192576            2  N/A                    -
+ 5040  svchost.exe  2020-01-22 15:03:41        0  running                0        701717            320           11  N/A                    -
+ 5072  svchost.exe  2020-01-22 15:03:41        0  running                0           215              0            5  N/A                    -
+ 5348  svchost.exe  2020-01-22 15:03:41        0  running                0           116       27139793           14  N/A                    -
+ 5416  svchost.exe  2020-01-22 15:03:41        0  running                0        265380         425564            6  N/A                    -
+ 5616  svchost.exe  2020-01-22 15:03:41        0  running                0           512            512            1  N/A                    -
+ 5672  svchost.exe  2020-01-22 15:04:36        8  running          3649536      15478788         528388            3  DESKTOP-N6ESA10\eouwe  C:\Windows\System32\svchost.exe
+ 5696  svchost.exe  2020-01-22 15:03:42        0  running                0             0              0            4  N/A                    -
+ 5972  svchost.exe  2020-01-22 15:03:42        0  running                0      14946222       11608988           10  N/A                    -
+ 5996  svchost.exe  2020-01-22 15:03:42        0  running                0     395012826      437574420           17  N/A                    -
+ 6224  svchost.exe  2020-01-22 15:03:42        0  running                0           116            160            5  N/A                    -
+ 6288  svchost.exe  2020-01-22 15:03:42        0  running                0         29517              0            3  N/A                    -
+ 6340  svchost.exe  2020-01-22 15:03:42        0  running                0             0              0            1  N/A                    -
+ 6684  svchost.exe  2020-01-22 15:03:42        0  running                0         22528              0            3  N/A                    -
+ 6700  svchost.exe  2020-01-22 15:03:42        0  running                0       3381093         379200            7  N/A                    -
+ 7276  svchost.exe  2020-01-22 15:03:42        0  running                0             0              0           14  N/A                    -
+ 8024  svchost.exe  2020-01-22 15:03:43        0  running                0             0              0            4  N/A                    -
+ 8144  svchost.exe  2020-01-22 15:03:43        0  running                0           232            320           13  N/A                    -
+ 9320  svchost.exe  2020-01-22 15:03:45        0  running                0         59260          98304            1  N/A                    -
+ 9380  svchost.exe  2020-01-22 15:04:21        8  running          8417280      14426783      167761441           12  DESKTOP-N6ESA10\eouwe  C:\Windows\System32\svchost.exe
+ 9408  svchost.exe  2020-01-22 15:04:21        8  running          1052672             0              0            2  DESKTOP-N6ESA10\eouwe  C:\Windows\System32\svchost.exe
+ 9624  svchost.exe  2020-01-22 15:03:54        0  running                0       4689237         913592           14  N/A                    -
+ 9632  svchost.exe  2020-01-22 15:05:50        0  running                0        527160           1600            6  N/A                    -
+10612  svchost.exe  2020-01-22 15:03:53        0  running                0             0              0            1  N/A                    -
+11440  svchost.exe  2020-01-22 15:03:55        0  running                0             0              0            3  N/A                    -
+11500  svchost.exe  2020-01-22 15:04:21        8  running          7245824       2179825       35428472            8  DESKTOP-N6ESA10\eouwe  C:\Windows\System32\svchost.exe
+11788  svchost.exe  2020-01-22 15:04:21        0  running                0         45429           6596            5  N/A                    -
+11888  svchost.exe  2020-01-22 15:04:22        0  running                0          7004              0            3  N/A                    -
+12072  svchost.exe  2020-01-22 15:04:23        0  running                0         69404          68096            2  N/A                    -
+12896  svchost.exe  2020-01-22 22:06:29        8  running           495616             0              0            2  DESKTOP-N6ESA10\eouwe  C:\Windows\System32\svchost.exe
+13192  svchost.exe  2020-01-22 15:04:26        0  running                0       1511183          96191            8  N/A                    -
+13508  svchost.exe  2020-01-22 16:09:05        0  running                0         12967           7252            6  N/A                    -
+13712  svchost.exe  2020-01-22 15:05:43        0  running                0           204              0            1  N/A                    -
+14592  svchost.exe  2020-01-28 14:59:05        0  running                0          4565           4096            2  N/A                    -
+16096  svchost.exe  2020-01-22 16:34:54        0  running                0        677728         139264            4  N/A                    -
+16600  svchost.exe  2020-01-22 23:05:07        0  running                0             0              0            8  N/A                    -
+16768  svchost.exe  2020-01-22 15:05:43        0  running                0      37851346     1409393739           10  N/A                    -
+17332  svchost.exe  2020-01-22 16:34:53        0  running                0          9336              0            3  N/A                    -
+17720  svchost.exe  2020-01-26 16:54:16        8  running           520192             0              0            2  DESKTOP-N6ESA10\eouwe  C:\Windows\System32\svchost.exe
+18140  svchost.exe  2020-01-29 09:49:08        0  running                0          8948            712            4  N/A                    -
+18992  svchost.exe  2020-01-27 13:43:19        0  running                0        535764        1985407            4  N/A                    -
+20588  svchost.exe  2020-01-29 09:49:05        0  running                0          4401              0            3  N/A                    -
+21864  svchost.exe  2020-01-28 11:42:32        0  running                0           716           9936            5  N/A                    -
 =====  ===========  ===================  =======  ========  ==============  ============  =============  ===========  =====================  ===============================

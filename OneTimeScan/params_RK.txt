@@ -1,8 +1,8 @@
 ##Registry keys Params##,
-HKEY: HKEY_LOCAL_MACHINE,
-Path: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Git_is1,
-WannaFilter: Y,
+HKEY: ,
+Path: ,
+WannaFilter: ,
 Name: ,
-Type: REG_SZ,
-Wanna_use_Keys: Y,
+Type: ,
+Wanna_use_Keys: N,
 END

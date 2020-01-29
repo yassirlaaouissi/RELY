@@ -150,11 +150,18 @@ def filter_reg(registry, filter_vraag, filter_naam, filter_type):
                     print("Type not found in list of registry keys \n")
                     logger.info("Type not found in the registry keys list.")
 
+
+
+
+
+
+
             if filter_lijst == []:
                 print("Did not find IOC in: Registry Keys ")
                 sys.exit(1)
             else:
                 print("Found IOC, possible malware in: Registry Keys ")
+
 
             return filter_lijst
 

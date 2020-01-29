@@ -70,7 +70,7 @@ elif (Wanna_use_FS.upper() == "Y"):
 
 else:
     print("Did not select Y or N, please restart program and try again")
-    sys.exit(1)
+    #sys.exit(1)
 
 z = open("OneTimeScan/params_FS.txt","w+")
 z.write("##Filesystem Params##, \n")
@@ -111,7 +111,7 @@ elif(Wanna_use_Tasks.upper() == "Y"):
 
 else:
     print("Did not select Y or N, please restart program and try again")
-    sys.exit(1)
+    #sys.exit(1)
 
 x = open("OneTimeScan/params_ST.txt","w+")
 x.write("##Scheduled tasks Params##\n")
@@ -182,7 +182,7 @@ elif (want_to_use_proceslist.upper() == "Y"):
         filter_path = input("Do you want to filter on type? Please give the type otherwise leave blank and press enter (e.g. C:\Windows\System32\dllhost.exe): ")
 else:
     print("Did not select Y or N, please restart program and try again")
-    sys.exit(1)
+    #sys.exit(1)
 
 g = open("OneTimeScan/params_PL.txt","w+")
 g.write("##Proces list Params##,\n")
@@ -192,8 +192,6 @@ g.write("Pad: " + str(filter_path) + ",\n")
 g.write("want_to_use_proceslist: " + str(want_to_use_proceslist) + ",\n")
 g.write("END")
 g.write("\n")
-
-
 
 
 print()
