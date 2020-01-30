@@ -1,0 +1,9 @@
+======================  =============================================================  =========  =====================================
+Name                    Path                                                           State      Last time runned
+======================  =============================================================  =========  =====================================
+AnalyzeSystem           \Microsoft\Windows\Power Efficiency Diagnostics\AnalyzeSystem  Completed  2020-01-29 11:23:58 (Central EU Time)
+RtHDVBg_ListenToDevice  \RtHDVBg_ListenToDevice                                        Running    2020-01-30 09:56:07 (Central EU Time)
+SystemSoundsService     \Microsoft\Windows\Multimedia\SystemSoundsService              Running    2020-01-30 09:55:37 (Central EU Time)
+CacheTask               \Microsoft\Windows\Wininet\CacheTask                           Running    2020-01-30 09:55:37 (Central EU Time)
+Lpksetup                \Microsoft\Windows\MUI\Lpksetup                                Completed  2020-01-23 23:12:55 (Central EU Time)
+======================  =============================================================  =========  =====================================

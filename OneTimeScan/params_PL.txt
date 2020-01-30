@@ -1,6 +1,0 @@
-##Proces list Params##,
-WannaFilter: ,
-Name: ,
-Pad: ,
-want_to_use_proceslist: n,
-END

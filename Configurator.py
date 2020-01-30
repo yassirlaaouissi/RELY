@@ -154,6 +154,8 @@ elif (Wanna_use_Keys.upper() == "Y"):
         filter_data = input("Do you want to filter on data? Please give the type otherwise leave blank and press enter (e.g: Cmd):")
     if filter_vraag.upper() == "N":
         uselessvar=""
+    else:
+        print("Did not select Y or N, please restart program and try again")
 else:
     print("Did not select Y or N, please restart program and try again")
 
@@ -183,6 +185,10 @@ elif (want_to_use_proceslist.upper() == "Y"):
     if(filter_question.upper() == "Y"):
         filter_name = input("Do you want to filter on name? Please give the name otherwise leave blank and press enter (e.g. svchost.exe): ")
         filter_path = input("Do you want to filter on path? Please give the path otherwise leave blank and press enter (e.g. C:\Windows\System32\dllhost.exe): ")
+    elif(filter_question.upper() == "N"):
+        uselessvar = ""
+    else:
+        print("Did not select Y or N, please restart program and try again")
 else:
     print("Did not select Y or N, please restart program and try again")
     #sys.exit(1)
