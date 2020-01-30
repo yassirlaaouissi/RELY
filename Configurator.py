@@ -113,7 +113,7 @@ else:
     print("Did not select Y or N, please restart program and try again")
     #sys.exit(1)
 
-x = open("OneTimeScan/params_ST.txt","w+")
+x = open("OneTimeScan/params_ST.txt", "w+")
 x.write("##Scheduled tasks Params##\n")
 x.write("Name: " + str(filterOnName) + ",\n")
 x.write("State: " + str(filterOnState) + ",\n")
