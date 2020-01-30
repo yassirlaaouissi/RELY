@@ -1,6 +1,6 @@
 ##Proces list Params##,
-WannaFilter: ,
-Name: ,
-Pad: ,
-want_to_use_proceslist: N,
+WannaFilter: Y,
+Name: svchost.exe,
+Pad: C:\Windows\System32\dllhost.exe,
+want_to_use_proceslist: Y,
 END
