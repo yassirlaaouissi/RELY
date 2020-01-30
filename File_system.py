@@ -109,51 +109,60 @@ def filterfiles(listname, size1, size2, name1, name2, path1, path2):
         sizelist = filter(lambda x: x['File size (bytes)'] == size2, listname)
         logger.info('filtering list')
         sizelist2 = list(sizelist)
+        listc = str(sizelist2)
+        if listc == '[]':
+            logger.info('No results found on file size: ' + size1)
+            print('File size not found in list of file system \n')
+
         for item in sizelist2:
             sizestr = str(item)
             sizestr2 = sizestr.replace('[', '')
             sizestr3 = sizestr2.replace(']', '')
-            if sizestr3 == '':
-                logger.info('No results found on file size: ' + size1)
-            else:
-                sizelistdict = literal_eval(sizestr3)
-                filteredlist.append(sizelistdict)
-                logger.info('found results')
-                logger.info('append filtered files to allfilesystem_list')
+
+            sizelistdict = literal_eval(sizestr3)
+            filteredlist.append(sizelistdict)
+            logger.info('found results')
+            logger.info('append filtered files to allfilesystem_list')
 
     # filteroptie op File path
     if path1.upper() == 'Y':
         pathlist = filter(lambda x: x['File path'] == path2, listname)
         logger.info('filtering list')
         pathlist2 = list(pathlist)
+        pathc = str(pathlist2)
+        if pathc == '[]':
+            logger.info('No results found on file path: ' + path1)
+            print('Path not found in list of file system \n')
+
         for item in pathlist2:
             pathstr = str(item)
             pathstr2 = pathstr.replace('[', '')
             pathstr3 = pathstr2.replace(']', '')
-            if pathstr3 == '':
-                logger.info('No results found on file path: ' + path1)
-            else:
-                pathlistdict = literal_eval(pathstr3)
-                filteredlist.append(pathlistdict)
-                logger.info('found results')
-                logger.info('append filtered files to allfilesystem_list')
+
+            pathlistdict = literal_eval(pathstr3)
+            filteredlist.append(pathlistdict)
+            logger.info('found results')
+            logger.info('append filtered files to allfilesystem_list')
 
     #filteroptie op File name
     if name1.upper() == 'Y':
         namelist = filter(lambda x: name2 in x['File name'], listname)
         logger.info('filtering list')
         namelist2 = list(namelist)
+        namec = str(namelist2)
+        if namec == '[]':
+            logger.info('No results found on file name: ' + name1)
+            print('Name not found in list of file system \n')
+
         for item in namelist2:
             namestr = str(item)
             namestr2 = namestr.replace('[', '')
             namestr3 = namestr2.replace(']', '')
-            if namestr3 == '':
-                logger.info('No results found on file name: ' + name1)
-            else:
-                namelistdict = literal_eval(namestr3)
-                filteredlist.append(namelistdict)
-                logger.info('found results')
-                logger.info('append filtered files to allfilesystem_list')
+
+            namelistdict = literal_eval(namestr3)
+            filteredlist.append(namelistdict)
+            logger.info('found results')
+            logger.info('append filtered files to allfilesystem_list')
 
     if filteredlist == []:
         print("Did not find IOC in: File System ")
