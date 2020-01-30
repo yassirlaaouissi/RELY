@@ -122,7 +122,6 @@ def filter_processes(processes, filter_question, filter_name, filter_path):
 
             if filtered_list == []:
                 print("Did not find IOC in: Proces list ")
-                sys.exit(1)
             else:
                 print("Found IOC, possible malware in: Proces list ")
 
@@ -178,7 +177,10 @@ def save_file(final_list):
 def main(filter_question, filter_name, filter_path):
     proces_list()
     final_list = filter_processes(processes, filter_question, filter_name, filter_path)
-    save_file(final_list)
+    if final_list == []:
+        print()
+    else:
+        save_file(final_list)
     #proces_list()
 
 

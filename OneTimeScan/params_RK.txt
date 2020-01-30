@@ -1,0 +1,9 @@
+##Registry keys Params##,
+HKEY: ,
+Path: ,
+WannaFilter: ,
+Name: ,
+Type: ,
+Wanna_use_Keys: N,
+Data: ,
+END

@@ -157,7 +157,7 @@ def filterfiles(listname, size1, size2, name1, name2, path1, path2):
 
     if filteredlist == []:
         print("Did not find IOC in: File System ")
-        sys.exit(1)
+        #sys.exit(1)
     else:
         print("Found IOC, possible malware in: File System ")
     return filteredlist
@@ -168,11 +168,13 @@ def main(pathname, filter1, filtersize, sizef, filtername, namef, filterpath, pa
 
     if filter1.upper() == 'Y':
         filesystem_list = filterfiles(filesystem_list, filtersize, sizef, filtername, namef, filterpath, pathf)
+    if filesystem_list == []:
+        print()
+    else:
+        tablelist = show_list(filesystem_list)
 
-    tablelist = show_list(filesystem_list)
-
-    if save.upper() == 'Y':
-        save_list(tablelist)
+        if save.upper() == 'Y':
+            save_list(tablelist)
     logger.info('Finished')
 
 if __name__ == '__main__':

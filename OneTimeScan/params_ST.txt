@@ -1,0 +1,8 @@
+##Scheduled tasks Params##
+Name: fjd,
+State: fjdk,
+Path: fjsjs,
+printlist: Y,
+WantToFilter: Y,
+Wanna_use_Tasks: Y,
+END

@@ -127,7 +127,6 @@ def filter_tasks(AllTaskDetails, WantToFilter, filterOnName, filterOnState, filt
 
             if FilteredList == []:
                 print("Did not find IOC in: Scheduled Tasks ")
-                sys.exit(1)
             else:
                 print("Found IOC, possible malware in: Scheduled Tasks ")
 
@@ -140,53 +139,59 @@ def filter_tasks(AllTaskDetails, WantToFilter, filterOnName, filterOnState, filt
         logger.error('Input did not correspond with Y or N.')
 
 def show_results(list, WantToPrintList):
-    headers = ["Name", "Path", "State", "Last time runned"]
-    for key in list:
-        row = list
-    #rows = [x.values() for x in list]
-    tablelist = tabulate.tabulate(row, headers, tablefmt='rst')
-    filename = 'ScheduledTasks.txt'
-
-    if(WantToPrintList.upper() == "Y"):
-        print(tablelist)
-        logger.info('Returned and printed list of task attributes with table view.')
-        return tablelist
-    elif(WantToPrintList.upper() == "N"):
-        print("File with results will be saved in the same folder as scheduledtasks.py. Name of the file is " + filename)
-        logger.info('Returned  list of task attributes with table view.')
-        return tablelist
+    if list == []:
+        print()
     else:
-        print("File with results will be saved in the same folder as scheduledtasks.py. Name of the file is " + filename)
-        return tablelist
-        logger.info('Returned and printed list of task attributes with table view.')
+        headers = ["Name", "Path", "State", "Last time runned"]
+        for key in list:
+            row = list
+        #rows = [x.values() for x in list]
+        tablelist = tabulate.tabulate(row, headers, tablefmt='rst')
+        filename = 'ScheduledTasks.txt'
+
+        if(WantToPrintList.upper() == "Y"):
+            print(tablelist)
+            logger.info('Returned and printed list of task attributes with table view.')
+            return tablelist
+        elif(WantToPrintList.upper() == "N"):
+            print("File with results will be saved in the same folder as scheduledtasks.py. Name of the file is " + filename)
+            logger.info('Returned  list of task attributes with table view.')
+            return tablelist
+        else:
+            print("File with results will be saved in the same folder as scheduledtasks.py. Name of the file is " + filename)
+            return tablelist
+            logger.info('Returned and printed list of task attributes with table view.')
 
 def save_list_to_file(ListToSave):
-    filename = 'ScheduledTasks.txt'
-    with open(filename, 'w') as f:
-        f.write(ListToSave)
-        logger.info('Saved list of task attributes with table view.')
+    if ListToSave == None:
+        print()
+    else:
+        filename = 'ScheduledTasks.txt'
+        with open(filename, 'w') as f:
+            f.write(ListToSave)
+            logger.info('Saved list of task attributes with table view.')
 
-    #hashing
-    hasher = hashlib.md5()
-    with open('ScheduledTasks.txt', 'rb') as afile:
-        buf = afile.read()
-        hasher.update(buf)
-    hash1 = 'ScheduledTasks.txt MD5 Hashwaarde: ' + hasher.hexdigest()
-    logger.debug('Generating MD5 hash: ' + hasher.hexdigest())
+        #hashing
+        hasher = hashlib.md5()
+        with open('ScheduledTasks.txt', 'rb') as afile:
+            buf = afile.read()
+            hasher.update(buf)
+        hash1 = 'ScheduledTasks.txt MD5 Hashwaarde: ' + hasher.hexdigest()
+        logger.debug('Generating MD5 hash: ' + hasher.hexdigest())
 
-    hashersha = hashlib.sha256()
-    with open('ScheduledTasks.txt', 'rb') as afile:
-        buf = afile.read()
-        hashersha.update(buf)
-    hash2 = 'ScheduledTasks.txt SHA256 Hashwaarde: ' + hashersha.hexdigest()
-    logger.debug('Generating SHA256 hash: ' + hashersha.hexdigest())
+        hashersha = hashlib.sha256()
+        with open('ScheduledTasks.txt', 'rb') as afile:
+            buf = afile.read()
+            hashersha.update(buf)
+        hash2 = 'ScheduledTasks.txt SHA256 Hashwaarde: ' + hashersha.hexdigest()
+        logger.debug('Generating SHA256 hash: ' + hashersha.hexdigest())
 
-    f = open('hashfile.txt', 'a', encoding="utf-8")
-    logger.info('open file: hashfile.txt')
-    f.write(hash1 + '\n' + hash2 + '\n')
-    logger.info('writing md5 hash to file')
-    f.close()
-    logger.info('close file: hashfile.txt')
+        f = open('hashfile.txt', 'a', encoding="utf-8")
+        logger.info('open file: hashfile.txt')
+        f.write(hash1 + '\n' + hash2 + '\n')
+        logger.info('writing md5 hash to file')
+        f.close()
+        logger.info('close file: hashfile.txt')
 
 
 def main(WantToFilter, filterOnName, filterOnState, filterOnPath, WantToPrintList):
