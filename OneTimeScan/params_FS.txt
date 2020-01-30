@@ -8,5 +8,5 @@ save: ,
 sizef: ,
 namef: ,
 pathf: ,
-Wanna_use_FS: N,
+Wanna_use_FS: n,
 END
