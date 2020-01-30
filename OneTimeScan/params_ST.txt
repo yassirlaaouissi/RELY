@@ -1,8 +1,0 @@
-##Scheduled tasks Params##
-Name: ,
-State: ,
-Path: ,
-printlist: ,
-WantToFilter: ,
-Wanna_use_Tasks: n,
-END

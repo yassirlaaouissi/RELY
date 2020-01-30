@@ -1,9 +1,0 @@
-##Registry keys Params##,
-HKEY: gjd,
-Path: fnddj,
-WannaFilter: n,
-Name: ,
-Type: ,
-Wanna_use_Keys: y,
-Data: ,
-END
