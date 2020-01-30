@@ -20,10 +20,10 @@ def choice_menu(geef_HKEY, geef_pad):
     # Wanneer er een enter wordt ingevoerd geeft het programma een fout melding
     if (geef_pad == ""):
         print("Path not found, please enter a valid path choice. Try again.")
-        sys.exit(1)
+        #sys.exit(1)
     if (geef_HKEY == ""):
         print("HKEY not found, please enter a valid HKEY choice. Try again.")
-        sys.exit(1)
+        #sys.exit(1)
 
     # Leest de gegeven HKEY-input van de gebruiker uit.
     try:
@@ -61,7 +61,7 @@ def choice_menu(geef_HKEY, geef_pad):
         if (HKEY_found == False):
             print("HKEY not found, please enter a valid HKEY choice. Try again.")
             logger.info("HKEY not found")
-            sys.exit(1)
+            #sys.exit(1)
             return
 
         return explorer
@@ -69,7 +69,7 @@ def choice_menu(geef_HKEY, geef_pad):
     except:
         print("Path not found, please enter a valid path choice. Try again.")
         logger.info("Path not found")
-        sys.exit(1)
+        #sys.exit(1)
 
 
 def reg_reader(exp):
@@ -169,7 +169,6 @@ def filter_reg(registry, filter_vraag, filter_naam, filter_type, filter_data):
 
             if filter_lijst == []:
                 print("Did not find IOC in: Registry Keys ")
-                sys.exit(1)
             else:
                 print("Found IOC, possible malware in: Registry Keys ")
 
@@ -182,48 +181,51 @@ def filter_reg(registry, filter_vraag, filter_naam, filter_type, filter_data):
 
 
 def save_keys(final_list):
-    # print tabel naar scherm
-    header = final_list[0].keys()
-    rows = [x.values() for x in final_list]
-    tableregkey = tabulate.tabulate(rows, header, tablefmt='rst')
-    logger.info("Create table of registry keys.")
-    print(tableregkey)
-    logger.info("Printed table of registry keys.")
-
-    # schrijf de tabel met uitkomsten naar een .txt bestand.
-    if osp.isfile("RegistryKeys.txt"):
-        f = open('RegistryKeys.txt', 'w')
+    if final_list == []:
+        print()
     else:
-        f = open('RegistryKeys.txt', 'x')
-    logger.info("Save list of registry keys.")
+        # print tabel naar scherm
+        header = final_list[0].keys()
+        rows = [x.values() for x in final_list]
+        tableregkey = tabulate.tabulate(rows, header, tablefmt='rst')
+        logger.info("Create table of registry keys.")
+        print(tableregkey)
+        logger.info("Printed table of registry keys.")
 
-    f.write(tableregkey)
-    logger.info('writing results to file.')
+        # schrijf de tabel met uitkomsten naar een .txt bestand.
+        if osp.isfile("RegistryKeys.txt"):
+            f = open('RegistryKeys.txt', 'w')
+        else:
+            f = open('RegistryKeys.txt', 'x')
+        logger.info("Save list of registry keys.")
 
-    f.close()
-    logger.info('close txt file.')
+        f.write(tableregkey)
+        logger.info('writing results to file.')
 
-    # hashing
-    hasher = hashlib.md5()
-    with open('RegistryKeys.txt', 'rb') as afile:
-        buf = afile.read()
-        hasher.update(buf)
-    hash1 = 'RegistryKeys.txt MD5 Hashwaarde: ' + hasher.hexdigest()
-    logger.debug('Generating MD5 hash: ' + hasher.hexdigest())
+        f.close()
+        logger.info('close txt file.')
 
-    hashersha = hashlib.sha256()
-    with open('RegistryKeys.txt', 'rb') as afile:
-        buf = afile.read()
-        hashersha.update(buf)
-    hash2 = 'RegistryKeys.txt SHA256 Hashwaarde: ' + hashersha.hexdigest()
-    logger.debug('Generating SHA256 hash: ' + hashersha.hexdigest())
+        # hashing
+        hasher = hashlib.md5()
+        with open('RegistryKeys.txt', 'rb') as afile:
+            buf = afile.read()
+            hasher.update(buf)
+        hash1 = 'RegistryKeys.txt MD5 Hashwaarde: ' + hasher.hexdigest()
+        logger.debug('Generating MD5 hash: ' + hasher.hexdigest())
 
-    f = open('hashfile.txt', 'a', encoding="utf-8")
-    logger.info('open file: hashfile.txt')
-    f.write(hash1 + '\n' + hash2 + '\n')
-    logger.info('writing md5 hash to file')
-    f.close()
-    logger.info('close file: hashfile.txt')
+        hashersha = hashlib.sha256()
+        with open('RegistryKeys.txt', 'rb') as afile:
+            buf = afile.read()
+            hashersha.update(buf)
+        hash2 = 'RegistryKeys.txt SHA256 Hashwaarde: ' + hashersha.hexdigest()
+        logger.debug('Generating SHA256 hash: ' + hashersha.hexdigest())
+
+        f = open('hashfile.txt', 'a', encoding="utf-8")
+        logger.info('open file: hashfile.txt')
+        f.write(hash1 + '\n' + hash2 + '\n')
+        logger.info('writing md5 hash to file')
+        f.close()
+        logger.info('close file: hashfile.txt')
 
 
 def main(geef_HKEY, geef_pad, filter_vraag, filter_naam, filter_type, filter_data):
