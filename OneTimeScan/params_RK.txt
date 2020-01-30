@@ -1,0 +1,9 @@
+##Registry keys Params##,
+HKEY: HKEY_LOCAL_MACHINE,
+Path: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Git_is1,
+WannaFilter: Y,
+Name: poep,
+Type: ,
+Wanna_use_Keys: Y,
+Data: ,
+END

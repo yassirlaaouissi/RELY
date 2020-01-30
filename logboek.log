@@ -1,0 +1,47 @@
+Proces list: 01/29/2020 06:01:34 PM INFO: This file includes info of the steps that the program makes.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Asked for input HKEY.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Received input HKEY: HKEY_LOCAL_MACHINE
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Asked for input path, 
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Received input path: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Git_is1
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Analyzing HKEY and path choice
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Append values to registry list.
+Registry Keys: 01/29/2020 06:01:34 PM INFO: input for filter the registry: Y
+Registry Keys: 01/29/2020 06:01:34 PM INFO: input to filter on name: poep
+Registry Keys: 01/29/2020 06:01:34 PM INFO: input to filter on type: 
+Registry Keys: 01/29/2020 06:01:34 PM INFO: input to filter on data: 
+Registry Keys: 01/29/2020 06:01:34 PM INFO: Name not found in the registry keys list.
