@@ -115,10 +115,10 @@ def filter_processes(processes, filter_question, filter_name, filter_path):
                         continue
                     elif key['path'] == filter_path:
                         filtered_list.append(key)
-                        logger.info("Proces list is filtered on type.")
+                        logger.info("Proces list is filtered on path.")
                 if len(filtered_list) == 0:
-                    print("Type not found in list of processes \n")
-                    logger.info("Type not found in the proces list.")
+                    print("Path not found in list of processes \n")
+                    logger.info("Path not found in the proces list.")
 
             if filtered_list == []:
                 print("Did not find IOC in: Proces list ")

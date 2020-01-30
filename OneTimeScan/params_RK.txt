@@ -1,9 +1,9 @@
 ##Registry keys Params##,
-HKEY: ,
-Path: ,
-WannaFilter: ,
+HKEY: gjd,
+Path: fnddj,
+WannaFilter: n,
 Name: ,
 Type: ,
-Wanna_use_Keys: N,
+Wanna_use_Keys: y,
 Data: ,
 END

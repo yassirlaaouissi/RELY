@@ -182,7 +182,7 @@ elif (want_to_use_proceslist.upper() == "Y"):
     filter_question = input("Do you want to filter the processes? Y/N: ")
     if(filter_question.upper() == "Y"):
         filter_name = input("Do you want to filter on name? Please give the name otherwise leave blank and press enter (e.g. svchost.exe): ")
-        filter_path = input("Do you want to filter on type? Please give the type otherwise leave blank and press enter (e.g. C:\Windows\System32\dllhost.exe): ")
+        filter_path = input("Do you want to filter on path? Please give the path otherwise leave blank and press enter (e.g. C:\Windows\System32\dllhost.exe): ")
 else:
     print("Did not select Y or N, please restart program and try again")
     #sys.exit(1)

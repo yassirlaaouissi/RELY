@@ -107,8 +107,8 @@ def reg_reader(exp):
 
             logger.info("Append values to registry list.")
 
-    except WindowsError:
-        print
+    except:
+        print()
 
     return registry
 

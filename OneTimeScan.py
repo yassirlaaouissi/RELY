@@ -10,10 +10,10 @@ import scheduled_tasks
 
 
 
-f = open('OneTimeScan/hashfile.txt', 'w', encoding="utf-8")
+f = open('hashfile.txt', 'w', encoding="utf-8")
 f.close()
 
-logging.basicConfig(handlers=[logging.FileHandler('OneTimeScan/logboek.log', 'w', 'utf-8')], format='%(name)s: %(asctime)s %(levelname)s: %(message)s', datefmt='%d/%m/%Y %I:%M:%S %p', level=logging.DEBUG)
+logging.basicConfig(handlers=[logging.FileHandler('logboek.log', 'w', 'utf-8')], format='%(name)s: %(asctime)s %(levelname)s: %(message)s', datefmt='%d/%m/%Y %I:%M:%S %p', level=logging.DEBUG)
 
 
 #Welcome banner

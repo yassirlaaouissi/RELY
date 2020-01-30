@@ -1,0 +1,92 @@
+=====  ===========  ===================  =======  ========  ==============  ============  =============  ===========  =====================  ===============================
+  pid  name         create_time            cores  status      memory_usage    read_bytes    write_bytes    n_threads  username               path
+=====  ===========  ===================  =======  ========  ==============  ============  =============  ===========  =====================  ===============================
+  100  svchost.exe  2020-01-23 23:12:58        0  running                0         77064         389148            8  N/A                    -
+  608  svchost.exe  2020-01-23 23:12:55        0  running                0             0              0            2  N/A                    -
+  632  svchost.exe  2020-01-23 23:12:55        0  running                0     653378598       14907028           28  N/A                    -
+ 1104  svchost.exe  2020-01-23 23:12:55        0  running                0         92672              0           14  N/A                    -
+ 1156  svchost.exe  2020-01-23 23:12:55        0  running                0             0              0            7  N/A                    -
+ 1168  svchost.exe  2020-01-23 23:12:55        0  running                0             0              0            6  N/A                    -
+ 1276  svchost.exe  2020-01-23 23:12:55        0  running                0             0              0            2  N/A                    -
+ 1464  svchost.exe  2020-01-23 23:12:55        0  running                0             0              0            8  N/A                    -
+ 1472  svchost.exe  2020-01-23 23:12:55        0  running                0             0              0            3  N/A                    -
+ 1480  svchost.exe  2020-01-23 23:12:55        0  running                0          7286              0            5  N/A                    -
+ 1548  svchost.exe  2020-01-23 23:12:55        0  running                0             0              0            4  N/A                    -
+ 1572  svchost.exe  2020-01-23 23:12:55        0  running                0             0              0            3  N/A                    -
+ 1664  svchost.exe  2020-01-23 23:12:55        0  running                0             0              0            5  N/A                    -
+ 1680  svchost.exe  2020-01-23 23:12:55        0  running                0             0              0            9  N/A                    -
+ 1728  svchost.exe  2020-01-23 23:12:55        0  running                0             0              0            5  N/A                    -
+ 1736  svchost.exe  2020-01-23 23:12:55        0  running                0             0              0            3  N/A                    -
+ 1808  svchost.exe  2020-01-23 23:12:55        0  running                0             0              0           11  N/A                    -
+ 1928  svchost.exe  2020-01-23 23:12:55        0  running                0     372600784      259718200            9  N/A                    -
+ 2000  svchost.exe  2020-01-23 23:12:55        0  running                0      84026294        7030994           11  N/A                    -
+ 2228  svchost.exe  2020-01-23 23:12:55        0  running                0          3188        7725216            3  N/A                    -
+ 2252  svchost.exe  2020-01-23 23:12:55        0  running                0             0              0            8  N/A                    -
+ 2468  svchost.exe  2020-01-23 23:12:55        0  running                0         31312              0            5  N/A                    -
+ 2528  svchost.exe  2020-01-23 23:12:55        0  running                0             0              0            3  N/A                    -
+ 2588  svchost.exe  2020-01-23 23:12:55        0  running                0        266736              0            9  N/A                    -
+ 2676  svchost.exe  2020-01-23 23:12:55        0  running                0     195946548         491864            5  N/A                    -
+ 2684  svchost.exe  2020-01-23 23:12:55        0  running                0             0              0            4  N/A                    -
+ 2772  svchost.exe  2020-01-23 23:12:55        0  running                0        534988         835916            6  N/A                    -
+ 2840  svchost.exe  2020-01-23 23:12:55        0  running                0        127484         175840           12  N/A                    -
+ 2848  svchost.exe  2020-01-23 23:12:55        0  running                0         32490              0           16  N/A                    -
+ 2940  svchost.exe  2020-01-30 09:55:37        0  running                0          2334            712            5  N/A                    -
+ 2992  svchost.exe  2020-01-23 23:12:55        0  running                0     103923382       41715804            4  N/A                    -
+ 3004  svchost.exe  2020-01-23 23:12:55        0  running                0             0              0            3  N/A                    -
+ 3048  svchost.exe  2020-01-23 23:12:55        0  running                0           714              0            5  N/A                    -
+ 3084  svchost.exe  2020-01-23 23:12:55        0  running                0         18124            160            6  N/A                    -
+ 3232  svchost.exe  2020-01-23 23:12:55        0  running                0             0              0           11  N/A                    -
+ 3252  svchost.exe  2020-01-23 23:12:55        0  running                0         59368              0            2  N/A                    -
+ 3340  svchost.exe  2020-01-23 23:12:56        0  running                0             0              0            3  N/A                    -
+ 3400  svchost.exe  2020-01-23 23:16:57        0  running                0          2694              0            3  N/A                    -
+ 3476  svchost.exe  2020-01-23 23:12:56        0  running                0             0              0            3  N/A                    -
+ 3484  svchost.exe  2020-01-23 23:12:56        0  running                0             0              0            6  N/A                    -
+ 3600  svchost.exe  2020-01-29 09:21:51        0  running                0             0              0            2  N/A                    -
+ 3688  svchost.exe  2020-01-23 23:12:56        0  running                0      39047936         368640            3  N/A                    -
+ 3764  svchost.exe  2020-01-23 23:13:05        0  running                0          2712         372624           13  N/A                    -
+ 3796  svchost.exe  2020-01-23 23:12:56        0  running                0      25995792              0            9  N/A                    -
+ 3884  svchost.exe  2020-01-23 23:12:56        0  running                0             0              0            6  N/A                    -
+ 3920  svchost.exe  2020-01-23 23:12:56        0  running                0        411149            320           16  N/A                    -
+ 4024  svchost.exe  2020-01-23 23:12:56        0  running                0           800              0            5  N/A                    -
+ 4268  svchost.exe  2020-01-23 23:12:56        0  running                0             0              0            9  N/A                    -
+ 4444  svchost.exe  2020-01-23 23:12:57        0  running                0       7362982        4576087            8  N/A                    -
+ 4480  svchost.exe  2020-01-23 23:12:57        0  running                0     327461846      818704312           22  N/A                    -
+ 4680  svchost.exe  2020-01-23 23:20:52        0  running                0         10831          10386            8  N/A                    -
+ 4824  svchost.exe  2020-01-23 23:12:56        0  running                0      81669594        1418968            5  N/A                    -
+ 4856  svchost.exe  2020-01-23 23:12:56        0  running                0           116       24338364           14  N/A                    -
+ 5048  svchost.exe  2020-01-23 23:12:57        0  running                0     264170604        4100116           14  N/A                    -
+ 5068  svchost.exe  2020-01-23 23:12:57        0  running                0       7781136       11743972           14  N/A                    -
+ 5184  svchost.exe  2020-01-23 23:12:57        0  running                0             0              0            5  N/A                    -
+ 5480  svchost.exe  2020-01-23 23:12:57        0  running                0        765500        1466888            6  N/A                    -
+ 5496  svchost.exe  2020-01-23 23:12:57        0  running                0             0              0           14  N/A                    -
+ 5556  svchost.exe  2020-01-23 23:12:57        0  running                0             0        1010213            6  N/A                    -
+ 5688  svchost.exe  2020-01-23 23:12:57        0  running                0         22528              0            3  N/A                    -
+ 5696  svchost.exe  2020-01-23 23:12:57        0  running                0        265797         164960            7  N/A                    -
+ 6040  svchost.exe  2020-01-23 23:12:57        0  running                0           120            348            5  N/A                    -
+ 6100  svchost.exe  2020-01-23 23:12:57        0  running                0           548            680           13  N/A                    -
+ 6236  svchost.exe  2020-01-23 23:12:57        0  running                0             0              0            3  N/A                    -
+ 6668  svchost.exe  2020-01-23 23:12:57        0  running                0             0              0            2  N/A                    -
+ 7356  svchost.exe  2020-01-23 23:15:00        0  running                0       2098604           1440            8  N/A                    -
+ 7644  svchost.exe  2020-01-30 09:56:33        8  running                0       9094574         819270            6  LAPTOP-SH0RFLS3\lucil  C:\Windows\System32\svchost.exe
+ 7708  svchost.exe  2020-01-23 23:12:58        0  running                0         64000              0            7  N/A                    -
+ 7872  svchost.exe  2020-01-23 23:12:59        0  running                0         16579         260425           13  N/A                    -
+ 8476  svchost.exe  2020-01-23 23:12:59        0  running                0         81664              0            4  N/A                    -
+ 9756  svchost.exe  2020-01-23 23:13:00        0  running                0         75512              0            3  N/A                    -
+10540  svchost.exe  2020-01-23 23:13:01        0  running                0       1024448          27678            9  N/A                    -
+10700  svchost.exe  2020-01-23 23:13:01        0  running                0       1247093        1160748            3  N/A                    -
+11200  svchost.exe  2020-01-23 23:14:50        0  running                0             0              0            7  N/A                    -
+15560  svchost.exe  2020-01-23 23:14:59        0  running                0      19492953         617984            8  N/A                    -
+15796  svchost.exe  2020-01-30 11:55:37        0  running                0       2760054          49616           12  N/A                    -
+16028  svchost.exe  2020-01-30 12:06:27        0  running                0       2510957            999            3  N/A                    -
+16360  svchost.exe  2020-01-27 12:13:50        0  running                0             0              0            2  N/A                    -
+17632  svchost.exe  2020-01-30 09:55:36        8  running                0       3424623       12443110           14  LAPTOP-SH0RFLS3\lucil  C:\Windows\System32\svchost.exe
+18644  svchost.exe  2020-01-30 09:55:36        0  running                0             0              0            4  N/A                    -
+18948  svchost.exe  2020-01-28 10:39:31        0  running                0           548          18120            5  N/A                    -
+19368  svchost.exe  2020-01-28 10:27:05        0  running                0        700416         139264            5  N/A                    -
+21240  svchost.exe  2020-01-30 09:55:38        8  running                0         43700              0           13  LAPTOP-SH0RFLS3\lucil  C:\Windows\System32\svchost.exe
+22928  svchost.exe  2020-01-29 13:06:02        0  running                0      67527511      486720933           13  N/A                    -
+23152  svchost.exe  2020-01-30 09:55:36        8  running                0        931560        5245703           15  LAPTOP-SH0RFLS3\lucil  C:\Windows\System32\svchost.exe
+23576  svchost.exe  2020-01-29 19:04:37        0  running                0             0              0            6  N/A                    -
+12952  dllhost.exe  2020-01-30 09:55:38        8  running                0             0              0            2  LAPTOP-SH0RFLS3\lucil  C:\Windows\System32\dllhost.exe
+18048  dllhost.exe  2020-01-30 09:56:06        8  running                0      10686464        3493888            6  LAPTOP-SH0RFLS3\lucil  C:\Windows\System32\dllhost.exe
+=====  ===========  ===================  =======  ========  ==============  ============  =============  ===========  =====================  ===============================

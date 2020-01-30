@@ -2,5 +2,5 @@
 WannaFilter: ,
 Name: ,
 Pad: ,
-want_to_use_proceslist: N,
+want_to_use_proceslist: n,
 END

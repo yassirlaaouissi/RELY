@@ -64,13 +64,11 @@ def filter_tasks(AllTaskDetails, WantToFilter, filterOnName, filterOnState, filt
     UnfilteredList = AllTaskDetails
     FilteredList = []
 
-
-
     if(WantToFilter.upper() == "N"):
-        logger.debug('Selected yes as filtering choice.')
+        logger.debug('Selected no as filtering choice.')
         return UnfilteredList
     elif(WantToFilter.upper() == "Y"):
-        logger.debug('Selected no as filtering choice.')
+        logger.debug('Selected yes as filtering choice.')
         logger.debug('Selected' + filterOnName + 'as name to filter on.')
         logger.debug('Selected' + filterOnState + 'as state to filter on.')
         logger.debug('Selected' + filterOnPath + 'as path to filter on.')
