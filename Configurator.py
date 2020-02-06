@@ -72,7 +72,7 @@ else:
     print("Did not select Y or N, please restart program and try again")
     #sys.exit(1)
 
-z = open("OneTimeScan/params_FS.txt","w+")
+z = open("./params_FS.txt","w")
 z.write("##Filesystem Params##, \n")
 z.write("pathname: " + str(pathname) + ",\n")
 z.write("filter1: " + str(filter1) + ",\n")
@@ -113,7 +113,7 @@ else:
     print("Did not select Y or N, please restart program and try again")
     #sys.exit(1)
 
-x = open("OneTimeScan/params_ST.txt","w+")
+x = open("./params_ST.txt", "w")
 x.write("##Scheduled tasks Params##\n")
 x.write("Name: " + str(filterOnName) + ",\n")
 x.write("State: " + str(filterOnState) + ",\n")
@@ -159,7 +159,7 @@ elif (Wanna_use_Keys.upper() == "Y"):
 else:
     print("Did not select Y or N, please restart program and try again")
 
-y = open("OneTimeScan/params_RK.txt","w+")
+y = open("./params_RK.txt","w")
 y.write("##Registry keys Params##,\n")
 y.write("HKEY: " + str(geef_HKEY) + ",\n")
 y.write("Path: " + str(geef_pad) + ",\n")
@@ -193,7 +193,7 @@ else:
     print("Did not select Y or N, please restart program and try again")
     #sys.exit(1)
 
-g = open("OneTimeScan/params_PL.txt","w+")
+g = open("./params_PL.txt","w")
 g.write("##Proces list Params##,\n")
 g.write("WannaFilter: " + str(filter_question) + ",\n")
 g.write("Name: " + str(filter_name) + ",\n")

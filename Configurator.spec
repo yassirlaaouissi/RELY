@@ -4,9 +4,9 @@ block_cipher = None
 
 
 a = Analysis(['Configurator.py'],
-             pathex=['C:\\School\\Python\\RELY2'],
+             pathex=['D:\\HS Leiden bestanden\\Jaar 2\\IPFIT5\\RELY'],
              binaries=[],
-             datas=[('C:/Python37/Lib/site-packages/pyfiglet', './pyfiglet')],
+             datas=[('C:\\Users\\yassi\\AppData\\Local\\Programs\\Python\\Python37\\Lib\\site-packages\\pyfiglet', './pyfiglet')],
              hiddenimports=['win32timezone'],
              hookspath=[],
              runtime_hooks=[],

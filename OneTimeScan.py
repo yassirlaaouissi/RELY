@@ -25,7 +25,7 @@ ascii_underbanner = ascii_banner.renderText("Team firebreathing rubberduckies")
 print(ascii_underbanner)
 
 #Filesystem read
-with open('OneTimeScan/params_FS.txt') as f:
+with open('./params_FS.txt') as f:
     lines = f.readlines()
     unfilteredPath = lines[1]
     unfilteredFilter1 = lines[2]
@@ -73,7 +73,7 @@ with open('OneTimeScan/params_FS.txt') as f:
 
 #Proces List read
 
-with open('OneTimeScan/params_PL.txt') as a:
+with open('./params_PL.txt') as a:
     lines = a.readlines()
     unfilteredWannaFilterProc = lines[1]
     unfilteredName = lines[2]
@@ -96,7 +96,7 @@ with open('OneTimeScan/params_PL.txt') as a:
     #print(lines)
 
 #Registry keys read
-with open('OneTimeScan/params_RK.txt') as b:
+with open('./params_RK.txt') as b:
     lines = b.readlines()
     unfilteredHKEY = lines[1]
     unfilteredPath = lines[2]
@@ -130,7 +130,7 @@ with open('OneTimeScan/params_RK.txt') as b:
     #print(lines)
 
 #Scheduled tasks read
-with open('OneTimeScan/params_ST.txt') as c:
+with open('./params_ST.txt') as c:
     lines = c.readlines()
 
     unfilteredName = lines[1]

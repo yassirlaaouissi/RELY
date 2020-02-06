@@ -133,8 +133,10 @@ def filter_tasks(AllTaskDetails, WantToFilter, filterOnName, filterOnState, filt
             return FilteredList
             logger.debug('Returned list of task attributes.')
     else:
-        print("The input you gave did not correspond Y or N, please restart the program and try again.")
+        print("The input you gave did not correspond Y or N, please reconfigure the program and try again.")
         logger.error('Input did not correspond with Y or N.')
+        looseList = []
+        return looseList
 
 def show_results(list, WantToPrintList):
     if list == []:
