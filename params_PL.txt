@@ -1,0 +1,6 @@
+##Proces list Params##,
+WannaFilter: N,
+Name: ,
+Pad: ,
+want_to_use_proceslist: Y,
+END
