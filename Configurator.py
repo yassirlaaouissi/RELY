@@ -154,8 +154,8 @@ elif (Wanna_use_Keys.upper() == "Y"):
         filter_data = input("Do you want to filter on data? Please give the type otherwise leave blank and press enter (e.g: Cmd):")
     if filter_vraag.upper() == "N":
         uselessvar=""
-    else:
-        print("Did not select Y or N, please restart program and try again")
+    #else:
+        #print("Did not select Y or N, please restart program and try again")
 else:
     print("Did not select Y or N, please restart program and try again")
 
